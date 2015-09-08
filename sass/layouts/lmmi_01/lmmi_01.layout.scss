@@ -35,22 +35,27 @@ $desk-columns: 16;
 
 @import "off-canvas";
 
-.l-header,
+.l-header .container,
 .l-main,
-.l-footer {
+.l-footer .container {
   @include container;
   @include pie-clearfix;
-  margin-bottom: $vert-spacing-unit;
 }
+.l-header,
+.l-main,
+.l-footer .container {
+ margin-bottom: 20px;
+}
+
 
 .l-off-canvas {
   clear: both;
 }
 
 @include susy-breakpoint($tab, $tab-columns) {
-  .l-header,
+  .l-header .container,
   .l-main,
-  .l-footer {
+  .l-footer .container {
     max-width: container($tab-columns);
   }
 

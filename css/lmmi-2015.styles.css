@@ -404,4 +404,12 @@ div.messages ul {
 div.messages ul li {
   list-style-image: none; }
 
+/* line 1, ../sass/components/regions/_footer.scss */
+.l-footer {
+  background: #333; }
+
+/* line 1, ../sass/components/regions/_header.scss */
+.l-header {
+  background: #38471E; }
+
 /*# sourceMappingURL=lmmi-2015.styles.css.map */
