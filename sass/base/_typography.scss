@@ -47,3 +47,12 @@ picture {
   margin: 0;
   max-width: 100%;
 }
+
+/**
+ * $PARAGRAPHS
+ */
+
+p + img {
+  float: left;
+  margin-right: $base-spacing;
+}

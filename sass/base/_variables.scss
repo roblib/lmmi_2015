@@ -40,3 +40,15 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+// Breadcrumbs
+$breadcrumb-border-color: $base-border-color;
+$breadcrumb-border: 1px solid $breadcrumb-border-color;
+$breadcrumb-height: $base-spacing * 1.5;
+$breadcrumb-arrow-color: $breadcrumb-border-color;
+$breadcrumb-background: $base-background-color;
+$breadcrumb-inactive-hover-color: $breadcrumb-background;
+$breadcrumb-color: $medium-gray;
+$breadcrumb-color-hover: $action-color;
+$breadcrumb-color-active: $breadcrumb-color;
+

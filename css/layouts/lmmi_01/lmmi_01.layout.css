@@ -15,7 +15,7 @@
   right: 0;
   width: 24px;
   height: 24px;
-  background: transparent url("../../../layouts/off-canvas/assets/close.png") center center no-repeat;
+  background: transparent url("../../../layouts/lmmi_01/assets/close.png") center center no-repeat;
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
@@ -23,7 +23,7 @@
 
 /* line 16, ../../../sass/layouts/lmmi_01/_off-canvas.scss */
 .l-off-canvas-show {
-  background: transparent url("../../../layouts/off-canvas/assets/menu.png") center center no-repeat; }
+  background: transparent url("../../../layouts/lmmi_01/assets/menu.png") center center no-repeat; }
 
 @media (min-width: 0) and (max-width: 44em) {
   /* line 22, ../../../sass/layouts/lmmi_01/_off-canvas.scss */

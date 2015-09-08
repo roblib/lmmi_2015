@@ -10,11 +10,11 @@
   right: 0;
   width: 24px;
   height: 24px;
-  background: transparent url("../../../layouts/off-canvas/assets/close.png") center center no-repeat;
+  background: transparent url("../../../layouts/lmmi_01/assets/close.png") center center no-repeat;
   @include hide-text;
 }
 .l-off-canvas-show {
-  background: transparent url("../../../layouts/off-canvas/assets/menu.png") center center no-repeat;
+  background: transparent url("../../../layouts/lmmi_01/assets/menu.png") center center no-repeat;
 }
 
 @include breakpoint(0 $tab) {

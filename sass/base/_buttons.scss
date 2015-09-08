@@ -33,3 +33,10 @@
     }
   }
 }
+
+
+/* Adjacent buttons should have some space between them. */
+.button + .button,
+.button + a {
+  margin-left: 1em;
+}

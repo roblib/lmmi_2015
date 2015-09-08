@@ -1,72 +1,11 @@
 @media all and (max-width: 800px) {
+  /* line 3, ../sass/lmmi-2015.hacks.scss */
   #toolbar, #admin-menu {
-    display: none;
-  }
+    display: none; }
 
+  /* line 8, ../sass/lmmi-2015.hacks.scss */
   html body.toolbar, html body.admin-menu {
     padding-top: 0 !important;
-    margin-top: 0 !important;
-  }
-}
+    margin-top: 0 !important; } }
 
-
-/*======================================
-=            unsorted stuff            =
-======================================*/
-img {}
-p + img {
-    float: left;
-    margin-right: 1em;
-}
-
-/**
- * $BREADCRUMB
- */
-.breadcrumb li {
-  padding-right: 0.4em;
-}
-.breadcrumb li:after {
-  content: "»";
-  padding-left: 0.4em;
-  vertical-align: baseline;
-}
-.breadcrumb li:last-child:after {
-  content: "";
-}
-.breadcrumb a {
-  text-decoration: none;
-}
-
-/**
- * $HLIST
- */
-.block--system-user-menu .menu, .block--nav-bar .menu, .action-links, .breadcrumb {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  /* for IE 6/7 */
-  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
-  /* non-JS fallback */
-  *zoom: 1;
-}
-.block--system-user-menu .menu:before, .block--nav-bar .menu:before, .action-links:before, .breadcrumb:before, .block--system-user-menu .menu:after, .block--nav-bar .menu:after, .action-links:after, .breadcrumb:after {
-  content: ".";
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-.block--system-user-menu .menu:after, .block--nav-bar .menu:after, .action-links:after, .breadcrumb:after {
-  clear: both;
-}
-.block--system-user-menu .menu li, .block--nav-bar .menu li, .action-links li, .breadcrumb li {
-  list-style-image: none;
-  list-style-type: none;
-  margin-left: 0;
-  white-space: nowrap;
-  display: inline;
-  float: left;
-}
-
-
-/*=====  End of unsorted stuff  ======*/
-
+/*# sourceMappingURL=lmmi-2015.hacks.css.map */

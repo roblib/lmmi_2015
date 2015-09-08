@@ -2,7 +2,7 @@
 @import "libraries/bourbon/bourbon";
 @import "libraries/neat/neat-helpers";
 
-
+/*
 // Turn on Neat's visual grid for development.
 $visual-grid:       false;
 $visual-grid-color: #EEEEEE;
@@ -26,6 +26,21 @@ $mobile:   new-breakpoint(min-width em(320px, $font-size) $grid-columns);
 $narrow:   new-breakpoint(min-width em(560px, $font-size) $grid-columns);
 $wide:     new-breakpoint(min-width em(851px, $font-size) $grid-columns);
 $horizontal-bar-mode: new-breakpoint(min-width em(950px, $font-size) $grid-columns);
+*/
+
+
+// Neat Overrides
+$column: 90px;
+$gutter: 30px;
+$grid-columns: 12;
+$max-width: 1200px;
+
+// Neat Breakpoints
+$medium-screen: 600px;
+$large-screen: 900px;
+
+$medium-screen-up: new-breakpoint(min-width $medium-screen 4);
+$large-screen-up: new-breakpoint(min-width $large-screen 8);
 
 
 // Import grid to be used (Bourbon Neat) now that we've set our overrides.
