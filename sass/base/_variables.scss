@@ -1,6 +1,17 @@
+// Import fonts
+
+@import url(//fonts.googleapis.com/css?family=Lusitana:400,700);
+@import url(//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic);
+@import url(//fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic);
+
 // Typography
-$base-font-family: $helvetica;
-$heading-font-family: $base-font-family;
+
+$serif: 'Lusitana', serif;
+$serif-2: 'Merriweather', serif;
+$sans-serif: 'Merriweather Sans', sans-serif;
+
+$base-font-family: $serif-2;
+$heading-font-family: $serif;
 
 // Font Sizes
 $base-font-size: 1em;
@@ -22,10 +33,11 @@ $medium-gray: #999;
 $light-gray: #ddd;
 $dark-green: #38471E;
 $gold: #ECAD00;
+$red: #ac1a02;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$action-color: $blue;
+$action-color: $red;
 
 // Border
 $base-border-color: $light-gray;

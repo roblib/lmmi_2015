@@ -13,76 +13,69 @@
 }
 
 
-/*reset*/
-.tabs--primary {
-	border-bottom: 0;
-	li {
-		margin: 0;
-		padding: 4p;
-	}
-	a {
-		padding: 0;
-		margin: 0;
-		background: none;
-
-		&.active {
-			background: none;
-		}
-	}
+/*livestyle*/
+ul.tabs li {
+	margin: 0;
+	padding: 4p;;
 }
-
-.tabs--primary {
-
- a {
-	font-family: "Merriweather Sans", sans-serif;
+ul.tabs a {
+	padding: 0;
+	margin: 0;
+}
+.tabs a.active {
+	background: none;
+}
+.tabs a {
+	background: none;
+	    font-family: "Merriweather Sans", sans-serif;
     font-size: .8em;
     font-weight: 100;
 }
-
- li {
+.tabs {
+}
+.tabs li {
 	padding: 5px;
 	border-top: 1px solid #ccc;
 	border-left: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;;
 }
- li:last-child {
+.tabs li:last-child {
 	border-right: 1px solid #ccc;
 	border-radius: 0 4px 4px 0;;;
 }
- li:first-child {
+a.active {;
+}
+.tabs li:first-child {
 	border-radius: 4px 0 0 4px;;
 }
-
+.tabs--primary {
+	border-bottom: 0;;
+}
 li.active {;
 }
- a:hover,  a:focus {
+.tabs a:hover, .tabs a:focus {
 	background: none;;
 }
 
- li.active,  li:hover {
+.tabs li.active, .tabs li:hover {
 	background-color: #AC1A02;;
 }
- li.active a,  li:hover a {
+.tabs li.active a, .tabs li:hover a {
 	color: #fff;;
 }
-}
-
-
-// links in the top right
 h1 {
 	display: inline-block;;
 }
-.tabs--primary {
+ul.tabs.tabs--primary.links--inline {
 	display: inline-block;
 	float: right;;
 }
-
-
-
 h2.element-invisible {
 	display: inline-block;;
 }
-
+.l-main {
+	padding-top: 10px;;
+}
 
 .section-islandora ul.tabs > li:last-child a::before {content: "Print";}
 img#print_btn {display: none;}

@@ -21,3 +21,8 @@
 @import "abstractions/**/*";
 @import "base/base";
 @import "components/**/*";
+
+body {
+	    -webkit-font-smoothing: antialiased;
+}
+

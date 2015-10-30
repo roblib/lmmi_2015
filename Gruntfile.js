@@ -10,9 +10,9 @@ module.exports = function (grunt) {
       sass: {
         files: ['sass/{,**/}*.{scss,sass}'],
         tasks: ['compass:dev'],
-        options: {
-          livereload: false
-        }
+        //options: {
+          //livereload: false
+        //}
       },
       registry: {
         files: ['*.info', '{,**}/*.{php,inc}'],

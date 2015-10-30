@@ -1,0 +1,32 @@
+.lp-grid {
+	clear: both;
+	@include outer-container;
+}
+
+
+@include breakpoint(800px) {
+	.lp-slideshow {
+	@include span-columns(8);
+}
+.lp-welcome {
+	@include span-columns(4);
+	@include omega();
+}
+.lp-blog {
+	@include span-columns(4);
+}
+.lp-feature {
+	@include span-columns(4);
+}
+.lp-social-feed {
+	@include span-columns(4);
+	@include omega();
+}
+.lp-video {
+	@include span-columns(6);
+}
+.lp-links {
+	@include span-columns(6);
+	@include omega();
+}
+}

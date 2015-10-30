@@ -7,5 +7,70 @@
   html body.toolbar, html body.admin-menu {
     padding-top: 0 !important;
     margin-top: 0 !important; } }
+/*reset*/
+/* line 17, ../sass/lmmi-2015.hacks.scss */
+.tabs--primary {
+  border-bottom: 0; }
+  /* line 19, ../sass/lmmi-2015.hacks.scss */
+  .tabs--primary li {
+    margin: 0;
+    padding: 4p; }
+  /* line 23, ../sass/lmmi-2015.hacks.scss */
+  .tabs--primary a {
+    padding: 0;
+    margin: 0;
+    background: none; }
+    /* line 28, ../sass/lmmi-2015.hacks.scss */
+    .tabs--primary a.active {
+      background: none; }
+
+/* line 36, ../sass/lmmi-2015.hacks.scss */
+.tabs--primary a {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: .8em;
+  font-weight: 100; }
+/* line 42, ../sass/lmmi-2015.hacks.scss */
+.tabs--primary li {
+  padding: 5px;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; }
+/* line 48, ../sass/lmmi-2015.hacks.scss */
+.tabs--primary li:last-child {
+  border-right: 1px solid #ccc;
+  border-radius: 0 4px 4px 0; }
+/* line 52, ../sass/lmmi-2015.hacks.scss */
+.tabs--primary li:first-child {
+  border-radius: 4px 0 0 4px; }
+/* line 58, ../sass/lmmi-2015.hacks.scss */
+.tabs--primary a:hover, .tabs--primary a:focus {
+  background: none; }
+/* line 62, ../sass/lmmi-2015.hacks.scss */
+.tabs--primary li.active, .tabs--primary li:hover {
+  background-color: #AC1A02; }
+/* line 65, ../sass/lmmi-2015.hacks.scss */
+.tabs--primary li.active a, .tabs--primary li:hover a {
+  color: #fff; }
+
+/* line 72, ../sass/lmmi-2015.hacks.scss */
+h1 {
+  display: inline-block; }
+
+/* line 75, ../sass/lmmi-2015.hacks.scss */
+.tabs--primary {
+  display: inline-block;
+  float: right; }
+
+/* line 82, ../sass/lmmi-2015.hacks.scss */
+h2.element-invisible {
+  display: inline-block; }
+
+/* line 87, ../sass/lmmi-2015.hacks.scss */
+.section-islandora ul.tabs > li:last-child a::before {
+  content: "Print"; }
+
+/* line 88, ../sass/lmmi-2015.hacks.scss */
+img#print_btn {
+  display: none; }
 
 /*# sourceMappingURL=lmmi-2015.hacks.css.map */

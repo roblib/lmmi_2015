@@ -6,56 +6,56 @@
 /*******************************************************************************
  * Off canvas portion of styling for the Off Canvas layout.
  ******************************************************************************/
-/* line 5, ../../../sass/layouts/lmmi_01/_off-canvas.scss */
+/* line 5, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
 .l-off-canvas-show,
 .l-off-canvas-hide {
   display: none;
   position: absolute;
-  top: 0;
+  top: 12px;
   right: 0;
   width: 24px;
   height: 24px;
-  background: transparent url("../../../layouts/lmmi-01/assets/close.png") center center no-repeat;
+  background: transparent url("../../../layouts/lmmi-main/assets/close.png") center center no-repeat;
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
   text-transform: capitalize; }
 
-/* line 16, ../../../sass/layouts/lmmi_01/_off-canvas.scss */
+/* line 16, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
 .l-off-canvas-show {
-  background: transparent url("../../../layouts/lmmi-01/assets/menu.png") center center no-repeat; }
+  background: transparent url("../../../layouts/lmmi-main/assets/menu.png") center center no-repeat; }
 
 @media (min-width: 0) and (max-width: 785px) {
-  /* line 22, ../../../sass/layouts/lmmi_01/_off-canvas.scss */
+  /* line 22, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
   .no-js .l-off-canvas {
     position: relative;
     min-height: 24px;
     padding-right: 24px; }
-    /* line 27, ../../../sass/layouts/lmmi_01/_off-canvas.scss */
+    /* line 27, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
     .no-js .l-off-canvas .l-region {
       position: relative;
       overflow: hidden; }
-    /* line 31, ../../../sass/layouts/lmmi_01/_off-canvas.scss */
+    /* line 31, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
     .no-js .l-off-canvas .l-off-canvas-hide {
       display: block; }
-    /* line 35, ../../../sass/layouts/lmmi_01/_off-canvas.scss */
+    /* line 35, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
     .no-js .l-off-canvas:not(:target) .l-region {
       min-height: 0;
       height: 0; }
-    /* line 39, ../../../sass/layouts/lmmi_01/_off-canvas.scss */
+    /* line 39, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
     .no-js .l-off-canvas:not(:target) .l-off-canvas-show {
       display: block; }
-    /* line 42, ../../../sass/layouts/lmmi_01/_off-canvas.scss */
+    /* line 42, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
     .no-js .l-off-canvas:not(:target) .l-off-canvas-hide {
       display: none; }
 
-  /* line 49, ../../../sass/layouts/lmmi_01/_off-canvas.scss */
+  /* line 49, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
   .js .l-page {
     position: relative;
     height: 100%;
     padding-left: 12%; }
 
-  /* line 54, ../../../sass/layouts/lmmi_01/_off-canvas.scss */
+  /* line 54, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
   .js .l-off-canvas {
     position: absolute;
     z-index: 99;
@@ -64,25 +64,43 @@
     bottom: 0;
     left: -70%;
     padding-top: 24px;
+    padding-right: 20px;
     -moz-transition: left 0.2s ease-in;
     -o-transition: left 0.2s ease-in;
     -webkit-transition: left 0.2s ease-in;
     transition: left 0.2s ease-in;
     cursor: pointer; }
-    /* line 66, ../../../sass/layouts/lmmi_01/_off-canvas.scss */
+    /* line 67, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
     .js .l-off-canvas.is-visible {
       left: 0;
       cursor: auto; }
-      /* line 70, ../../../sass/layouts/lmmi_01/_off-canvas.scss */
+      /* line 70, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
+      .js .l-off-canvas.is-visible .l-region--navigation {
+        background: #333;
+        padding-bottom: 20px;
+        margin-top: 20px; }
+      /* line 75, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
+      .js .l-off-canvas.is-visible .search-bar {
+        float: right;
+        margin: 10px; }
+      /* line 79, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
+      .js .l-off-canvas.is-visible .upei-crest {
+        display: none; }
+      /* line 81, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
       .js .l-off-canvas.is-visible .l-off-canvas-show {
         display: none; }
-      /* line 73, ../../../sass/layouts/lmmi_01/_off-canvas.scss */
+      /* line 84, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
       .js .l-off-canvas.is-visible .l-off-canvas-hide {
         display: block; }
-    /* line 77, ../../../sass/layouts/lmmi_01/_off-canvas.scss */
+    /* line 88, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
     .js .l-off-canvas .l-off-canvas-show {
       display: block; } }
-/* line 38, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+/* line 94, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
+.l-region.l-region--navigation {
+  overflow: hidden;
+  *zoom: 1; }
+
+/* line 38, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
 .l-header .container,
 .l-main,
 .l-footer .container {
@@ -105,46 +123,46 @@
     display: table;
     clear: both; }
 
-/* line 44, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+/* line 44, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
 .l-header,
 .l-main,
 .l-footer {
   margin-bottom: 20px; }
 
-/* line 51, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+/* line 51, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
 .l-main,
 .branding-container,
 .l-footer {
   padding-left: 10px;
   padding-right: 10px; }
 
-/* line 59, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+/* line 59, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
 .l-main {
   padding-bottom: 10px; }
 
-/* line 63, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+/* line 63, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
 .l-off-canvas {
   clear: both; }
 
 @media (min-width: 44em) {
-  /* line 68, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+  /* line 68, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
   .l-header .container,
   .l-main,
   .l-footer .container {
     max-width: 1100px; }
 
-  /* line 80, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+  /* line 80, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
   .l-region--navigation {
     clear: both; }
 
-  /* line 87, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+  /* line 87, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
   .has-sidebar-first .l-content,
   .has-sidebar-second .l-content,
   .has-two-sidebars .l-content {
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%; }
-  /* line 90, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+  /* line 90, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
   .has-sidebar-first .l-region--sidebar-first,
   .has-sidebar-first .l-region--sidebar-second,
   .has-sidebar-second .l-region--sidebar-first,
@@ -154,78 +172,78 @@
     width: 32.20339%;
     float: right;
     margin-right: 0; }
-  /* line 94, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+  /* line 94, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
   .has-sidebar-first .l-region--sidebar-second,
   .has-sidebar-second .l-region--sidebar-second,
   .has-two-sidebars .l-region--sidebar-second {
     clear: right; } }
 @media (min-width: 880px) {
-  /* line 101, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+  /* line 101, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
   .l-branding {
     width: 74.57627%;
     float: left;
     margin-right: 1.69492%; }
 
-  /* line 104, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+  /* line 104, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
   .l-region--header {
     width: 23.72881%;
     float: right;
     margin-right: 0; } }
 @media (min-width: 70em) {
-  /* line 111, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+  /* line 111, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
   .l-branding {
     width: 74.68354%;
     float: left;
     margin-right: 1.26582%; }
 
-  /* line 114, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+  /* line 114, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
   .l-region--header {
     width: 24.05063%;
     float: right;
     margin-right: 0; }
 
-  /* line 119, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+  /* line 119, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
   .has-sidebar-first .l-content {
     width: 74.68354%;
     float: right;
     margin-right: 0; }
-  /* line 122, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+  /* line 122, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
   .has-sidebar-first .l-region--sidebar-first {
     width: 24.05063%;
     float: left;
     margin-right: 1.26582%; }
 
-  /* line 127, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+  /* line 127, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
   .has-sidebar-second .l-content {
     width: 74.68354%;
     float: left;
     margin-right: 1.26582%; }
-  /* line 130, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+  /* line 130, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
   .has-sidebar-second .l-region--sidebar-second {
     width: 24.05063%;
     float: right;
     margin-right: 0;
     clear: none; }
 
-  /* line 137, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+  /* line 137, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
   .has-two-sidebars .l-content {
     width: 49.36709%;
     float: left;
     margin-right: 1.26582%;
     margin-left: 25.31646%; }
-  /* line 141, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+  /* line 141, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
   .has-two-sidebars .l-region--sidebar-first,
   .has-two-sidebars .l-region--sidebar-second {
     width: 24.05063%;
     float: left;
     margin-right: 1.26582%; }
-  /* line 145, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+  /* line 145, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
   .has-two-sidebars .l-region--sidebar-first {
     margin-left: -75.94937%; }
-  /* line 148, ../../../sass/layouts/lmmi_01/lmmi_01.layout.scss */
+  /* line 148, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
   .has-two-sidebars .l-region--sidebar-second {
     float: right;
     margin-right: 0;
     clear: none; } }
 
-/*# sourceMappingURL=lmmi_01.layout.css.map */
+/*# sourceMappingURL=lmmi-main.layout.css.map */
