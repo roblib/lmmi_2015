@@ -119,7 +119,7 @@
   // The nav items
 
   ul li.leaf {
-    background: $navigation-background;
+    /*background: $navigation-background;*/
     display: block;
     line-height: $navigation-height;
     overflow: hidden;
@@ -311,7 +311,7 @@
       position: relative;
 
       input[type=text] {
-        @include box-sizing(border-box);
+        box-sizing: border-box;
         background: $navigation-search-background;
         border-radius: $base-border-radius * 2;
         border: $navigation-search-border;
@@ -360,7 +360,7 @@
       width: 16em;
 
       input {
-        @include box-sizing(border-box);
+        box-sizing: border-box;
         display: block;
       }
     }

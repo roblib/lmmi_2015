@@ -515,7 +515,7 @@ code {
       display: block; }
   /* line 121, ../sass/components/_navigation.scss */
   .nav-wrapper ul li.leaf {
-    background: #333;
+    /*background: $navigation-background;*/
     display: block;
     line-height: 60px;
     overflow: hidden;
@@ -667,8 +667,6 @@ code {
       position: relative; }
       /* line 313, ../sass/components/_navigation.scss */
       .nav-wrapper .search-bar form input[type=text] {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
         box-sizing: border-box;
         background: #404040;
         border-radius: 6px;
@@ -710,8 +708,6 @@ code {
         width: 16em; }
         /* line 362, ../sass/components/_navigation.scss */
         .nav-wrapper .search-bar input {
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
           box-sizing: border-box;
           display: block; } }
 
@@ -814,8 +810,6 @@ form.islandora-solr-simple-search-form {
     -ms-appearance: none;
     -o-appearance: none;
     appearance: none;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-transition: border-color;
     -moz-transition: border-color;

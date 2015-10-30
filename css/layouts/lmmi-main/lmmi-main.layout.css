@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*******************************************************************************
  * off-canvas.layout.scss
  *
@@ -12,7 +13,7 @@
   display: none;
   position: absolute;
   top: 12px;
-  right: 0;
+  right: 8px;
   width: 24px;
   height: 24px;
   background: transparent url("../../../layouts/lmmi-main/assets/close.png") center center no-repeat;
@@ -53,18 +54,18 @@
   .js .l-page {
     position: relative;
     height: 100%;
-    padding-left: 12%; }
+    /*padding-left: 12%;*/ }
 
   /* line 54, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
   .js .l-off-canvas {
     position: absolute;
     z-index: 99;
-    width: 80%;
+    width: 250px;
     top: 0;
     bottom: 0;
-    left: -70%;
+    left: -200px;
     padding-top: 24px;
-    padding-right: 20px;
+    /*padding-right: 20px;*/
     -moz-transition: left 0.2s ease-in;
     -o-transition: left 0.2s ease-in;
     -webkit-transition: left 0.2s ease-in;
@@ -73,33 +74,66 @@
     /* line 67, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
     .js .l-off-canvas.is-visible {
       left: 0;
+      background: #333;
+      -webkit-box-shadow: inset 0 0 5px 5px #222;
+      -moz-box-shadow: inset 0 0 5px 5px #222;
+      box-shadow: inset 0 0 5px 5px #222;
       cursor: auto; }
-      /* line 70, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
+      /* line 74, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
       .js .l-off-canvas.is-visible .l-region--navigation {
-        background: #333;
+        /*background: #333;*/
         padding-bottom: 20px;
         margin-top: 20px; }
-      /* line 75, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
+      /* line 79, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
       .js .l-off-canvas.is-visible .search-bar {
         float: right;
-        margin: 10px; }
-      /* line 79, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
+        margin: 0px;
+        padding: 10px; }
+      /* line 84, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
       .js .l-off-canvas.is-visible .upei-crest {
         display: none; }
-      /* line 81, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
+      /* line 86, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
       .js .l-off-canvas.is-visible .l-off-canvas-show {
         display: none; }
-      /* line 84, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
+      /* line 89, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
       .js .l-off-canvas.is-visible .l-off-canvas-hide {
         display: block; }
-    /* line 88, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
+    /* line 93, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
     .js .l-off-canvas .l-off-canvas-show {
       display: block; } }
-/* line 94, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
+/* line 99, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
 .l-region.l-region--navigation {
   overflow: hidden;
   *zoom: 1; }
 
+@media (min-width: 0) and (max-width: 768px) {
+  /* line 105, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
+  .l-off-canvas.is-visible ul li.leaf:active, .l-off-canvas.is-visible  
+  ul li.leaf:hover {
+    -webkit-box-shadow: inset 0 0 15px 3px #222;
+    -moz-box-shadow: inset 0 0 15px 3px #222;
+    box-shadow: inset 0 0 15px 3px #222; }
+  /* line 112, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
+  .l-off-canvas.is-visible ul li {
+    display: block;
+    margin: 0;
+    line-height: 48px;
+    border-top: 1px solid #4d4d4d;
+    border-bottom: 1px solid #1a1a1a; }
+  /* line 120, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
+  .l-off-canvas.is-visible div#block-islandora-solr-simple {
+    display: block;
+    border-top: 1px solid #4d4d4d;
+    width: 100%; }
+  /* line 126, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
+  .l-off-canvas.is-visible form#islandora-solr-simple-search-form {
+    width: 220px;
+    float: right; }
+  /* line 131, ../../../sass/layouts/lmmi-main/_off-canvas.scss */
+  .l-off-canvas.is-visible ul li:hover {
+    -webkit-box-shadow: inset 0 0 15px 3px #222;
+    -moz-box-shadow: inset 0 0 15px 3px #222;
+    box-shadow: inset 0 0 15px 3px #222; } }
 /* line 38, ../../../sass/layouts/lmmi-main/lmmi-main.layout.scss */
 .l-header .container,
 .l-main,
