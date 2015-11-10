@@ -49,7 +49,7 @@ html {
     clear: both;
     content: "";
     display: table; }
-  /* line 62, ../../../../../../../../Users/rdrew/.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  /* line 62, ../../../../../../../../Users/rdrew/.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
   .breadcrumb li {
     list-style-image: none;
     list-style-type: none;
@@ -459,45 +459,28 @@ code {
   min-height: 60px;
   width: 100%;
   z-index: 999; }
-  /* line 47, ../sass/components/_navigation.scss */
+  /* line 37, ../sass/components/_navigation.scss */
   .nav-wrapper .upei-crest {
     float: left;
     max-height: 60px;
     padding-left: 1em;
     padding-right: 2em;
     padding-left: 0; }
-    /* line 54, ../sass/components/_navigation.scss */
+    /* line 44, ../sass/components/_navigation.scss */
     .nav-wrapper .upei-crest img {
       max-height: 60px;
       padding: 0.8em 0; }
-  /* line 62, ../sass/components/_navigation.scss */
-  .nav-wrapper .navigation-menu-button {
-    color: rgba(255, 255, 255, 0.7);
-    display: block;
-    float: right;
-    line-height: 60px;
-    margin: 0;
-    padding-right: 1em;
-    text-decoration: none;
-    text-transform: uppercase; }
-    @media screen and (min-width: 928px) {
-      /* line 62, ../sass/components/_navigation.scss */
-      .nav-wrapper .navigation-menu-button {
-        display: none; } }
-    /* line 76, ../sass/components/_navigation.scss */
-    .nav-wrapper .navigation-menu-button:focus, .nav-wrapper .navigation-menu-button:hover {
-      color: #ECAD00; }
-  /* line 84, ../sass/components/_navigation.scss */
+  /* line 52, ../sass/components/_navigation.scss */
   .nav-wrapper nav {
     float: none;
     float: left;
     min-height: 60px;
     /*z-index: 9999999;*/ }
     @media screen and (min-width: 928px) {
-      /* line 84, ../sass/components/_navigation.scss */
+      /* line 52, ../sass/components/_navigation.scss */
       .nav-wrapper nav {
         float: left; } }
-  /* line 95, ../sass/components/_navigation.scss */
+  /* line 63, ../sass/components/_navigation.scss */
   .nav-wrapper ul.menu {
     -webkit-transform-style: preserve-3d;
     clear: both;
@@ -510,11 +493,11 @@ code {
     display: inline;
     margin: 0;
     padding: 0; }
-    /* line 108, ../sass/components/_navigation.scss */
+    /* line 76, ../sass/components/_navigation.scss */
     .nav-wrapper ul.menu.show {
       display: block; }
-  /* line 121, ../sass/components/_navigation.scss */
-  .nav-wrapper ul li.leaf {
+  /* line 89, ../sass/components/_navigation.scss */
+  .nav-wrapper ul.menu li {
     /*background: $navigation-background;*/
     display: block;
     line-height: 60px;
@@ -524,15 +507,15 @@ code {
     width: 100%;
     z-index: 9999; }
     @media screen and (min-width: 785px) {
-      /* line 121, ../sass/components/_navigation.scss */
-      .nav-wrapper ul li.leaf {
+      /* line 89, ../sass/components/_navigation.scss */
+      .nav-wrapper ul.menu li {
         background: transparent;
         display: inline;
         line-height: 60px;
         text-decoration: none;
         width: auto; } }
-    /* line 146, ../sass/components/_navigation.scss */
-    .nav-wrapper ul li.leaf a {
+    /* line 114, ../sass/components/_navigation.scss */
+    .nav-wrapper ul.menu li a {
       color: rgba(255, 255, 255, 0.7);
       display: inline-block;
       text-decoration: none;
@@ -540,132 +523,21 @@ code {
       font-size: .8em;
       font-weight: 100; }
       @media screen and (min-width: 928px) {
-        /* line 146, ../sass/components/_navigation.scss */
-        .nav-wrapper ul li.leaf a {
+        /* line 114, ../sass/components/_navigation.scss */
+        .nav-wrapper ul.menu li a {
           padding-right: 1em; } }
-      /* line 158, ../sass/components/_navigation.scss */
-      .nav-wrapper ul li.leaf a:focus, .nav-wrapper ul li.leaf a:hover {
+      /* line 126, ../sass/components/_navigation.scss */
+      .nav-wrapper ul.menu li a:focus, .nav-wrapper ul.menu li a:hover {
         color: #ECAD00; }
-  /* line 172, ../sass/components/_navigation.scss */
-  .nav-wrapper li.more.nav-link {
-    padding-right: 0; }
-    @media screen and (min-width: 928px) {
-      /* line 172, ../sass/components/_navigation.scss */
-      .nav-wrapper li.more.nav-link {
-        padding-right: 1em; } }
-    /* line 179, ../sass/components/_navigation.scss */
-    .nav-wrapper li.more.nav-link > ul > li:first-child a {
-      padding-top: 1em; }
-    /* line 183, ../sass/components/_navigation.scss */
-    .nav-wrapper li.more.nav-link a {
-      margin-right: 1em; }
-    /* line 187, ../sass/components/_navigation.scss */
-    .nav-wrapper li.more.nav-link > a {
-      padding-right: 0.6em; }
-    /* line 191, ../sass/components/_navigation.scss */
-    .nav-wrapper li.more.nav-link > a:after {
-      position: absolute;
-      top: auto;
-      right: -0.4em;
-      bottom: auto;
-      left: auto;
-      content: '\25BE';
-      color: rgba(255, 255, 255, 0.7); }
-  /* line 198, ../sass/components/_navigation.scss */
-  .nav-wrapper li.more {
-    overflow: visible;
-    padding-right: 0; }
-    /* line 202, ../sass/components/_navigation.scss */
-    .nav-wrapper li.more a {
-      padding-right: 0.8em; }
-    /* line 206, ../sass/components/_navigation.scss */
-    .nav-wrapper li.more > a {
-      padding-right: 1.6em;
-      position: relative; }
-      @media screen and (min-width: 928px) {
-        /* line 206, ../sass/components/_navigation.scss */
-        .nav-wrapper li.more > a {
-          margin-right: 1em; } }
-      /* line 214, ../sass/components/_navigation.scss */
-      .nav-wrapper li.more > a:after {
-        content: '›';
-        font-size: 1.2em;
-        position: absolute;
-        right: 0.5em; }
-    /* line 222, ../sass/components/_navigation.scss */
-    .nav-wrapper li.more:focus > .submenu, .nav-wrapper li.more:hover > .submenu {
-      display: block; }
-    @media screen and (min-width: 928px) {
-      /* line 198, ../sass/components/_navigation.scss */
-      .nav-wrapper li.more {
-        padding-right: 0.8em;
-        position: relative; } }
-  /* line 233, ../sass/components/_navigation.scss */
-  .nav-wrapper ul.submenu {
-    display: none;
-    padding-left: 0; }
-    @media screen and (min-width: 928px) {
-      /* line 233, ../sass/components/_navigation.scss */
-      .nav-wrapper ul.submenu {
-        left: -1em;
-        position: absolute;
-        top: 1.5em; } }
-    @media screen and (min-width: 928px) {
-      /* line 243, ../sass/components/_navigation.scss */
-      .nav-wrapper ul.submenu .submenu {
-        left: 11.8em;
-        top: 0; } }
-    /* line 250, ../sass/components/_navigation.scss */
-    .nav-wrapper ul.submenu li {
-      display: block;
-      padding-right: 0; }
-      @media screen and (min-width: 928px) {
-        /* line 250, ../sass/components/_navigation.scss */
-        .nav-wrapper ul.submenu li {
-          line-height: 46.15385px; }
-          /* line 257, ../sass/components/_navigation.scss */
-          .nav-wrapper ul.submenu li:first-child > a {
-            border-top-left-radius: 3px;
-            border-top-right-radius: 3px; }
-          /* line 262, ../sass/components/_navigation.scss */
-          .nav-wrapper ul.submenu li:last-child > a {
-            border-bottom-left-radius: 3px;
-            border-bottom-right-radius: 3px;
-            padding-bottom: 0.7em; } }
-      /* line 269, ../sass/components/_navigation.scss */
-      .nav-wrapper ul.submenu li a {
-        background-color: #2b2b2b;
-        display: inline-block;
-        text-align: right;
-        width: 100%; }
-        @media screen and (min-width: 928px) {
-          /* line 269, ../sass/components/_navigation.scss */
-          .nav-wrapper ul.submenu li a {
-            background-color: #333;
-            padding-left: 1em;
-            text-align: left;
-            width: 12em; } }
-  /* line 287, ../sass/components/_navigation.scss */
-  .nav-wrapper .navigation-tools {
-    background: #505050;
-    clear: both;
-    display: block;
-    height: 60px; }
-    @media screen and (min-width: 928px) {
-      /* line 287, ../sass/components/_navigation.scss */
-      .nav-wrapper .navigation-tools {
-        background: transparent;
-        clear: none;
-        float: right; } }
-  /* line 302, ../sass/components/_navigation.scss */
+  /* line 144, ../sass/components/_navigation.scss */
   .nav-wrapper .search-bar {
     float: right;
     margin-top: 1em;
     width: 12em; }
-    /* line 310, ../sass/components/_navigation.scss */
+    /* line 152, ../sass/components/_navigation.scss */
     .nav-wrapper .search-bar form {
       position: relative; }
-      /* line 313, ../sass/components/_navigation.scss */
+      /* line 155, ../sass/components/_navigation.scss */
       .nav-wrapper .search-bar form input[type=text] {
         box-sizing: border-box;
         background: #404040;
@@ -677,11 +549,7 @@ code {
         margin: 0;
         padding: 0.5em 0.8em;
         width: 100%; }
-        @media screen and (min-width: 928px) {
-          /* line 313, ../sass/components/_navigation.scss */
-          .nav-wrapper .search-bar form input[type=text] {
-            width: 100%; } }
-      /* line 330, ../sass/components/_navigation.scss */
+      /* line 168, ../sass/components/_navigation.scss */
       .nav-wrapper .search-bar form input[type=submit] {
         background: #404040;
         border: none;
@@ -701,31 +569,30 @@ code {
         background-repeat: no-repeat;
         background-position: center; }
     @media screen and (min-width: 928px) {
-      /* line 302, ../sass/components/_navigation.scss */
+      /* line 144, ../sass/components/_navigation.scss */
       .nav-wrapper .search-bar {
         display: inline-block;
         position: relative;
         width: 16em; }
-        /* line 362, ../sass/components/_navigation.scss */
+        /* line 194, ../sass/components/_navigation.scss */
         .nav-wrapper .search-bar input {
           box-sizing: border-box;
           display: block; } }
 
-/*=====  End of header search  ======*/
-/* line 382, ../sass/components/_navigation.scss */
+/* line 202, ../sass/components/_navigation.scss */
 .l-region--navigation p {
   margin: 0; }
 
-/* line 385, ../sass/components/_navigation.scss */
+/* line 205, ../sass/components/_navigation.scss */
 .l-region--navigation {
   display: none; }
 
-/* line 388, ../sass/components/_navigation.scss */
+/* line 208, ../sass/components/_navigation.scss */
 .is-visible .l-region--navigation {
   display: block; }
 
 @media screen and (min-width: 785px) {
-  /* line 393, ../sass/components/_navigation.scss */
+  /* line 213, ../sass/components/_navigation.scss */
   .l-region--navigation {
     display: block; } }
 /*reset*/
@@ -773,17 +640,18 @@ code {
   .tabs--primary li.active a, .tabs--primary li:hover a {
     color: #fff; }
 
-/* line 52, ../sass/components/_primary-tabs.scss */
-.l-main h1 {
-  display: inline-block; }
-/* line 55, ../sass/components/_primary-tabs.scss */
-.l-main .tabs--primary {
-  display: inline-block;
-  float: right; }
-/* line 59, ../sass/components/_primary-tabs.scss */
-.l-main h2.element-invisible {
-  display: inline-block; }
-
+/*.l-main {*/
+/*h1 {*/
+/*display: inline-block;*/
+/*}*/
+/*.tabs--primary {*/
+/*display: inline-block;*/
+/*float: right;*/
+/*}*/
+/*h2.element-invisible {*/
+/*display: inline-block;*/
+/*}*/
+/*}*/
 /* line 65, ../sass/components/_primary-tabs.scss */
 .section-islandora ul.tabs > li:last-child a::before {
   content: "Print"; }
@@ -1081,7 +949,7 @@ nav.social {
     clear: both;
     content: "";
     display: table; }
-  /* line 62, ../../../../../../../../Users/rdrew/.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  /* line 62, ../../../../../../../../Users/rdrew/.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
   nav.social li {
     list-style-image: none;
     list-style-type: none;
@@ -1090,13 +958,13 @@ nav.social {
     float: left;
     padding-left: 4px;
     padding-right: 4px; }
-    /* line 49, ../../../../../../../../Users/rdrew/.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    /* line 49, ../../../../../../../../Users/rdrew/.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
     nav.social li:first-child {
       padding-left: 0; }
-    /* line 50, ../../../../../../../../Users/rdrew/.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    /* line 50, ../../../../../../../../Users/rdrew/.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
     nav.social li:last-child {
       padding-right: 0; }
-    /* line 52, ../../../../../../../../Users/rdrew/.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    /* line 52, ../../../../../../../../Users/rdrew/.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
     nav.social li.last {
       padding-right: 0; }
   /* line 43, ../sass/components/regions/_header.scss */
@@ -1104,7 +972,7 @@ nav.social {
     list-style: none;
     float: right;
     margin: 0; }
-    /* line 11, ../../../../../../../../Users/rdrew/.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_bullets.scss */
+    /* line 11, ../../../../../../../../Users/rdrew/.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_bullets.scss */
     nav.social ul.menu li {
       list-style-image: none;
       list-style-type: none;
@@ -1131,91 +999,36 @@ nav.social {
   content: "";
   display: table; }
 
-/* line 1, ../sass/components/regions/_lp-grid.scss */
-.lp-grid {
-  clear: both;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto; }
-  /* line 20, ../sass/libraries/bourbon/addons/_clearfix.scss */
-  .lp-grid::after {
-    clear: both;
-    content: "";
-    display: table; }
-
-@media screen and (min-width: 800px) {
-  /* line 8, ../sass/components/regions/_lp-grid.scss */
-  .lp-slideshow {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 65.95745%; }
-    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-    .lp-slideshow:last-child {
-      margin-right: 0; }
-
-  /* line 11, ../sass/components/regions/_lp-grid.scss */
-  .lp-welcome {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 31.91489%;
-    margin-right: 0; }
-    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-    .lp-welcome:last-child {
-      margin-right: 0; }
-
-  /* line 15, ../sass/components/regions/_lp-grid.scss */
-  .lp-blog {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 31.91489%; }
-    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-    .lp-blog:last-child {
-      margin-right: 0; }
-
-  /* line 18, ../sass/components/regions/_lp-grid.scss */
-  .lp-feature {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 31.91489%; }
-    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-    .lp-feature:last-child {
-      margin-right: 0; }
-
-  /* line 21, ../sass/components/regions/_lp-grid.scss */
-  .lp-social-feed {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 31.91489%;
-    margin-right: 0; }
-    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-    .lp-social-feed:last-child {
-      margin-right: 0; }
-
-  /* line 25, ../sass/components/regions/_lp-grid.scss */
-  .lp-video {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 48.93617%; }
-    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-    .lp-video:last-child {
-      margin-right: 0; }
-
-  /* line 28, ../sass/components/regions/_lp-grid.scss */
-  .lp-links {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 48.93617%;
-    margin-right: 0; }
-    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-    .lp-links:last-child {
-      margin-right: 0; } }
+/*.lp-grid {*/
+/*clear: both;*/
+/*@include outer-container;*/
+/*}*/
+/*@include breakpoint(800px) {*/
+/*.lp-slideshow {*/
+/*@include span-columns(8);*/
+/*}*/
+/*.lp-welcome {*/
+/*@include span-columns(4);*/
+/*@include omega();*/
+/*}*/
+/*.lp-blog {*/
+/*@include span-columns(4);*/
+/*}*/
+/*.lp-feature {*/
+/*@include span-columns(4);*/
+/*}*/
+/*.lp-social-feed {*/
+/*@include span-columns(4);*/
+/*@include omega();*/
+/*}*/
+/*.lp-video {*/
+/*@include span-columns(6);*/
+/*}*/
+/*.lp-links {*/
+/*@include span-columns(6);*/
+/*@include omega();*/
+/*}*/
+/*}*/
 /* line 25, ../sass/lmmi-2015.styles.scss */
 body {
   -webkit-font-smoothing: antialiased; }

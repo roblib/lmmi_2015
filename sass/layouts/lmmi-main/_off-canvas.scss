@@ -97,41 +97,41 @@
 }
 
 .l-region.l-region--navigation {
-	@include clearfix;
+	/*@include clearfix;*/
 }
 @include breakpoint(0 768px) {
 
-.l-off-canvas.is-visible {
-ul li.leaf:active, 
-ul li.leaf:hover {
-	-webkit-box-shadow: inset 0 0 15px 3px #222;
-	-moz-box-shadow: inset 0 0 15px 3px #222;
-	box-shadow: inset 0 0 15px 3px #222;
-}
+	.l-off-canvas.is-visible {
+		ul li.leaf:active, 
+		ul li.leaf:hover {
+			-webkit-box-shadow: inset 0 0 15px 3px #222;
+			-moz-box-shadow: inset 0 0 15px 3px #222;
+			box-shadow: inset 0 0 15px 3px #222;
+		}
 
-ul li {
-	display: block;
-	margin: 0;
-	line-height: 48px;
-	border-top: 1px solid #4d4d4d;
-	border-bottom: 1px solid #1a1a1a;
-}
+		ul li {
+			display: block;
+			margin: 0;
+			line-height: 48px;
+			border-top: 1px solid #4d4d4d;
+			border-bottom: 1px solid #1a1a1a;
+		}
 
-div#block-islandora-solr-simple {
-	display: block;
-	border-top: 1px solid #4d4d4d;
-	width: 100%;
-}
+		div#block-islandora-solr-simple {
+			display: block;
+			border-top: 1px solid #4d4d4d;
+			width: 100%;
+		}
 
-form#islandora-solr-simple-search-form {
-	width: 220px;
-	float: right;
-}
+		form#islandora-solr-simple-search-form {
+			width: 220px;
+			float: right;
+		}
 
-ul li:hover {
-	-webkit-box-shadow: inset 0 0 15px 3px #222;
-	-moz-box-shadow: inset 0 0 15px 3px #222;
-	box-shadow: inset 0 0 15px 3px #222;
-}
-}
+		ul li:hover {
+			-webkit-box-shadow: inset 0 0 15px 3px #222;
+			-moz-box-shadow: inset 0 0 15px 3px #222;
+			box-shadow: inset 0 0 15px 3px #222;
+		}
+	}
 }
