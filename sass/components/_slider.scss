@@ -1,0 +1,32 @@
+.field-slideshow-caption {
+    display: block;
+    background: rgba(51, 51, 51, 0.81);
+    color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 6px;
+    height: 46px;
+    padding: 10px;
+}
+.field-slideshow-controls {
+
+	i {
+		font-size: 1.3em;
+	}
+
+}
+
+.field-slideshow-caption a {
+    color:white;
+	font-family: $sans-serif;
+}
+.field-slideshow-controls {
+	float: right;
+	position: relative;
+	left: -10px;
+	bottom: 38px;
+	z-index: 200;
+	a {
+	@include link-colors($gold, lighten($gold, 50%))}
+}

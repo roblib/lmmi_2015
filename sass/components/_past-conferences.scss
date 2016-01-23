@@ -1,0 +1,34 @@
+.field-name-field-conference-image {
+	@include breakpoint(800px) {
+		width: 40%;
+		float: left;
+		margin-right: 1em;
+	}
+}
+
+.view-conferences .views-row {
+	border-bottom: 1px solid #ccc;
+	padding-top: 1em;
+}
+.view-conferences .moscone-container {
+    margin-bottom: 0;
+}
+.view-conferences { 
+	.media-object {
+		border:1px solid #ccc;
+		padding: 10px;
+		background:#fff;
+		.media-object-section:first-child {
+			line-height: 0;
+		}
+	}
+	figure {
+		background:#fff;
+	}
+}.view-conferences .panel-display.moscone.clearfix {
+    border-bottom: 0px;
+    background: rgba(142, 173, 144, 0.27);
+    /* border: 1px solid #ccc; */
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    padding: 10px;
+}

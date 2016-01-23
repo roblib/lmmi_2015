@@ -1,7 +1,95 @@
+.mini-panel--footer {
+	@include outer-container;
+
+@include breakpoint(800px) {
+
+	.block--upei-logo { @include span-columns(3); }
+	.block--supporters { @include span-columns(3); }
+	.block--contact { @include span-columns(3); }
+	.menu--social-links { @include span-columns(3); }
+}
+}
+
+.block--upei-logo { 
+
+	img {
+	
+		max-width: 180px;
+	
+	}
+}
+.block--supporters {}
+.block--contact {
+
+	a, span.gc-cs-link {
+	
+		color:$gold;
+	
+	}
+
+}
+.menu--social-links {}
+
 .l-footer {
 	background: $dark-gray;
 	padding-top: $base-spacing;
 	padding-bottom: $base-spacing;
+
+}
+
+.mini-panel--footer {
+	color: white;
+	p {color:white;}
+	.pane-title {
+		font-size: 1.4em;
+	}
+	.menu {
+		li {
+			color:white;
+			margin-bottom: .5em;
+			/*margin-left: 20px;*/
+			list-style-type: none;
+			font-family: $sans-serif-2;
+			list-style-image: none ;
+			a {
+			
+				@include link-colors(#fff,$gold)			
+
+			}
+			i {
+				margin-right: 6px;
+				font-size: 1.6em;
+				color: $gold;
+			}
+		}
+	}
+
+}
+.menu--social-links {
+	color: white;
+	p {color:white;}
+	.pane-title {
+		font-size: 1.4em;
+	}
+	.menu {
+		li {
+			color:white;
+			margin-bottom: .5em;
+			margin-left: 20px;
+			list-style-type: none;
+			list-style-image: none ;
+			a {
+			
+				@include link-colors(#fff,$gold)			
+
+			}
+			i {
+				margin-right: 6px;
+				font-size: 1.6em;
+				color: $gold;
+			}
+		}
+	}
 
 }
 
@@ -36,3 +124,5 @@ div#footer-wrapper { background: #333; }
 	}
 	}
 }
+.contact-info p {font-family: "Roboto Condensed", sans-serif;}
+

@@ -14,19 +14,7 @@ $vert-spacing-unit: 20px;
 $horz-spacing-unit: 1em;
 
 // Define Susy grid variables mobile first.
-$susy: (
-  flow: ltr,
-  math: fluid,
-  output: float,
-  gutter-position: after,
-  container: 1100px,
-  container-position: center,
-  columns: 4,
-  gutters: 1/4,
-  column-width: 4em,
-  global-box-sizing: content-box,
-  last-flow: to,
-);
+$susy: (flow: ltr, math: fluid, output: float, gutter-position: after, container: 1100px, container-position: center, columns: 4, gutters: 1 / 4, column-width: 4em, global-box-sizing: content-box, last-flow: to);
 
 $tab: 44em;
 $tab-columns: 12;
@@ -38,117 +26,134 @@ $desk-columns: 16;
 .l-header .container,
 .l-main,
 .l-footer .container {
-  @include container;
-  @include pie-clearfix;
+	@include container;
+
+	@include pie-clearfix;
 }
+
 .l-header,
 .l-main,
 .l-footer {
- margin-bottom: 20px;
-   // padding for the sides when mobile
+	margin-bottom: 20px;
 }
 
 .l-main,
 .branding-container,
 .l-footer {
-    // padding for the sides when mobile
-  padding-left: 10px;
-  padding-right: 10px;
-
+	// padding for the sides when mobile
+	padding-left: 10px;
+	padding-right: 10px;
 }
+
 .l-main {
-	padding-bottom:10px;
+	@include breakpoint(960px) {
+		padding: 2em;
+		padding-top: 1em;
+	}
+
+
+	@include breakpoint(0 1120px) {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 }
 
 .l-off-canvas {
-  clear: both;
+	clear: both;
 }
 
 @include susy-breakpoint($tab, $tab-columns) {
-  .l-header .container,
-  .l-main,
-  .l-footer .container {
-    max-width: container($tab-columns);
-  }
-    // did this to deal with the social nav buttons
-  // .l-branding {
-  //   @include span(9 of $tab-columns);
-  // }
-  // .l-region--header{
-  //   @include span(last 3 of $tab-columns);
-  // }
-  .l-region--navigation {
-    clear: both;
-  }
+	.l-header .container,
+	.l-main,
+	.l-footer .container {
+		max-width: container($tab-columns);
+	}
 
-  .has-sidebar-first,
-  .has-sidebar-second,
-  .has-two-sidebars {
-    .l-content {
-      @include span(8 of $tab-columns);
-    }
-    .l-region--sidebar-first,
-    .l-region--sidebar-second {
-      @include span(last 4 of $tab-columns);
-    }
-    .l-region--sidebar-second {
-      clear: right;
-    }
-  }
+	.l-region--navigation {
+		clear: both;
+	}
+
+	.has-sidebar-first,
+	.has-sidebar-second,
+	.has-two-sidebars {
+		.l-content {
+			@include span(8 of $tab-columns);
+		}
+
+		.l-region--sidebar-first,
+		.l-region--sidebar-second {
+			@include span(last 4 of $tab-columns);
+		}
+
+		.l-region--sidebar-second {
+			clear: right;
+		}
+	}
 }
+
 
 @include breakpoint(880px) {
-   .l-branding {
-    @include span(9 of $tab-columns);
-  }
-  .l-region--header{
-    @include span(last 3 of $tab-columns);
-  }
+	.l-branding {
+		@include span(9 of $tab-columns);
+	}
+
+	.l-region--header {
+		@include span(last 3 of $tab-columns);
+	}
 }
+
 
 @include susy-breakpoint($desk, $desk-columns) {
+	.l-branding {
+		@include span(12 of $desk-columns);
+	}
 
-  .l-branding {
-    @include span(12 of $desk-columns);
-  }
-  .l-region--header{
-    @include span(last 4 of $desk-columns);
-  }
+	.l-region--header {
+		@include span(last 4 of $desk-columns);
+	}
 
-  .has-sidebar-first {
-    .l-content {
-      @include span(last 12 of $desk-columns);
-    }
-    .l-region--sidebar-first {
-      @include span(4 of $desk-columns);
-    }
-  }
-  .has-sidebar-second {
-    .l-content {
-      @include span(12 of $desk-columns);
-    }
-    .l-region--sidebar-second {
-      @include span(last 4 of $desk-columns);
-      clear: none;
-    }
-  }
+	.has-sidebar-first {
+		.l-content {
+			@include span(last 12 of $desk-columns);
+		}
 
-  .has-two-sidebars {
-    .l-content {
-      @include span(8 of $desk-columns);
-      @include push(4 of $desk-columns);
-    }
-    .l-region--sidebar-first,
-    .l-region--sidebar-second {
-      @include span(4 of $desk-columns);
-    }
-    .l-region--sidebar-first {
-      @include pull(12 of $desk-columns);
-    }
-    .l-region--sidebar-second {
-      @include last;
-      clear: none;
-    }
-  }
+		.l-region--sidebar-first {
+			@include span(4 of $desk-columns);
+		}
+	}
+
+	.has-sidebar-second {
+		.l-content {
+			@include span(12 of $desk-columns);
+		}
+
+		.l-region--sidebar-second {
+			@include span(last 4 of $desk-columns);
+
+			clear: none;
+		}
+	}
+
+	.has-two-sidebars {
+		.l-content {
+			@include span(8 of $desk-columns);
+
+			@include push(4 of $desk-columns);
+		}
+
+		.l-region--sidebar-first,
+		.l-region--sidebar-second {
+			@include span(4 of $desk-columns);
+		}
+
+		.l-region--sidebar-first {
+			@include pull(12 of $desk-columns);
+		}
+
+		.l-region--sidebar-second {
+			@include last;
+
+			clear: none;
+		}
+	}
 }
-

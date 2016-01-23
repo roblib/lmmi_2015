@@ -1,0 +1,85 @@
+.lp-blog .views-row {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+
+	h3 {
+		margin-bottom: 0;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	.field.field-name-post-date {
+		font-size: .8em;
+		font-family: $sans-serif;
+	}
+}
+
+.node--blog--teaser {
+	margin: 1em 0;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #ccc;
+	clear: both;
+}
+
+.page-blog .action-links {
+	float: right;
+
+	a {
+		@extend button;
+	}
+}
+
+.lp-blog h3 {
+	margin-bottom: 0;
+}
+
+.page-blog .l-content h1 {
+	display: inline-block;
+	width: 50%;
+	float: left;
+}
+
+/*landing page*/
+/*read more link*/
+.field.field-name-node-link a {
+	border-top: 1px solid #AC1A02;
+	border-bottom: 1px solid #AC1A02;
+	line-height: 0;
+	font-size: .8em;
+	margin-bottom: 1em;
+
+	&:hover {
+		background: $red;
+		color: #fff;
+	}
+}
+
+.lp-blog {
+	ul.pager {
+		text-align: center;
+		list-style-type: none;
+	}
+
+	ul.pager li {
+		display: inline;
+		font-size: .9em;
+	}
+}
+
+.blog_post_date {
+	font-size: .9em;
+	float: left;
+}
+
+.read_more {
+	float: right;
+}
+
+.feature {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}

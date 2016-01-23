@@ -3,65 +3,52 @@
 }
 
 a.site-logo {
-    @include breakpoint(664px) {
-    	display: inline-block;
-    width: 285px;
-    float: left;
-    height: auto;
-    border-right: 1px solid rgba(255, 255, 255, 0.42);
-    padding-right: 10px;
-    margin-right: 10px;
-    }
+	@include breakpoint(664px) {
+		display: inline-block;
+		width: 285px;
+		float: left;
+		height: auto;
+		border-right: 1px solid rgba(255, 255, 255, 0.42);
+		padding-right: 10px;
+		margin-right: 10px;
+	}
 }
 
-h1.site-name {
-    font-size: 1.5em;
-	@include breakpoint(980px) {
-    font-size: 1.8em;
-    }
-    font-weight: 100;
-    margin-bottom: .1em;
-}
-
-h1.site-name a {
-    color: $gold;
-}
-
-h2.site-slogan {
-    color: #fff;
-    font-weight: 100;
-    font-size: 1.2em;
-    margin: 0;
-}
 .branding-container.container {
-    padding-top: 10px;
-    padding-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 nav.social {
 	@include horizontal-list;
+
 	ul.menu {
 		@include no-bullets;
+
 		float: right;
 		margin: 0;
 	}
+
 	span.title {
 		display: none;
 	}
+
 	a {
 		font-size: 2em;
 		color: $gold;
 		padding-left: 10px;
+
 		&:hover {
 			color: lighten($gold, 40%);
 		}
 	}
+
 	// hide on mobile
 	display: none;
+
 	@include breakpoint(880px) {
 		display: block;
 	}
-
 }
 
 .search-bar {

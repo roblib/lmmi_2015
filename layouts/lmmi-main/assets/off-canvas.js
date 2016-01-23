@@ -7,7 +7,7 @@
       $('#off-canvas').click(function(e) {
         if (!$(this).hasClass('is-visible')) {
           $(this).addClass('is-visible');
-          e.preventDefault();
+          //e.preventDefault();
           e.stopPropagation();
         }
       });

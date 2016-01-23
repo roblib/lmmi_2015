@@ -4,6 +4,8 @@
 
 
 .breadcrumb {
+	margin-bottom: .6em;
+	font-family: $sans-serif-2;
   @extend %hlist;
 
   li {

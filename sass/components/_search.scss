@@ -1,0 +1,20 @@
+.l-region--sidebar-second .block--islandora-solr {
+    border: 1px solid #ccc;
+	padding:8px;
+	margin: 1em 0;
+	border-radius: 4px;
+}
+.date-range-filter-wrapper {
+    background: #ccc;
+    padding: 5px;
+}
+.l-region--sidebar-second .block--islandora-solr li {
+    font-size: .9em;
+}
+
+.islandora-solr-date-filter label {
+    display: inline-block;
+    float: left;
+    margin: 5px 0;
+    width: 100%;
+}
