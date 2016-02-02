@@ -1,32 +1,15 @@
-.field-slideshow-caption {
-    display: block;
-    background: rgba(51, 51, 51, 0.81);
-    color: white;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 6px;
-    height: 46px;
-    padding: 10px;
-}
-.field-slideshow-controls {
-
-	i {
-		font-size: 1.3em;
-	}
-
+.flex-caption {
+	background: rgb(64, 64, 64);
+	color: #fff;
+	padding: 10px;
 }
 
-.field-slideshow-caption a {
-    color:white;
-	font-family: $sans-serif;
+div#flexslider-1 {
+	box-shadow: none !important;
+	margin: 0;
+	border: 0;
 }
-.field-slideshow-controls {
-	float: right;
-	position: relative;
-	left: -10px;
-	bottom: 38px;
-	z-index: 200;
-	a {
-	@include link-colors($gold, lighten($gold, 50%))}
+
+.slider img {
+	border: 2px solid #ccc;
 }

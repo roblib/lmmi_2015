@@ -25,29 +25,28 @@
 
 .lp-feature figure {
 	margin: 0;
-	//margin-bottom: 2em;
-	line-height:0px;
-width:80px;
-	/*float: left;*/
-	/*margin-right: 5px;*/
+
+	line-height: 0px;
+	width: 60px;
+
 	img {
-   /*     border: 1px solid #ccc;*/
 		@extend .img-border;
-		//padding: 4px;
+
 		width: 100%;
 	}
 }
 
 .lp-feature {
 	.media-object {
-		background: #ccc;
-		padding:4px;
-		width:100%;
+		background: $light-gray;
+		border: 1px solid $medium-gray;
+		padding: 4px;
+		width: 100%;
+		@extend .shadow;
 	}
 }
 
 .feature_title {
-	/*line-height: 1.1;*/
 	margin-bottom: 0;
 }
 
@@ -64,7 +63,10 @@ width:80px;
 			color: #fff;
 		}
 
-		//display:none;
 
 	}
+}
+/*simons page*/
+.page-node-917 .field.field--name-field-feature-image {
+    display: none;
 }

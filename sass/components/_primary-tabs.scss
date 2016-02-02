@@ -21,7 +21,7 @@
 
 .tabs--primary {
 	a {
-		font-family: "Merriweather Sans", sans-serif;
+		/*font-family: "Merriweather Sans", sans-serif;*/
 		font-size: .8em;
 		font-weight: 100;
 	}
@@ -38,7 +38,7 @@
 		border-radius: 4px 0 0 4px;
 		}
 		&.active, &:hover {
-		background-color: #AC1A02;
+		background-color: $red;
 		}
 		&.active a, &:hover a {
 		color: #fff;

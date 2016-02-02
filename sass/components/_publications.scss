@@ -1,0 +1,35 @@
+.publication-teaser {
+	.node--teaser {
+		@include outer-container;
+		/*margin-bottom:2em !important;*/
+		h3 {
+		font-weight: 700;
+		}
+	}
+.field-name-title {
+		@include span-columns(12);
+		@include omega();
+
+}
+	.field-name-field-feature-image {
+		@include span-columns(2);
+	}
+	.field-name-body {
+		@include span-columns(10);
+		@include omega();
+	}
+	.field-name-node-link {
+	text-align: right;
+	}
+	.views-row {
+	    border-bottom: 0px;
+	    background: rgba(142, 173, 144, 0.27);
+	    /* border: 1px solid #ccc; */
+	    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+	    padding: 10px;
+	    margin-bottom: 1em;
+	}
+}
+.pane-featured-publications {
+clear: both;
+}

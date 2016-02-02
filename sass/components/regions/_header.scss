@@ -35,11 +35,11 @@ nav.social {
 
 	a {
 		font-size: 2em;
-		color: $gold;
+			color: lighten($gold, 40%);
 		padding-left: 10px;
 
 		&:hover {
-			color: lighten($gold, 40%);
+		color: $gold;
 		}
 	}
 
@@ -51,6 +51,14 @@ nav.social {
 	}
 }
 
+/*old site link*/
+/*nav.social li.last a {*/
+    /*font-size: 1em;*/
+/*}*/
+
+/*nav.social li.last i {*/
+    /*margin-right: 4px;*/
+/*}*/
 .search-bar {
 	@include clearfix;
 }

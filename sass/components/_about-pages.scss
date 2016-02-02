@@ -3,11 +3,28 @@
 	p {
 		text-align: justify;
 	}
-
-	//img.imgp_img {
-		//width: 100% !important;
-		//height: auto !important;
-	//}
 }
 
+/*works*/
+.lmmi-works {
+	p { 
+	margin: 0;
+	 }
+	td {
+		display: inline-block;
+	}
 
+	/*header*/
+	tr:nth-child(1) td {
+		width: 100%;
+		color: $light-green;
+	}
+	td:first-child {
+		width: 15%;
+	}
+
+	td:nth-child(2) {
+		width: 85%;
+	}
+
+}

@@ -6,13 +6,7 @@ $visual-grid-index: front;
 		display: none;
 	}
 
-	/*@include clearfix;*/
-
 	@include outer-container;
-
-	/*@include show-grid;*/
-
-	/*@include susy-grid-background;*/
 
 	figure {
 		margin: 0;
@@ -70,10 +64,9 @@ $visual-grid-index: front;
 
 //conference pages
 .conf_banner_2016 {
-	@include breakpoint(700px) {
-		width: 50%;
-		float: left;
-		margin-right: 20px;
+	@include breakpoint(800px) {
+		width: 60%;
+		margin: 0 auto;
 	}
 
 
@@ -89,8 +82,6 @@ $visual-grid-index: front;
 
 .keynote {
 	width: 100%;
-
-	/* height: 253px; */
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 1em;
 	margin-bottom: 1em;

@@ -1,0 +1,14 @@
+.conf_chair {
+	@include clearfix;
+
+	clear: both;
+	margin-bottom: 1em;
+
+	.imgp_container {
+		width: 14%;
+		margin-right: 1em;
+		img {
+		width: 100%;
+	}
+	}
+}
