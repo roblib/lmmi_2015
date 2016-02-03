@@ -16,7 +16,7 @@
 		}
 	}
 
-	@include breakpoint(800px) {
+	@include breakpoint(600px) {
 		.field-name-title {
 			@include span-columns(12);
 
@@ -55,10 +55,7 @@
 }
 
 .twilight-book {
-	display: none;
-	@include breakpoint(800px) {
-	display: block;
-	}
+	@include hide-me;
     line-height: 1;
     width: 188px;
     float: right;

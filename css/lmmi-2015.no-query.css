@@ -59,18 +59,18 @@ html {
     white-space: nowrap;
     float: left; }
 
-/* line 102, ../sass/abstractions/_mixins.scss */
+/* line 22, ../sass/abstractions/_mixins.scss */
 .texture {
   height: 5em;
   width: 100%; }
-  /* line 108, ../sass/abstractions/_mixins.scss */
+  /* line 29, ../sass/abstractions/_mixins.scss */
   .texture .texture-normal {
     background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/diagonal-noise.png"), linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
     background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/diagonal-noise.png"), linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
     float: left;
     height: 5em;
     width: 50%; }
-  /* line 116, ../sass/abstractions/_mixins.scss */
+  /* line 38, ../sass/abstractions/_mixins.scss */
   .texture .texture-inverted {
     background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/diagonal-noise.png"), linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
     background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/diagonal-noise.png"), linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
@@ -1350,7 +1350,7 @@ body.cke_editable {
 /*about lm*/
 /* line 3, ../sass/components/_about-pages.scss */
 .section-about p {
-  text-align: justify; }
+  /*text-align: justify;*/ }
 
 /*works*/
 /* line 9, ../sass/components/_about-pages.scss */
@@ -2120,17 +2120,22 @@ ul.sf-menu ul {
 
 /* line 17, ../sass/components/_past-conferences.scss */
 .view-conferences .media-object {
+  display: none;
   border: 1px solid #ccc;
   padding: 10px;
   background: #fff; }
-  /* line 21, ../sass/components/_past-conferences.scss */
+  @media screen and (min-width: 800px) {
+    /* line 17, ../sass/components/_past-conferences.scss */
+    .view-conferences .media-object {
+      display: block; } }
+  /* line 22, ../sass/components/_past-conferences.scss */
   .view-conferences .media-object .media-object-section:first-child {
     line-height: 0; }
-/* line 25, ../sass/components/_past-conferences.scss */
+/* line 26, ../sass/components/_past-conferences.scss */
 .view-conferences figure {
   background: #fff; }
 
-/* line 29, ../sass/components/_past-conferences.scss */
+/* line 30, ../sass/components/_past-conferences.scss */
 .view-conferences .panel-display.moscone.clearfix {
   border-bottom: 0px;
   background: rgba(142, 173, 144, 0.27);
@@ -2138,7 +2143,7 @@ ul.sf-menu ul {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   padding: 10px; }
 
-/* line 37, ../sass/components/_past-conferences.scss */
+/* line 38, ../sass/components/_past-conferences.scss */
 .gallery-row a {
   border: 1px solid #ccc;
   padding: 4px;
@@ -2229,7 +2234,7 @@ img#print_btn {
   /* line 14, ../sass/components/_publications.scss */
   .publication-teaser .field-name-field-feature-image img {
     width: 100%; }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
   /* line 20, ../sass/components/_publications.scss */
   .publication-teaser .field-name-title {
     float: left;
@@ -2286,10 +2291,10 @@ img#print_btn {
     /* line 57, ../sass/components/_publications.scss */
     .twilight-book {
       display: block; } }
-  /* line 67, ../sass/components/_publications.scss */
+  /* line 64, ../sass/components/_publications.scss */
   .twilight-book .caption {
     display: block; }
-  /* line 71, ../sass/components/_publications.scss */
+  /* line 68, ../sass/components/_publications.scss */
   .twilight-book img {
     width: 100%; }
 
