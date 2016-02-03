@@ -3,6 +3,10 @@
 
 	h2 {
 		font-size: 1.7em;
+		margin-top:.6em;
+		@include breakpoint(800px) {
+		margin-top: 0;
+		}
 	}
 }
 //twitter logo on lp block

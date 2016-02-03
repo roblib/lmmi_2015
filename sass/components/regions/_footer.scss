@@ -1,6 +1,6 @@
 .mini-panel--footer {
 	@include outer-container;
-
+padding-left:2em;
 @include breakpoint(800px) {
 
 	.block--upei-logo { @include span-columns(3); }
