@@ -7,8 +7,56 @@
 	.imgp_container {
 		width: 14%;
 		margin-right: 1em;
+
 		img {
-		width: 100%;
+			width: 100%;
+		}
 	}
+}
+
+.conf_banner_2016 {
+	img {
+		width: 100% !important;
+		height: auto !important;
+	}
+}
+
+.conf_banner_2016 {
+	flex-direction: column;
+
+	@include breakpoint(800px) {
+		flex-direction: row;
+	}
+
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid #ccc;
+	background: rgba(142, 173, 144, 0.27);
+	padding: 5px;
+	margin-bottom: 2em;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+
+
+	img {
+		/* height: auto !important; */
+		/* display: block; */
+		flex: 1;
+	}
+
+	.caption {
+		flex: 1;
+
+		/* margin-left: 2em; */
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	h3 {
+		font-size: 1.5em;
 	}
 }

@@ -63,18 +63,6 @@ $visual-grid-index: front;
 }
 
 //conference pages
-.conf_banner_2016 {
-	@include breakpoint(800px) {
-		width: 60%;
-		margin: 0 auto;
-	}
-
-
-	img {
-		width: 100% !important;
-		height: auto !important;
-	}
-}
 
 .keynote {
 	@include clearfix;

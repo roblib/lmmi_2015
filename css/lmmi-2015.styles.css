@@ -1325,6 +1325,44 @@ body.cke_editable {
   width: 100%;
 }
 
+.conf_banner_2016 img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.conf_banner_2016 {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  background: rgba(142, 173, 144, 0.27);
+  padding: 5px;
+  margin-bottom: 2em;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+@media screen and (min-width: 800px) {
+  .conf_banner_2016 {
+    flex-direction: row;
+  }
+}
+.conf_banner_2016 img {
+  /* height: auto !important; */
+  /* display: block; */
+  flex: 1;
+}
+.conf_banner_2016 .caption {
+  flex: 1;
+  /* margin-left: 2em; */
+  text-align: center;
+}
+.conf_banner_2016 h2 {
+  font-size: 2em;
+}
+.conf_banner_2016 h3 {
+  font-size: 1.5em;
+}
+
 /*about lm*/
 .section-about p {
   text-align: justify;
@@ -1519,6 +1557,10 @@ body.cke_editable {
   padding: 4px;
   width: 100%;
 }
+.lp-feature .media-object .media-object-section:nth-child(2) {
+  width: 100%;
+  /* height: auto; */
+}
 
 .feature_title {
   margin-bottom: 0;
@@ -1662,17 +1704,6 @@ body#imagepicker form#imagepicker-image-form {
   width: 17%;
 }
 .gallery-row a img {
-  width: 100% !important;
-  height: auto !important;
-}
-
-@media screen and (min-width: 800px) {
-  .conf_banner_2016 {
-    width: 60%;
-    margin: 0 auto;
-  }
-}
-.conf_banner_2016 img {
   width: 100% !important;
   height: auto !important;
 }
@@ -2760,6 +2791,16 @@ div#footer-wrapper {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.footer-login a {
+  background: #737272;
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: 400;
+}
+.footer-login a:hover {
+  background: #74933E;
+}
+
 .l-header {
   background: #38471E;
 }
@@ -2850,6 +2891,10 @@ nav.social a:hover {
   display: table;
 }
 
+.lp-welcome img {
+  display: block;
+  margin: 0 auto;
+}
 .lp-welcome h2 {
   font-size: 1.7em;
   margin-top: .6em;

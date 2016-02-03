@@ -25,7 +25,6 @@
 
 .lp-feature figure {
 	margin: 0;
-
 	line-height: 0px;
 	width: 60px;
 
@@ -42,7 +41,14 @@
 		border: 1px solid $medium-gray;
 		padding: 4px;
 		width: 100%;
+
 		@extend .shadow;
+
+		.media-object-section:nth-child(2) {
+			width: 100%;
+
+			/* height: auto; */
+		}
 	}
 }
 
@@ -62,11 +68,10 @@
 			background: $red;
 			color: #fff;
 		}
-
-
 	}
 }
+
 /*simons page*/
 .page-node-917 .field.field--name-field-feature-image {
-    display: none;
+	display: none;
 }
