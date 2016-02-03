@@ -38,7 +38,7 @@ ul.sf-menu ul {
 	$navigation-active-link-color: transparentize(white, 0.5);
 	$navigation-submenu-padding: 1em;
 	$navigation-submenu-width: 12em;
-	$horizontal-bar-mode: 928px;
+	$horizontal-bar-mode: 1037px;
 
 	background-color: $navigation-background;
 	border-bottom: 1px solid darken($navigation-background, 10);
@@ -51,7 +51,9 @@ ul.sf-menu ul {
 		float: left;
 		max-height: $navigation-height;
 		padding-left: $navigation-padding;
-		padding-right: 2em;
+		@include breakpoint(1037px) {
+			padding-right: 2em;
+		}
 		padding-left: 0;
 
 		img {
@@ -131,7 +133,7 @@ ul.sf-menu ul {
 	display: block;
 }
 
-@include breakpoint(785px) {
+@include breakpoint(940px) {
 	.l-region--navigation {
 		display: block;
 	}
@@ -531,7 +533,7 @@ $superfish-1-background-color-level-fourth: #333;
 .main-nav--desktop {
 	display: none;
 
-	@include breakpoint(800px) {
+	@include breakpoint(940px) {
 		display: block;
 	}
 }
@@ -540,7 +542,7 @@ $superfish-1-background-color-level-fourth: #333;
 	clear: both;
 	display: block;
 
-	@include breakpoint(800px) {
+	@include breakpoint(940px) {
 		display: none;
 	}
 }

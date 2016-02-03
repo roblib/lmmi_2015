@@ -87,7 +87,10 @@ $visual-grid-index: front;
 	margin-bottom: 1em;
 
 	.imgp_container {
-		width: 200px;
+		width:100%;
+		@include breakpoint(480px){
+			width: 200px;
+		}
 		float: left;
 		margin-right: 16px;
 	}

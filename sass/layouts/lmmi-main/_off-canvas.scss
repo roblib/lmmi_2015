@@ -19,7 +19,7 @@
 	background: transparent url("../../../layouts/lmmi-main/assets/menu.png") center center no-repeat;
 }
 
-@include breakpoint(0 785px) {
+@include breakpoint(0 940px) {
 	// No JS Fallbacks
 	.no-js .l-off-canvas {
 		position: relative;
@@ -118,7 +118,7 @@
 	/*@include clearfix;*/
 }
 
-@include breakpoint(0 768px) {
+@include breakpoint(0 940px) {
 	.l-off-canvas.is-visible {
 		.menu-level-1 > ul.menu {
 		    padding: 0;
