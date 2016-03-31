@@ -45,22 +45,3 @@
 		}
 	}	
 }
-
-
-// links in the top right
-/*.l-main {*/
-	/*h1 {*/
-		/*display: inline-block;*/
-	/*}*/
-	/*.tabs--primary {*/
-		/*display: inline-block;*/
-		/*float: right;*/
-	/*}*/
-	/*h2.element-invisible {*/
-		/*display: inline-block;*/
-	/*}*/
-/*}*/
-
-
-.section-islandora ul.tabs > li:last-child a::before {content: "Print";}
-img#print_btn {display: none;}
