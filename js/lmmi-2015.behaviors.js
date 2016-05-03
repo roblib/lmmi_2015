@@ -1,6 +1,11 @@
 (function ($) {
 
 
+	Drupal.behaviors.move_prog_link = {
+		attach: function(context, settings) {
+			$("span.replaceme").replaceWith($(".program .file"));
+		}
+	};	
 	Drupal.behaviors.move_submenu_location = {
 		attach: function(context, settings) {
 			$('.breadcrumb').after($('.page-sub-nav'));
@@ -95,5 +100,11 @@
 			});
 		}
 	};
+	Drupal.behaviors.program_link_manipulation = {
+		attach: function (context, settings) {
+			$('h1').hide;
+		}
+	};
 
+	
 })(jQuery);
