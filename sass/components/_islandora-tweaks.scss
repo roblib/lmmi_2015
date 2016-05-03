@@ -1,5 +1,16 @@
 .islandora-openseadragon {
-    display: block;
-    width: 100%;
-    height: 1000px;
+	display: block;
+	width: 100%;
+	height: 1000px;
+}
+
+.islandora-metadata {
+	margin-top: $base-spacing;
+	dl p {
+		margin-bottom: 0;
+	}
+
+	dt {
+		font-family: $sans-serif-2;
+	}
 }

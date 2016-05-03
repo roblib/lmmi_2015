@@ -1631,6 +1631,16 @@ body#imagepicker {
   width: 100%;
   height: 1000px; }
 
+/* line 7, ../sass/components/_islandora-tweaks.scss */
+.islandora-metadata {
+  margin-top: 1.5em; }
+  /* line 9, ../sass/components/_islandora-tweaks.scss */
+  .islandora-metadata dl p {
+    margin-bottom: 0; }
+  /* line 13, ../sass/components/_islandora-tweaks.scss */
+  .islandora-metadata dt {
+    font-family: "Roboto Condensed", sans-serif; }
+
 /* line 4, ../sass/components/_misc-pages.scss */
 .gallery-grid {
   max-width: 1200px;
