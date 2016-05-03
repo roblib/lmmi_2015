@@ -36,6 +36,15 @@
 
 		}
 	};	
+
+	Drupal.behaviors.solr_metadata = {
+		attach: function(context, settings) {
+			// Place your code here.
+			$('.islandora-metadata').prependTo($('.islandora-book-metadata'));
+
+		}
+	};	
+
 	//Drupal.behaviors.my_custom_behavior = {
 		//attach: function(context, settings) {
 			//// Place your code here.
