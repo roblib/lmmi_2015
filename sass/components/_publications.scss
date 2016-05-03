@@ -40,12 +40,7 @@
 	}
 
 	.views-row {
-		border: 1px solid #ccc;
-		background: rgba(142, 173, 144, 0.27);
-
-		/* border: 1px solid #ccc; */
-		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-		padding: 10px;
+		@include green-box();
 		margin-bottom: 1em;
 	}
 }
