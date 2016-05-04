@@ -11,25 +11,146 @@
 }
 
 .islandora-book-metadata > div {
-	@include green-box();
+	@include green-box;
 }
 
-.islandora-metadata {
-}
+.islandora-metadata {}
 
 .islandora-metadata dl * {
 	@include clean;
 }
 
 .islandora-metadata {
-   dt	{
-	   font-family: $sans-serif-2;
-		
+	dt {
+		font-family: $sans-serif-2;
 	}
-   dt, dd	{
-	   border-color: #B2B3B1;
-	   padding: 5px;
 
+	dt, dd {
+		border-color: #B2B3B1;
+		padding: 5px;
 	}
+
 	margin-top: $base-spacing;
 }
+
+//--------------------------
+//-  collection tile grid  -
+//--------------------------
+.messages--error {
+	display: none;
+}
+.islandora-objects-display-switch {
+	display: none;
+	
+}
+.islandora-objects-grid-item {
+	@include outer-container;
+
+}
+
+.islandora-objects-grid-item {
+	@include span-columns(1 of 4);
+
+	@include omega(4n);
+
+	img {
+		width: 100%;
+		line-height: 0;
+		padding: 5px;
+		border: 1px solid #ccc;
+		background: #fff;
+	}
+
+	dt {
+		@include clean;
+	}
+
+	dd {
+		text-align: center;
+		line-height: 1.1;
+
+		a {
+			font-family: $sans-serif-2;
+			color: $dark-gray;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: .8em;
+		}
+	}
+
+	dl {
+		//border: 1px solid $light-gray;
+		border: 1px solid #ccc;
+		padding: 10px;
+		background: $pale-green;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+	}
+
+	dl:hover {
+		background: shade($pale-green, 10%);
+		transition: background $base-duration $base-timing;
+		a {
+			color:$light-green;
+			
+		}
+	}
+}
+//---------------------------
+//-  islandora.objects.css-
+//---------------------------
+
+/**
+ * @file
+ * Styles for rendering grids/lists of objects.
+ */
+
+//div.islandora-objects > div {
+  //overflow: hidden;
+  //margin: 0 auto;
+  //width: 100%;
+  ////display: inline-block;
+//}
+
+//.islandora-objects-list-item {
+  //clear: both;
+  //width: 100%;
+//}
+
+//.islandora-objects-list-item dl dt {
+  //clear: left;
+  //float: left;
+  //padding: 3px 0 0;
+  //text-align: center;
+  //width: 100px;
+//}
+
+//.islandora-objects-list-item dl dd {
+  //margin: 0 0 0 130px;
+//}
+
+//[>Grid - Displays grid using dl formatted inline <]
+//.islandora-objects-grid dl {
+  //width: 20%;
+  //min-width: 100px;
+  //min-height: 180px;
+  //display: -moz-inline-stack;
+  //display: inline-block;
+  //vertical-align: top;
+  //margin: 1.5em 1.84%;
+  //zoom: 1;
+  //*display: inline;
+  //_height: 180px;
+//}
+
+//.islandora-objects-grid-item {
+  //display: inline;
+//}
+
+//.islandora-objects-grid dd {
+  //margin: 0;
+  //padding: 0;
+//}
+
+//.islandora-objects-display-switch {
+  //float: right;
+//}
