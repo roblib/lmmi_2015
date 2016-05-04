@@ -1,22 +1,35 @@
+//----------------------
+//-  metadata display  -
+//----------------------
+
 .islandora-openseadragon {
 	display: block;
 	width: 100%;
 	height: 1000px;
-	@include green-box();
+
+	@include green-box;
 }
 
 .islandora-book-metadata > div {
 	@include green-box();
 }
+
 .islandora-metadata {
+}
+
+.islandora-metadata dl * {
+	@include clean;
+}
+
+.islandora-metadata {
+   dt	{
+	   font-family: $sans-serif-2;
+		
+	}
+   dt, dd	{
+	   border-color: #B2B3B1;
+	   padding: 5px;
+
+	}
 	margin-top: $base-spacing;
-
-	dl p {
-		margin-bottom: 0;
-	}
-
-	dt {
-		font-family: $sans-serif-2;
-		border-bottom: $base-border;
-	}
 }

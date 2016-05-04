@@ -1295,13 +1295,17 @@ body.cke_editable {
 
 /* line 1, ../sass/components/_2016-conference.scss */
 .conf_chair {
+  *zoom: 1;
   clear: both;
   margin-bottom: 1em; }
-  /* line 20, ../sass/libraries/bourbon/addons/_clearfix.scss */
-  .conf_chair::after {
-    clear: both;
-    content: "";
-    display: table; }
+  /* line 645, ../sass/abstractions/_juice.scss */
+  .conf_chair:before, .conf_chair:after {
+    display: table;
+    content: '';
+    line-height: 0; }
+  /* line 651, ../sass/abstractions/_juice.scss */
+  .conf_chair:after {
+    clear: both; }
   /* line 7, ../sass/components/_2016-conference.scss */
   .conf_chair .imgp_container {
     width: 14%;
@@ -1625,7 +1629,7 @@ body#imagepicker {
 .form-item-imagepicker-browser-search-by-title {
   width: 20px; }
 
-/* line 1, ../sass/components/_islandora-tweaks.scss */
+/* line 5, ../sass/components/_islandora-tweaks.scss */
 .islandora-openseadragon {
   display: block;
   width: 100%;
@@ -1636,7 +1640,7 @@ body#imagepicker {
   padding: 10px;
   margin-bottom: 1.5em; }
 
-/* line 8, ../sass/components/_islandora-tweaks.scss */
+/* line 13, ../sass/components/_islandora-tweaks.scss */
 .islandora-book-metadata > div {
   border: 1px solid #ddd;
   background: rgba(142, 173, 144, 0.27);
@@ -1644,30 +1648,39 @@ body#imagepicker {
   padding: 10px;
   margin-bottom: 1.5em; }
 
-/* line 11, ../sass/components/_islandora-tweaks.scss */
+/* line 20, ../sass/components/_islandora-tweaks.scss */
+.islandora-metadata dl * {
+  margin: 0;
+  padding: 0; }
+
+/* line 24, ../sass/components/_islandora-tweaks.scss */
 .islandora-metadata {
   margin-top: 1.5em; }
-  /* line 14, ../sass/components/_islandora-tweaks.scss */
-  .islandora-metadata dl p {
-    margin-bottom: 0; }
-  /* line 18, ../sass/components/_islandora-tweaks.scss */
+  /* line 25, ../sass/components/_islandora-tweaks.scss */
   .islandora-metadata dt {
-    font-family: "Roboto Condensed", sans-serif;
-    border-bottom: 1px solid #ddd; }
+    font-family: "Roboto Condensed", sans-serif; }
+  /* line 29, ../sass/components/_islandora-tweaks.scss */
+  .islandora-metadata dt, .islandora-metadata dd {
+    border-color: #B2B3B1;
+    padding: 5px; }
 
 /* line 4, ../sass/components/_misc-pages.scss */
 .gallery-grid {
+  *zoom: 1;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
   /* line 5, ../sass/components/_misc-pages.scss */
   .gallery-grid p {
     display: none; }
-  /* line 20, ../sass/libraries/bourbon/addons/_clearfix.scss */
-  .gallery-grid::after {
-    clear: both;
-    content: "";
-    display: table; }
+  /* line 645, ../sass/abstractions/_juice.scss */
+  .gallery-grid:before, .gallery-grid:after {
+    display: table;
+    content: '';
+    line-height: 0; }
+  /* line 651, ../sass/abstractions/_juice.scss */
+  .gallery-grid:after {
+    clear: both; }
   /* line 11, ../sass/components/_misc-pages.scss */
   .gallery-grid figure {
     margin: 0;
@@ -1720,11 +1733,17 @@ body#imagepicker {
     width: 100% !important;
     height: auto !important; }
 
-/* line 20, ../sass/libraries/bourbon/addons/_clearfix.scss */
-.keynote::after {
-  clear: both;
-  content: "";
-  display: table; }
+/* line 67, ../sass/components/_misc-pages.scss */
+.keynote {
+  *zoom: 1; }
+  /* line 645, ../sass/abstractions/_juice.scss */
+  .keynote:before, .keynote:after {
+    display: table;
+    content: '';
+    line-height: 0; }
+  /* line 651, ../sass/abstractions/_juice.scss */
+  .keynote:after {
+    clear: both; }
 
 /* line 71, ../sass/components/_misc-pages.scss */
 .keynote {
@@ -2226,15 +2245,19 @@ ul.sf-menu ul {
 
 /* line 2, ../sass/components/_publications.scss */
 .publication-teaser .node--teaser {
+  *zoom: 1;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   /*margin-bottom:2em !important;*/ }
-  /* line 20, ../sass/libraries/bourbon/addons/_clearfix.scss */
-  .publication-teaser .node--teaser::after {
-    clear: both;
-    content: "";
-    display: table; }
+  /* line 645, ../sass/abstractions/_juice.scss */
+  .publication-teaser .node--teaser:before, .publication-teaser .node--teaser:after {
+    display: table;
+    content: '';
+    line-height: 0; }
+  /* line 651, ../sass/abstractions/_juice.scss */
+  .publication-teaser .node--teaser:after {
+    clear: both; }
   /* line 6, ../sass/components/_publications.scss */
   .publication-teaser .node--teaser h3 {
     font-weight: 700; }
@@ -2354,9 +2377,7 @@ form.islandora-solr-simple-search-form {
     text-decoration: none;
     background-clip: padding-box;
     position: absolute;
-    top: 0em;
-    right: 0em;
-    bottom: 0em;
+    top: 0em 0em 0em;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     outline: none;
@@ -2679,15 +2700,19 @@ body {
 
 /* line 1, ../sass/components/regions/_footer.scss */
 .mini-panel--footer {
+  *zoom: 1;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 2em; }
-  /* line 20, ../sass/libraries/bourbon/addons/_clearfix.scss */
-  .mini-panel--footer::after {
-    clear: both;
-    content: "";
-    display: table; }
+  /* line 645, ../sass/abstractions/_juice.scss */
+  .mini-panel--footer:before, .mini-panel--footer:after {
+    display: table;
+    content: '';
+    line-height: 0; }
+  /* line 651, ../sass/abstractions/_juice.scss */
+  .mini-panel--footer:after {
+    clear: both; }
   @media screen and (min-width: 800px) {
     /* line 7, ../sass/components/regions/_footer.scss */
     .mini-panel--footer .block--upei-logo {
@@ -2897,12 +2922,16 @@ nav.social {
   margin: 0;
   padding: 0;
   border: 0;
+  *zoom: 1;
   display: none; }
-  /* line 20, ../sass/libraries/bourbon/addons/_clearfix.scss */
-  nav.social::after {
-    clear: both;
-    content: "";
-    display: table; }
+  /* line 645, ../sass/abstractions/_juice.scss */
+  nav.social:before, nav.social:after {
+    display: table;
+    content: '';
+    line-height: 0; }
+  /* line 651, ../sass/abstractions/_juice.scss */
+  nav.social:after {
+    clear: both; }
   /* line 62, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
   nav.social li {
     list-style-image: none;
@@ -2954,11 +2983,17 @@ nav.social {
 /*nav.social li.last i {*/
 /*margin-right: 4px;*/
 /*}*/
-/* line 20, ../sass/libraries/bourbon/addons/_clearfix.scss */
-.search-bar::after {
-  clear: both;
-  content: "";
-  display: table; }
+/* line 62, ../sass/components/regions/_header.scss */
+.search-bar {
+  *zoom: 1; }
+  /* line 645, ../sass/abstractions/_juice.scss */
+  .search-bar:before, .search-bar:after {
+    display: table;
+    content: '';
+    line-height: 0; }
+  /* line 651, ../sass/abstractions/_juice.scss */
+  .search-bar:after {
+    clear: both; }
 
 /* line 4, ../sass/components/regions/_landing-page.scss */
 .lp-welcome img {
@@ -2986,14 +3021,18 @@ nav.social {
 
 /* line 1, ../sass/components/regions/_lp-grid.scss */
 .layout-container--landing-page {
+  *zoom: 1;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
-  /* line 20, ../sass/libraries/bourbon/addons/_clearfix.scss */
-  .layout-container--landing-page::after {
-    clear: both;
-    content: "";
-    display: table; }
+  /* line 645, ../sass/abstractions/_juice.scss */
+  .layout-container--landing-page:before, .layout-container--landing-page:after {
+    display: table;
+    content: '';
+    line-height: 0; }
+  /* line 651, ../sass/abstractions/_juice.scss */
+  .layout-container--landing-page:after {
+    clear: both; }
   @media screen and (min-width: 800px) {
     /* line 6, ../sass/components/regions/_lp-grid.scss */
     .layout-container--landing-page .slider {
