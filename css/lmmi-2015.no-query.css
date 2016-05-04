@@ -2357,6 +2357,31 @@ ul.sf-menu ul {
   .tabs--primary li.active a, .tabs--primary li:hover a {
     color: #fff; }
 
+/* line 49, ../sass/components/_primary-tabs.scss */
+.l-content {
+  *zoom: 1; }
+  /* line 645, ../sass/abstractions/_juice.scss */
+  .l-content:before, .l-content:after {
+    display: table;
+    content: '';
+    line-height: 0; }
+  /* line 651, ../sass/abstractions/_juice.scss */
+  .l-content:after {
+    clear: both; }
+  /* line 51, ../sass/components/_primary-tabs.scss */
+  .l-content h1 {
+    display: inline-block;
+    float: left; }
+  /* line 55, ../sass/components/_primary-tabs.scss */
+  .l-content .breadcrumb {
+    display: block; }
+  /* line 58, ../sass/components/_primary-tabs.scss */
+  .l-content .tabs--primary {
+    float: right; }
+  /* line 61, ../sass/components/_primary-tabs.scss */
+  .l-content .tabs--primary + * {
+    clear: both; }
+
 /* line 2, ../sass/components/_publications.scss */
 .publication-teaser .node--teaser {
   *zoom: 1;
