@@ -1314,12 +1314,15 @@ body.cke_editable {
     .conf_chair .imgp_container img {
       width: 100%; }
 
-/* line 18, ../sass/components/_2016-conference.scss */
-.conf_banner_2016 img {
-  width: 100% !important;
-  height: auto !important; }
+/* line 17, ../sass/components/_2016-conference.scss */
+.conf_banner_2016 {
+  background: #e0e8e2; }
+  /* line 19, ../sass/components/_2016-conference.scss */
+  .conf_banner_2016 img {
+    width: 100% !important;
+    height: auto !important; }
 
-/* line 24, ../sass/components/_2016-conference.scss */
+/* line 25, ../sass/components/_2016-conference.scss */
 .conf_banner_2016 {
   flex-direction: column;
   display: flex;
@@ -1329,25 +1332,25 @@ body.cke_editable {
   /*background: rgba(142, 173, 144, 0.27);*/
   padding: 5px;
   margin-bottom: 2em;
-  /*box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);*/ }
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
   @media screen and (min-width: 800px) {
-    /* line 24, ../sass/components/_2016-conference.scss */
+    /* line 25, ../sass/components/_2016-conference.scss */
     .conf_banner_2016 {
       flex-direction: row; } }
-  /* line 42, ../sass/components/_2016-conference.scss */
+  /* line 43, ../sass/components/_2016-conference.scss */
   .conf_banner_2016 img {
     /* height: auto !important; */
     /* display: block; */
     flex: 1; }
-  /* line 48, ../sass/components/_2016-conference.scss */
+  /* line 49, ../sass/components/_2016-conference.scss */
   .conf_banner_2016 .caption {
     flex: 1;
     /* margin-left: 2em; */
     text-align: center; }
-  /* line 55, ../sass/components/_2016-conference.scss */
+  /* line 56, ../sass/components/_2016-conference.scss */
   .conf_banner_2016 h2 {
     font-size: 2em; }
-  /* line 59, ../sass/components/_2016-conference.scss */
+  /* line 60, ../sass/components/_2016-conference.scss */
   .conf_banner_2016 h3 {
     font-size: 1.5em; }
 
@@ -2356,31 +2359,6 @@ ul.sf-menu ul {
   /* line 43, ../sass/components/_primary-tabs.scss */
   .tabs--primary li.active a, .tabs--primary li:hover a {
     color: #fff; }
-
-/* line 49, ../sass/components/_primary-tabs.scss */
-.l-content {
-  *zoom: 1; }
-  /* line 645, ../sass/abstractions/_juice.scss */
-  .l-content:before, .l-content:after {
-    display: table;
-    content: '';
-    line-height: 0; }
-  /* line 651, ../sass/abstractions/_juice.scss */
-  .l-content:after {
-    clear: both; }
-  /* line 51, ../sass/components/_primary-tabs.scss */
-  .l-content h1 {
-    display: inline-block;
-    float: left; }
-  /* line 55, ../sass/components/_primary-tabs.scss */
-  .l-content .breadcrumb {
-    display: block; }
-  /* line 58, ../sass/components/_primary-tabs.scss */
-  .l-content .tabs--primary {
-    float: right; }
-  /* line 61, ../sass/components/_primary-tabs.scss */
-  .l-content .tabs--primary + * {
-    clear: both; }
 
 /* line 2, ../sass/components/_publications.scss */
 .publication-teaser .node--teaser {

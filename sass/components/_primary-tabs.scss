@@ -46,19 +46,3 @@
 	}	
 }
 
-.l-content {
-	@include clearfix;
-	h1	{
-		display: inline-block;
-		float: left;
-	}
-	.breadcrumb {
-		display: block;
-	}
-	.tabs--primary {
-		float: right;		
-	}
-	.tabs--primary + * {
-		clear: both;
-	}
-}

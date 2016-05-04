@@ -27,22 +27,6 @@
 
 	dt, dd {
 		border-color: #B2B3B1;
-		padding: 5px;
-	}
-
-	margin-top: $base-spacing;
-}
-
-//--------------------------
-//-  collection tile grid  -
-//--------------------------
-.messages--error {
-	display: none;
-}
-.islandora-objects-display-switch {
-	display: none;
-	
-}
 .islandora-objects-grid-item {
 	@include outer-container;
 

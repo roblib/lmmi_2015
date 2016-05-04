@@ -15,6 +15,7 @@
 }
 
 .conf_banner_2016 {
+	background: $pale-green;
 	img {
 		width: 100% !important;
 		height: auto !important;
@@ -36,7 +37,7 @@
 	/*background: rgba(142, 173, 144, 0.27);*/
 	padding: 5px;
 	margin-bottom: 2em;
-    /*box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);*/
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 
 
 	img {
