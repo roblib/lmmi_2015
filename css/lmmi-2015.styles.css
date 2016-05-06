@@ -1490,6 +1490,51 @@ body.cke_editable {
 .node-type-blog .submitted {
   display: none; }
 
+/* line 104, ../sass/components/_blogs.scss */
+article figure {
+  border: 1px solid #ddd;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  padding: 5px;
+  display: inline-block; }
+  /* line 110, ../sass/components/_blogs.scss */
+  article figure img {
+    width: 100%; }
+  /* line 114, ../sass/components/_blogs.scss */
+  article figure figcaption {
+    line-height: 1.4;
+    font-size: .9em; }
+
+/* line 120, ../sass/components/_blogs.scss */
+blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 0.75em; }
+
+/* line 124, ../sass/components/_blogs.scss */
+.cw01 {
+  width: 160px;
+  float: left;
+  margin-right: 0.75em;
+  margin-bottom: 0.75em; }
+
+/* line 130, ../sass/components/_blogs.scss */
+.cw02 {
+  width: 33%;
+  float: left;
+  margin-bottom: 1.5em; }
+
+/* line 137, ../sass/components/_blogs.scss */
+.cw03 {
+  width: 64%;
+  float: right; }
+
+/* line 143, ../sass/components/_blogs.scss */
+.cw04 {
+  width: 50%;
+  display: block;
+  margin: 0 auto; }
+
 /**
  * $BREADCRUMB
  */
