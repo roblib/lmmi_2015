@@ -40,3 +40,13 @@
 .button + a {
   margin-left: 1em;
 }
+.green {
+$action-color: blue;	
+  background-color: $action-color;
+  color: #fff;
+  &:hover,
+  &:focus {
+    background-color: shade($action-color, 20%);
+    color: #fff;
+  }
+}
