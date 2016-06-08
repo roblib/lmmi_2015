@@ -1,0 +1,29 @@
+.ks {
+	figure {
+		@include clean;
+		background: $pale-green;
+		padding: 5px;
+		margin: 0;
+
+	}
+   strong	{
+	   color:$light-green;
+		
+	}
+   .l-main	{
+		
+	}
+}
+.postcard p {
+    margin: 0;
+}
+.postcard ul {
+    /*list-style: none;*/
+    margin: 0;
+    /*padding: 0;*/
+}
+
+.postcard {
+		/*background: rgba(142, 173, 144, 0.27);*/
+	
+}
