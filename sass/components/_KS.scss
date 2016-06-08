@@ -23,7 +23,17 @@
     /*padding: 0;*/
 }
 
-.postcard {
+.node-type-ks-page {
+	ul.breadcrumb {
+		display: none  !important;
+		
+	}
+	.postcard {
+		float: left;
+		max-width: 400px;
+		margin: 0 1em 1em 0;
+		background: $pale-green;
 		/*background: rgba(142, 173, 144, 0.27);*/
-	
+
+	}
 }

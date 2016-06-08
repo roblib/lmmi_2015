@@ -51,7 +51,7 @@ html {
     clear: both;
     content: "";
     display: table; }
-  /* line 62, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  /* line 62, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
   .breadcrumb li {
     list-style-image: none;
     list-style-type: none;
@@ -1385,8 +1385,15 @@ body.cke_editable {
   margin: 0;
   /*padding: 0;*/ }
 
-/* line 26, ../sass/components/_KS.scss */
-.postcard {
+/* line 27, ../sass/components/_KS.scss */
+.node-type-ks-page ul.breadcrumb {
+  display: none  !important; }
+/* line 31, ../sass/components/_KS.scss */
+.node-type-ks-page .postcard {
+  float: left;
+  max-width: 400px;
+  margin: 0 1em 1em 0;
+  background: #e0e8e2;
   /*background: rgba(142, 173, 144, 0.27);*/ }
 
 /*about lm*/
@@ -2617,7 +2624,7 @@ form.islandora-solr-simple-search-form {
   /* line 651, ../sass/abstractions/_juice.scss */
   .search-facets .block--islandora-solr .islandora-solr-sort:after {
     clear: both; }
-  /* line 62, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  /* line 62, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
   .search-facets .block--islandora-solr .islandora-solr-sort li {
     list-style-image: none;
     list-style-type: none;
@@ -2626,13 +2633,13 @@ form.islandora-solr-simple-search-form {
     float: left;
     padding-left: 4px;
     padding-right: 4px; }
-    /* line 49, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    /* line 49, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
     .search-facets .block--islandora-solr .islandora-solr-sort li:first-child {
       padding-left: 0; }
-    /* line 50, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    /* line 50, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
     .search-facets .block--islandora-solr .islandora-solr-sort li:last-child {
       padding-right: 0; }
-    /* line 52, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    /* line 52, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
     .search-facets .block--islandora-solr .islandora-solr-sort li.last {
       padding-right: 0; }
   /* line 35, ../sass/components/_search.scss */
@@ -3201,7 +3208,7 @@ body {
     /* line 68, ../sass/components/regions/_footer.scss */
     .mini-panel--footer .menu li a {
       color: #fff; }
-      /* line 24, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+      /* line 24, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
       .mini-panel--footer .menu li a:hover {
         color: #ECAD00; }
     /* line 72, ../sass/components/regions/_footer.scss */
@@ -3229,7 +3236,7 @@ body {
     /* line 100, ../sass/components/regions/_footer.scss */
     .menu--social-links .menu li a {
       color: #fff; }
-      /* line 24, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+      /* line 24, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
       .menu--social-links .menu li a:hover {
         color: #ECAD00; }
     /* line 104, ../sass/components/regions/_footer.scss */
@@ -3348,7 +3355,7 @@ nav.social {
   /* line 651, ../sass/abstractions/_juice.scss */
   nav.social:after {
     clear: both; }
-  /* line 62, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  /* line 62, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
   nav.social li {
     list-style-image: none;
     list-style-type: none;
@@ -3357,13 +3364,13 @@ nav.social {
     float: left;
     padding-left: 4px;
     padding-right: 4px; }
-    /* line 49, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    /* line 49, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
     nav.social li:first-child {
       padding-left: 0; }
-    /* line 50, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    /* line 50, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
     nav.social li:last-child {
       padding-right: 0; }
-    /* line 52, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    /* line 52, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
     nav.social li.last {
       padding-right: 0; }
   /* line 25, ../sass/components/regions/_header.scss */
@@ -3371,7 +3378,7 @@ nav.social {
     list-style: none;
     float: right;
     margin: 0; }
-    /* line 11, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_bullets.scss */
+    /* line 11, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_bullets.scss */
     nav.social ul.menu li {
       list-style-image: none;
       list-style-type: none;
