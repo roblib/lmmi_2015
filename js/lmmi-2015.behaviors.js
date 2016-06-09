@@ -1,6 +1,14 @@
 (function ($) {
 
 
+	Drupal.behaviors.solr_search_move_results = {
+		attach: function (context, settings) {
+
+			$('#islandora-solr-result-count', context).once(function() {
+				$(this).insertAfter($('.page-islandora-search h1'));
+			});
+		}
+	};
 	Drupal.behaviors.current_facet_query = {
 		attach: function (context, settings) {
 
