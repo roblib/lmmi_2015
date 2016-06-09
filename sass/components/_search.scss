@@ -1,3 +1,72 @@
+ul.breadcrumb {
+    display: none  !important;
+}
+.page-islandora-search {
+	h1 {
+	    display: inline-block;
+	}
+
+	div#islandora-solr-result-count {
+	    display: inline-block;
+		margin-left: .5em;
+	}
+}
+.l-region--sidebar-first {
+	display: none;
+}
+
+//--------------------
+//-  search results  -
+//--------------------
+$search-border: #e0e8e2;
+
+.islandora-solr-search-result {
+	background-color: $pale-green;
+	border: 1px solid #ccc;
+
+	dl.solr-thumb {
+		width: 25%;
+		padding: .5em;
+
+		img {
+			width: 100%;
+			padding: 4px;
+			background: #fff;
+
+			//margin: $small-spacing;
+	
+		}
+	}
+
+	dl.solr-fields.islandora-inline-metadata {}
+
+	dl.solr-fields {
+		border-color: #ccc !important;
+
+		//margin-left: $small-spacing;
+		width: 75%;
+	}
+
+	.solr-fields dt {
+		font-family: $sans-serif-2;
+	}
+
+	.solr-fields dt,
+	.solr-fields dd {
+		border-top: 1px solid #ccc;
+	}
+
+	.islandora-solr-search-result-inner {
+		//display: flex;
+
+	}
+
+	.solr-thumb {
+		//flex-basis: 60%;
+
+	}
+}
+
 //--------------------------------------------
 //-  common button syles for facet butttons  -
 //--------------------------------------------
@@ -42,7 +111,7 @@
 				@extend input[type="submit"];
 
 				@extend .facet-button;
-
+border: $base-border;
 				//background-color: #484848;
 				//background: #ccc;
 				background: $pale-green;
@@ -254,7 +323,8 @@ ul.islandora-solr-facet {
 
 	ul {
 		list-style: none;
-		@include clean();
+
+		@include clean;
 	}
 }
 
