@@ -1,39 +1,50 @@
 .ks {
 	figure {
 		@include clean;
+
 		background: $pale-green;
 		padding: 5px;
 		margin: 0;
+	}
 
+	strong {
+		color: $light-green;
 	}
-   strong	{
-	   color:$light-green;
-		
-	}
-   .l-main	{
-		
-	}
+
+	.l-main {}
 }
+
 .postcard p {
-    margin: 0;
+	margin: 0;
 }
+
 .postcard ul {
-    /*list-style: none;*/
-    margin: 0;
-    /*padding: 0;*/
+	/*list-style: none;*/
+	margin: 0;
+
+	/*padding: 0;*/
 }
 
 .node-type-ks-page {
 	ul.breadcrumb {
 		display: none  !important;
-		
 	}
+
+	strong {
+		color: $light-green;
+	}
+
 	.postcard {
 		float: left;
-		max-width: 400px;
+		max-width: 50%;
 		margin: 0 1em 1em 0;
 		background: $pale-green;
-		/*background: rgba(142, 173, 144, 0.27);*/
 
+		/*background: rgba(142, 173, 144, 0.27);*/
+		h2 {
+			@include clean;
+
+			margin-top: 4px;
+		}
 	}
 }
