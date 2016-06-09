@@ -1,18 +1,28 @@
 ul.breadcrumb {
-    display: none  !important;
+	display: none  !important;
 }
+
 .page-islandora-search {
 	h1 {
-	    display: inline-block;
+		display: inline-block;
 	}
 
 	div#islandora-solr-result-count {
-	    display: inline-block;
+		display: inline-block;
 		margin-left: .5em;
 	}
 }
+
 .l-region--sidebar-first {
 	display: none;
+}
+
+#islandora-solr-top {
+	min-height: initial;
+}
+
+.pager {
+	margin-bottom: $base-spacing;
 }
 
 //--------------------
@@ -111,7 +121,9 @@ $search-border: #e0e8e2;
 				@extend input[type="submit"];
 
 				@extend .facet-button;
-border: $base-border;
+
+				border: $base-border;
+
 				//background-color: #484848;
 				//background: #ccc;
 				background: $pale-green;
@@ -341,3 +353,54 @@ ul.islandora-solr-facet {
 .block--islandora-solr-current-query i {
 	color: $red !important;
 }
+
+//------------------------------------
+//-  Ryrie-Campbell collection view-
+//------------------------------------
+.collection-tile {
+	background: $pale-green;
+	padding: $small-spacing;
+	margin-bottom: $base-spacing;
+
+		border: $base-border;
+	img {
+		padding: 4px;
+		border: $base-border;
+		background: #fff;
+	}
+}
+
+.collection-tile {
+	display: flex;
+
+	dl.solr-thumb {
+		flex-basis: 310px;
+	}
+
+	dl.solr-thumb img {
+		width: 100%;
+	}
+
+	dd, dt {
+		display: inline-block;
+		zoom: 1;
+		letter-spacing: normal;
+		word-spacing: normal;
+		vertical-align: top;
+		padding-top: 6px;
+		padding-bottom: 4px;
+		margin: 0;
+	}
+	.metadata {
+		dd {
+			width: 60%;
+		border-top: 1px solid #ccc;
+		}
+
+		dt {
+			width: 20%;
+		border-top: 1px solid #ccc;
+		}
+	}
+}
+
