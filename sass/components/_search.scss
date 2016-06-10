@@ -359,7 +359,7 @@ ul.islandora-solr-facet {
 //------------------------------------
 .collection-tile {
 	background: $pale-green;
-	padding: $small-spacing;
+	/*padding: $small-spacing;*/
 	margin-bottom: $base-spacing;
 
 		border: $base-border;
@@ -372,7 +372,7 @@ ul.islandora-solr-facet {
 
 .collection-tile {
 	display: flex;
-
+@include shadow();
 	dl.solr-thumb {
 		flex-basis: 310px;
 	}
@@ -391,16 +391,32 @@ ul.islandora-solr-facet {
 		padding-bottom: 4px;
 		margin: 0;
 	}
-	.metadata {
-		dd {
-			width: 60%;
-		border-top: 1px solid #ccc;
-		}
+	.collection-tile.metadata dt {
+	    border-top: 1px solid;
+	}
 
-		dt {
-			width: 20%;
-		border-top: 1px solid #ccc;
-		}
+	dl.solr-fields.islandora-inline-metadata dt, dl.solr-fields.islandora-inline-metadata dd {
+	    border-top: 1px solid #ccc;
+	}
+
+	dl.solr-fields.islandora-inline-metadata {
+	    border-top: 3px solid #ccc;
+	}
+
+	dl.solr-thumb {
+	    margin-top: 0;
+	    padding: 4px 4px;
+	}
+
+	dl.solr-thumb {
+	    padding: 0;
+	    margin: 0;
+	}
+
+	dl.solr-thumb dt {
+	    padding: 0;
+	    margin: 0;
+	    padding: 8px 8px 0 8px;
 	}
 }
 

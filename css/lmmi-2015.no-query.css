@@ -59,18 +59,18 @@ html {
     white-space: nowrap;
     float: left; }
 
-/* line 22, ../sass/abstractions/_mixins.scss */
+/* line 25, ../sass/abstractions/_mixins.scss */
 .texture {
   height: 5em;
   width: 100%; }
-  /* line 29, ../sass/abstractions/_mixins.scss */
+  /* line 32, ../sass/abstractions/_mixins.scss */
   .texture .texture-normal {
     background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/diagonal-noise.png"), linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
     background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/diagonal-noise.png"), linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
     float: left;
     height: 5em;
     width: 50%; }
-  /* line 38, ../sass/abstractions/_mixins.scss */
+  /* line 41, ../sass/abstractions/_mixins.scss */
   .texture .texture-inverted {
     background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/diagonal-noise.png"), linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
     background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/diagonal-noise.png"), linear-gradient(180deg, #e1f2f1, #bae0de), center no-repeat #e1f2f1 scroll;
@@ -2906,7 +2906,7 @@ ul.islandora-solr-facet {
 /* line 360, ../sass/components/_search.scss */
 .collection-tile {
   background: #e0e8e2;
-  padding: 0.75em;
+  /*padding: $small-spacing;*/
   margin-bottom: 1.5em;
   border: 1px solid #ddd; }
   /* line 366, ../sass/components/_search.scss */
@@ -2917,7 +2917,8 @@ ul.islandora-solr-facet {
 
 /* line 373, ../sass/components/_search.scss */
 .collection-tile {
-  display: flex; }
+  display: flex;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
   /* line 376, ../sass/components/_search.scss */
   .collection-tile dl.solr-thumb {
     flex-basis: 310px; }
@@ -2934,14 +2935,28 @@ ul.islandora-solr-facet {
     padding-top: 6px;
     padding-bottom: 4px;
     margin: 0; }
-  /* line 395, ../sass/components/_search.scss */
-  .collection-tile .metadata dd {
-    width: 60%;
+  /* line 394, ../sass/components/_search.scss */
+  .collection-tile .collection-tile.metadata dt {
+    border-top: 1px solid; }
+  /* line 398, ../sass/components/_search.scss */
+  .collection-tile dl.solr-fields.islandora-inline-metadata dt, .collection-tile dl.solr-fields.islandora-inline-metadata dd {
     border-top: 1px solid #ccc; }
-  /* line 400, ../sass/components/_search.scss */
-  .collection-tile .metadata dt {
-    width: 20%;
-    border-top: 1px solid #ccc; }
+  /* line 402, ../sass/components/_search.scss */
+  .collection-tile dl.solr-fields.islandora-inline-metadata {
+    border-top: 3px solid #ccc; }
+  /* line 406, ../sass/components/_search.scss */
+  .collection-tile dl.solr-thumb {
+    margin-top: 0;
+    padding: 4px 4px; }
+  /* line 411, ../sass/components/_search.scss */
+  .collection-tile dl.solr-thumb {
+    padding: 0;
+    margin: 0; }
+  /* line 416, ../sass/components/_search.scss */
+  .collection-tile dl.solr-thumb dt {
+    padding: 0;
+    margin: 0;
+    padding: 8px 8px 0 8px; }
 
 /* line 1, ../sass/components/_slider.scss */
 .flex-caption {
