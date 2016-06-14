@@ -1,0 +1,42 @@
+
+.pager {
+	//padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.pager__item {
+	background: #f9f7f9;
+	background: white;
+	padding: 3px 8px !important;
+	@include media($medium-screen) {
+		padding: 5px 10px !important;
+	}
+	border: $base-border;
+	border-radius: 4px;
+}
+
+.pager__item:hover,
+.pager__item--current {
+
+		//@include small-shadow;
+		background: $pale-green;
+
+		@include transition;
+}
+.pager__item--current {
+	//@extend .pager__item:hover;
+	//font-size: .9em;
+}
+.pager__item a {
+
+		color: $base-font-color;
+
+		font-family: $sans-serif;
+		text-transform: uppercase;
+		line-height:0;
+		font-size:.8em;
+		@include media($medium-screen){
+			font-size:.9em;
+		}
+	
+}

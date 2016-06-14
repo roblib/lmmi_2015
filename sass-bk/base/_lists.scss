@@ -1,0 +1,62 @@
+ul,
+ol {
+  // list-style-type: none;
+  // margin: 0;
+  // padding: 0;
+
+  &%default-ul {
+    list-style-type: disc;
+    margin-bottom: $small-spacing;
+    padding-left: $base-spacing;
+  }
+
+  &%default-ol {
+    list-style-type: decimal;
+    margin-bottom: $small-spacing;
+    padding-left: $base-spacing;
+  }
+}
+
+dl {
+  margin-bottom: $small-spacing;
+
+  dt {
+    font-weight: bold;
+    margin-top: $small-spacing;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+// borrowed from ohm
+/**
+ * $HLIST
+ */
+.block--system-user-menu .menu, .block--nav-bar .menu, .action-links, .breadcrumb {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* for IE 6/7 */
+  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+  /* non-JS fallback */
+  *zoom: 1;
+}
+.block--system-user-menu .menu:before, .block--nav-bar .menu:before, .action-links:before, .breadcrumb:before, .block--system-user-menu .menu:after, .block--nav-bar .menu:after, .action-links:after, .breadcrumb:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.block--system-user-menu .menu:after, .block--nav-bar .menu:after, .action-links:after, .breadcrumb:after {
+  clear: both;
+}
+.block--system-user-menu .menu li, .block--nav-bar .menu li, .action-links li, .breadcrumb li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+}

@@ -1,0 +1,66 @@
+.publication-teaser {
+	.node--teaser {
+		@include outer-container;
+
+		/*margin-bottom:2em !important;*/
+		h3 {
+			font-weight: 700;
+		}
+	}
+
+	.field-name-field-feature-image {
+		width: 100%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	@include breakpoint(600px) {
+		.field-name-title {
+			@include span-columns(12);
+
+			@include omega;
+		}
+
+		.field-name-field-feature-image {
+			@include span-columns(2);
+		}
+
+		.field-name-body {
+			@include span-columns(10);
+
+			@include omega;
+		}
+	}
+
+
+	.field-name-node-link {
+		text-align: right;
+	}
+
+	.views-row {
+		@include green-box();
+		margin-bottom: 1em;
+	}
+}
+
+.pane-featured-publications {
+	clear: both;
+}
+
+.twilight-book {
+	@include hide-me;
+    line-height: 1;
+    width: 188px;
+    float: right;
+    margin-left: 1em;
+
+	.caption {
+		display: block;
+	}
+
+	img {
+		width: 100%;
+	}
+}

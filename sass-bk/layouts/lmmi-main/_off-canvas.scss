@@ -1,0 +1,181 @@
+/*******************************************************************************
+ * Off canvas portion of styling for the Off Canvas layout.
+ ******************************************************************************/
+
+.l-off-canvas-show,
+.l-off-canvas-hide {
+	display: none;
+	position: absolute;
+	top: 12px;
+	right: 8px;
+	width: 24px;
+	height: 24px;
+	background: transparent url("../../../layouts/lmmi-main/assets/close.png") center center no-repeat;
+
+	@include hide-text;
+}
+
+.l-off-canvas-show {
+	background: transparent url("../../../layouts/lmmi-main/assets/menu.png") center center no-repeat;
+}
+
+@include breakpoint(0 940px) {
+	// No JS Fallbacks
+	.no-js .l-off-canvas {
+		position: relative;
+		min-height: 24px;
+		padding-right: 24px;
+
+		.l-region {
+			position: relative;
+			overflow: hidden;
+		}
+
+		.l-off-canvas-hide {
+			display: block;
+		}
+
+		&:not(:target) {
+			.l-region {
+				min-height: 0;
+				height: 0;
+			}
+
+			.l-off-canvas-show {
+				display: block;
+			}
+
+			.l-off-canvas-hide {
+				display: none;
+			}
+		}
+	}
+
+	// JS Enabled Styles
+	.js .l-page {
+		position: relative;
+		height: 100%;
+
+		/*padding-left: 12%;*/
+	}
+
+	.js .l-off-canvas {
+		position: absolute;
+		z-index: 99;
+		width: 250px;
+		top: 0;
+		bottom: 0;
+		left: -200px;
+		padding-top: 24px;
+
+		/*padding-right: 20px;*/
+
+		@include transition(left 0.2s ease-in);
+
+		cursor: pointer;
+
+		&.is-visible {
+			left: 0;
+			background: #333;
+			-webkit-box-shadow: inset 0 0 5px 5px #222;
+			-moz-box-shadow: inset 0 0 5px 5px #222;
+			box-shadow: inset 0 0 5px 5px #222;
+			cursor: auto;
+
+			.l-region--navigation {
+				/*background: #333;*/
+				padding-bottom: 20px;
+				margin-top: 20px;
+			}
+
+			.search-bar {
+				float: right;
+				margin: 0px;
+				padding: 10px;
+			}
+
+			.upei-crest {
+				display: none;
+			}
+
+			.l-off-canvas-show {
+				display: none;
+			}
+
+			.l-off-canvas-hide {
+				display: block;
+			}
+		}
+
+		.l-off-canvas-show {
+			display: block;
+		}
+	}
+}
+
+
+.l-region.l-region--navigation {
+	/*@include clearfix;*/
+}
+
+@include breakpoint(0 940px) {
+	.l-off-canvas.is-visible {
+		.menu-level-1 > ul.menu {
+		    padding: 0;
+		    margin: 0 10px 0 20px;
+		}
+		ul.menu {
+			li {
+				//top level
+				display: block;
+				margin: 0;
+				line-height: 30px;
+
+				a {
+					color: #fff;
+					text-decoration: none;
+					font-family: "Roboto Condensed", sans-serif;
+					font-size: .8em;
+					font-weight: 100;
+
+					&:hover,
+					&:active {
+						color: #ECAD00;
+					}
+				}
+
+				ul {
+					padding-left: 20px;
+				}
+
+				li {
+					//2nd level
+
+					a {
+						&:before {
+							content: "\f101";
+							display: inline-block;
+							font: normal normal normal 14px/1 FontAwesome;
+							font-size: inherit;
+							text-rendering: auto;
+							-webkit-font-smoothing: antialiased;
+							-moz-osx-font-smoothing: grayscale;
+							margin-right: 4px;
+						}
+					}
+				}
+			}
+		}
+
+		div#block-islandora-solr-simple {
+			display: block;
+			border-top: 1px solid #4d4d4d;
+			width: 100%;
+		}
+
+		form#islandora-solr-simple-search-form {
+			width: 220px;
+			float: right;
+		}
+	}
+}
