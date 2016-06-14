@@ -7,7 +7,7 @@ $visual-grid-color: #EEEEEE;
 // Set to false if you'd like to remove the responsiveness.
 $responsive:    true;
 
-// Set total number of columns in the grid.
+//// Set total number of columns in the grid.
 $grid-columns:  12;
 
 // Set the max width of the page using the px to em function in Bourbon.
