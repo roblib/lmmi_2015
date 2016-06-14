@@ -1,3 +1,64 @@
+span.plusminus { 
+
+	i {
+		font-size: 1.2em;
+	}
+}
+
+.islandora-inline-metadata dt {
+  margin-right: -1px;
+    width: 25%;
+  font-weight: bold;
+    padding-right: 0;
+  word-wrap: normal;
+  }
+
+  .islandora-inline-metadata dd {
+    width: 75%;
+  padding-left: 40px;
+  }
+.view-ryrie-campbell {
+	//----------
+	//-  sort  -
+	//----------
+
+	.form-type-select {
+		align-items: center;
+		display: flex;
+	}
+
+	.views-exposed-widgets {
+		display: flex;
+		align-items: center;
+		label	{
+			margin-right: .5em;
+			&:after {
+				content:":";
+
+
+			}
+
+		}
+		input#edit-submit-ryrie-campbell {
+			@extend .green;
+
+		}
+	}
+
+	.view-filters {
+		float: right;
+	}
+
+	.view-content {
+		clear: both;
+	}
+	.views-exposed-form .views-exposed-widget .form-submit {
+		margin: 0;
+		/* padding: 0; */
+	}
+}
+//==============
+
 ul.breadcrumb {
 	display: none  !important;
 }
@@ -8,6 +69,7 @@ ul.breadcrumb {
 	}
 
 	div#islandora-solr-result-count {
+		font-family: $sans-serif;
 		display: inline-block;
 		margin-left: .5em;
 	}
@@ -58,7 +120,8 @@ $search-border: #e0e8e2;
 	}
 
 	.solr-fields dt {
-		font-family: $sans-serif-2;
+		font-family: $sans-serif;
+
 	}
 
 	.solr-fields dt,
@@ -83,7 +146,7 @@ $search-border: #e0e8e2;
 
 .facet-button {
 	//box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
-	font-family: $sans-serif-2;
+	font-family: $sans-serif;
 	font-weight: 400;
 	padding: 0.5em 0.75em 0.4em;
 	font-size: .9em;
@@ -95,7 +158,7 @@ $search-border: #e0e8e2;
 	h2 {}
 
 	h3 {
-		font-family: "Roboto Condensed", sans-serif;
+		//font-family: "Roboto Condensed", sans-serif;
 		line-height: 1.3em;
 		margin-bottom: 0.4em;
 
@@ -108,6 +171,7 @@ $search-border: #e0e8e2;
 
 			text-align: center;
 			margin: 0 auto;
+
 			padding: 0;
 			margin-bottom: $base-spacing;
 
@@ -213,7 +277,8 @@ ul.islandora-solr-facet li > a {
 }
 
 ul.islandora-solr-facet .count {
-	font-family: $roboto_condensed;
+	font-family: $sans-serif;
+	font-size: .9em;
 }
 
 .islandora-solr-facet-wrapper {
@@ -284,9 +349,9 @@ input#edit-range-slider-submit {
 ul.islandora-solr-facet {}
 
 .islandora-solr-facet li a {
-	font-family: $roboto_condensed;
+	font-family: $sans-serif;
 
-	/*font-size: 1em;*/
+	font-size: .9em;
 	width: 68%;
 }
 
@@ -341,7 +406,7 @@ ul.islandora-solr-facet {
 }
 
 .block--islandora-solr-current-query li {
-	font-family: $roboto_condensed;
+	font-family: $sans-serif;
 	font-size: .9em;
 	background: $pale-green;
 	border-bottom: 1px solid #ccc;

@@ -1,0 +1,76 @@
+/* ==========================================================================
+   sticky footer
+   ========================================================================== */
+
+   @import "compass/layout/sticky-footer";
+
+   @include sticky-footer(355px, ".l-page", "#page-footer", "footer");
+
+
+.l-footer {
+    .title {
+        color: #fff;
+        font-size: 1em;
+        padding-bottom: 5px;
+    }
+    .footer-links a {
+        color: #ccc;
+        font-size: 12px;
+    }
+    .menu-02, .menu-03, .menu-04, .menu-05 {
+        border-left: 1px solid #545454;
+        padding-left: 10px;
+    }
+    .menu .leaf {
+        list-style-image: none;
+  list-style-type: none;
+    }
+}
+
+.address {
+    color: white;
+    font-size: 0.8em;
+    line-height: 1.4;
+}
+.subfooter-wrapper {
+	border-top: 5px solid #8c2004;
+}
+.l-subfooter {
+	#address_right {
+		width: 154px;
+		margin: 0 auto;
+		@include breakpoint(800px) {
+			width: 100%;
+		// margin: inherit;
+		}
+	}
+    .links-last a {
+        font-size: .8em;
+        color: grey;
+    }
+    .links-last {
+        @include horizontal-list;
+        a {
+            font-size: .8em;
+            color: grey;
+        }
+    }
+    .socialmedia {
+    	@include breakpoint(500px) {
+		padding-top: 10px;
+    	}
+        ul {
+            @include horizontal-list;
+        }
+    }
+    .footerlogo {
+    }
+    @include breakpoint(1024px) {
+    	.socialmedia {
+        @include grid-span(6, 1);
+    }
+    .footerlogo {
+        @include grid-span(6, 7);
+    }
+    }
+}

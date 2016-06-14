@@ -1,0 +1,210 @@
+.limiter {
+    width: 85%;
+    margin: 0 auto;
+    clear: both;
+}
+
+/* ==========================================================================
+   USER
+   ========================================================================== */
+@include breakpoint(800px) {
+    .user-container {
+        .l-region--user-first {
+            @include grid-span(6, 1);
+        }
+        .l-region--user-second {
+            @include grid-span(6, 7);
+        }
+    }
+}
+
+
+/* ==========================================================================
+   branding
+   ========================================================================== */
+.branding-container {
+    .l-branding {
+        @include breakpoint(520px) {
+            .header-logo {
+                @include grid-span(3, 1);
+            }
+            div.site-name {
+                @include grid-span(9, 4);
+            }
+            // .header-logo {
+            //     @include grid-span(6, 1);
+            // }
+            // div.site-name {
+            //     @include grid-span(6, 7);
+            // }
+            // @include breakpoint(800px) {
+            //     .header-logo {
+            //         @include grid-span(3, 1);
+            //     }
+            //     div.site-name {
+            //         @include grid-span(9, 4);
+            //     }
+            // }
+        }
+    }
+}
+
+/* ==========================================================================
+   header
+   ========================================================================== */
+.header-container {
+    .l-region--header {
+        @include grid-span(2, 1);
+    }
+    .l-region--header-second {
+        @include grid-span(6, 3);
+    }
+    .l-region--header-third {
+        @include grid-span(4, 9);
+    }
+}
+
+/* ==========================================================================
+   navigation
+   ========================================================================== */
+.navigation-container {
+    .l-region--navigation-first {
+        @include grid-span(9, 1);
+    }
+    .l-region--navigation-second {
+        @include grid-span(3, 10);
+    }
+}
+
+/* ==========================================================================
+   feature
+   ========================================================================== */
+.feature-container {
+    .l-region--feature {
+        @include grid-span(12, 1);
+    }
+}
+
+/* ==========================================================================
+   preface
+   ========================================================================== */
+.preface-container {
+    .l-region--preface-first {
+        @include grid-span(4, 1);
+    }
+    .l-region--preface-second {
+        @include grid-span(4, 5);
+    }
+    .l-region--preface-third {
+        @include grid-span(4, 9);
+    }
+}
+
+/* ==========================================================================
+   content
+   ========================================================================== */
+// .content-container {
+//     @include breakpoint(800px) {
+//         .l-region--sidebar-first {
+//             @include grid-span(3, 1);
+//         }
+//         .l-content {
+//             @include grid-span(6, 4);
+//         }
+//         .l-region--sidebar-second {
+//             @include grid-span(3, 10);
+//         }
+//     }
+// }
+
+/* ==========================================================================
+   footer
+   ========================================================================== */
+
+.l-footer {
+    display: none;
+    @include breakpoint(500px) {
+        // .l-region--footer-first {
+        //     @include grid-span(6, 1);
+        // }
+        // .l-region--footer-second {
+        //     @include grid-span(6, 7);
+        // }
+        // .l-region--footer-third {
+        //     @include grid-span(6, 1);
+        // }
+        // .l-region--footer-fourth {
+        //     @include grid-span(6, 7);
+        // }
+        // .l-region--footer-fifth {
+        //     @include grid-span(6, 1);
+        // }
+        @include breakpoint(800px) {
+            display: inherit;
+            .l-region--footer-first {
+                @include grid-span(3, 1, 15);
+            }
+            .l-region--footer-second {
+                @include grid-span(3, 4, 15);
+            }
+            .l-region--footer-third {
+                @include grid-span(3, 7, 15);
+            }
+            .l-region--footer-fourth {
+                @include grid-span(3, 10, 15);
+            }
+            .l-region--footer-fifth {
+                @include grid-span(3, 13, 15);
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   subfooter
+   ========================================================================== */
+.l-subfooter {
+    .l-region--subfooter-first {
+        display: none;
+    }
+    @include breakpoint(800px) {
+        .l-region--subfooter-first {
+            display: inherit;
+            @include grid-span(9, 1);
+        }
+        .l-region--subfooter-second {
+            @include grid-span(3, 10);
+        }
+        @include breakpoint(1024px) {
+        .l-region--subfooter-first {
+            display: inherit;
+            @include grid-span(8, 1);
+        }
+        .l-region--subfooter-second {
+            @include grid-span(4, 9);
+        }
+    }
+    }
+}
+
+/* ==========================================================================
+   clearfixes
+   ========================================================================== */
+.limiter, .l-footer, .l-subfooter, {
+    @include clearfix;
+}
+
+/* ==========================================================================
+   visual grids
+   ========================================================================== */
+
+// // .branding-container,
+// // .header-container,
+// // .navigation-container,
+// // .preface-container,
+// .l-subfooter
+// // .l-footer,
+// // .content-container 
+// {
+//     @include background-grid($color: blue);
+// }

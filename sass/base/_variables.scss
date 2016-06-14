@@ -15,14 +15,15 @@
 
 $serif: "Lusitana", serif;
 $serif-2: "Merriweather", serif;
-$sans-serif: "Roboto", sans-serif;
+//$sans-serif: "Roboto", sans-serif;
+$sans-serif: "Merriweather Sans", sans-serif;
 $sans-serif-2: "Roboto Condensed", sans-serif;
 $roboto-condensed: "Roboto Condensed", sans-serif;
 
 /*$sans-serif: 'Merriweather Sans', sans-serif;*/
 
-$base-font-family: $sans-serif;
-$heading-font-family: $sans-serif-2;
+$base-font-family: $serif-2;
+$heading-font-family: $serif;
 
 // Font Sizes
 $base-font-size: 1em;
