@@ -26,10 +26,12 @@
 
 .islandora-metadata {
 	dt {
-		font-family: $sans-serif-2;
+		/*font-family: $sans-serif-2;*/
 	}
 
 	dt, dd {
+		padding-top: .5em;
+		padding-bottom: .5em;
 		border-color: #B2B3B1;
 	}
 }
