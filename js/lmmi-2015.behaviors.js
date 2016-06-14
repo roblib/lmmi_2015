@@ -1,6 +1,24 @@
 (function ($) {
 
 
+	Drupal.behaviors.nice_select = {
+		attach: function (context, settings) {
+
+			$('.view-ryrie-campbell select', context).once(function() {
+				$(this).niceSelect();
+			});
+		}
+	};
+
+	Drupal.behaviors.collection_search = {
+		attach: function (context, settings) {
+
+			$('.islandora-collection-search-form  option[value="all"]').remove();
+			$('.islandora-collection-search-form  .form-item-collection-select').hide();
+			//$('.islandora-collection-search-form  .current').replaceWith('<span class="current">KindredSpaces</span>');
+			
+		}
+	};
 	Drupal.behaviors.solr_search_move_results = {
 		attach: function (context, settings) {
 
