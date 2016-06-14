@@ -1368,37 +1368,38 @@ body.cke_editable {
 .ks figure {
   margin: 0;
   padding: 0;
-  background: #e0e8e2;
+  /*background: $pale-green;*/
+  background: blue;
   padding: 5px;
   margin: 0; }
-/* line 10, ../sass/components/_KS.scss */
+/* line 11, ../sass/components/_KS.scss */
 .ks strong {
   color: #74933E; }
 
-/* line 17, ../sass/components/_KS.scss */
+/* line 18, ../sass/components/_KS.scss */
 .postcard p {
   margin: 0; }
 
-/* line 21, ../sass/components/_KS.scss */
+/* line 22, ../sass/components/_KS.scss */
 .postcard ul {
   /*list-style: none;*/
   margin: 0;
   /*padding: 0;*/ }
 
-/* line 29, ../sass/components/_KS.scss */
+/* line 30, ../sass/components/_KS.scss */
 .node-type-ks-page ul.breadcrumb {
   display: none  !important; }
-/* line 33, ../sass/components/_KS.scss */
+/* line 34, ../sass/components/_KS.scss */
 .node-type-ks-page strong {
   color: #74933E; }
-/* line 37, ../sass/components/_KS.scss */
+/* line 38, ../sass/components/_KS.scss */
 .node-type-ks-page .postcard {
   float: left;
   max-width: 50%;
   margin: 0 1em 1em 0;
   background: #e0e8e2;
   /*background: rgba(142, 173, 144, 0.27);*/ }
-  /* line 44, ../sass/components/_KS.scss */
+  /* line 45, ../sass/components/_KS.scss */
   .node-type-ks-page .postcard h2, .node-type-ks-page .postcard .search-facets h3, .search-facets .node-type-ks-page .postcard h3 {
     margin: 0;
     padding: 0;
