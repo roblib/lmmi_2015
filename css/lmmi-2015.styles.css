@@ -921,7 +921,8 @@ button, .page-blog .action-links a, .cta_btn, input[type="button"], input[type="
   cursor: pointer;
   display: inline-block;
   font-family: "Merriweather Sans", sans-serif;
-  font-size: 1em;
+  /*font-size: $base-font-size;*/
+  font-size: .8em;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
@@ -931,29 +932,29 @@ button, .page-blog .action-links a, .cta_btn, input[type="button"], input[type="
   user-select: none;
   vertical-align: middle;
   white-space: nowrap; }
-  /* line 22, ../sass/base/_buttons.scss */
+  /* line 23, ../sass/base/_buttons.scss */
   button:hover, .page-blog .action-links a:hover, .cta_btn:hover, button:focus, .page-blog .action-links a:focus, .cta_btn:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, .search-facets .block--islandora-solr .islandora-solr-sort a:hover, .islandora-solr-facet-wrapper .soft-limit:hover, .block--islandora-solr-current-query .soft-limit:hover, input[type="submit"]:focus, .search-facets .block--islandora-solr .islandora-solr-sort a:focus, .islandora-solr-facet-wrapper .soft-limit:focus, .block--islandora-solr-current-query .soft-limit:focus {
     background-color: #701a03;
     color: #fff; }
-  /* line 28, ../sass/base/_buttons.scss */
+  /* line 29, ../sass/base/_buttons.scss */
   button:disabled, .page-blog .action-links a:disabled, .cta_btn:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled, .search-facets .block--islandora-solr .islandora-solr-sort a:disabled, .islandora-solr-facet-wrapper .soft-limit:disabled, .block--islandora-solr-current-query .soft-limit:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
-    /* line 32, ../sass/base/_buttons.scss */
+    /* line 33, ../sass/base/_buttons.scss */
     button:disabled:hover, .page-blog .action-links a:disabled:hover, .cta_btn:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover, .search-facets .block--islandora-solr .islandora-solr-sort a:disabled:hover, .islandora-solr-facet-wrapper .soft-limit:disabled:hover, .block--islandora-solr-current-query .soft-limit:disabled:hover {
       background-color: #8c2004; }
 
 /* Adjacent buttons should have some space between them. */
-/* line 40, ../sass/base/_buttons.scss */
+/* line 41, ../sass/base/_buttons.scss */
 .button + .button,
 .button + a {
   margin-left: 1em; }
 
-/* line 44, ../sass/base/_buttons.scss */
+/* line 45, ../sass/base/_buttons.scss */
 .green, .view-ryrie-campbell .views-exposed-widgets input#edit-submit-ryrie-campbell {
   background-color: #74933E;
   color: #fff; }
-  /* line 48, ../sass/base/_buttons.scss */
+  /* line 49, ../sass/base/_buttons.scss */
   .green:hover, .view-ryrie-campbell .views-exposed-widgets input#edit-submit-ryrie-campbell:hover, .green:focus, .view-ryrie-campbell .views-exposed-widgets input#edit-submit-ryrie-campbell:focus {
     background-color: #5d7632;
     color: #fff; }
@@ -2705,7 +2706,7 @@ ul.breadcrumb {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 400;
   padding: 0.5em 0.75em 0.4em;
-  font-size: .9em;
+  /*font-size: .9em;*/
   text-transform: uppercase; }
 
 /* line 160, ../sass/components/_search.scss */
@@ -2789,7 +2790,7 @@ ul.breadcrumb {
   padding: 5px; }
 /* line 247, ../sass/components/_search.scss */
 .search-facets .block--islandora-solr li {
-  font-size: 1em; }
+  /*font-size: 1em;*/ }
 /* line 251, ../sass/components/_search.scss */
 .search-facets .block--islandora-solr .islandora-solr-date-filter label {
   display: inline-block;
@@ -2897,7 +2898,7 @@ input#edit-range-slider-submit {
 .islandora-solr-facet li a {
   font-family: "Merriweather Sans", sans-serif;
   font-size: .9em;
-  width: 68%; }
+  width: 55%; }
 
 /* line 358, ../sass/components/_search.scss */
 .islandora-solr-facet li {
@@ -2942,7 +2943,7 @@ ul.islandora-solr-facet {
 /* line 408, ../sass/components/_search.scss */
 .block--islandora-solr-current-query li {
   font-family: "Merriweather Sans", sans-serif;
-  font-size: .9em;
+  font-size: .8em;
   background: #e0e8e2;
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;

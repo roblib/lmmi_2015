@@ -149,7 +149,7 @@ $search-border: #e0e8e2;
 	font-family: $sans-serif;
 	font-weight: 400;
 	padding: 0.5em 0.75em 0.4em;
-	font-size: .9em;
+	/*font-size: .9em;*/
 	text-transform: uppercase;
 }
 
@@ -245,7 +245,7 @@ $search-border: #e0e8e2;
 		}
 
 		li {
-			font-size: 1em;
+			/*font-size: 1em;*/
 		}
 
 		.islandora-solr-date-filter label {
@@ -352,7 +352,7 @@ ul.islandora-solr-facet {}
 	font-family: $sans-serif;
 
 	font-size: .9em;
-	width: 68%;
+	width: 55%;
 }
 
 .islandora-solr-facet li {
@@ -407,7 +407,7 @@ ul.islandora-solr-facet {
 
 .block--islandora-solr-current-query li {
 	font-family: $sans-serif;
-	font-size: .9em;
+	font-size: .8em;
 	background: $pale-green;
 	border-bottom: 1px solid #ccc;
 	border-top: 1px solid #ccc;
