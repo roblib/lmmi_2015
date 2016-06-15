@@ -1,0 +1,63 @@
+/*.block--search-navigation {*/
+	/*display: inline-block;*/
+	/*float: right;*/
+/*}*/
+
+.block--search-navigation--list {
+	@include horizontal-list;
+}
+
+.block--search-navigation--list-item a {
+	@extend button;
+
+	/*@extend .green;*/
+
+	background-color: $green;
+
+	&:hover,
+	&:focus {
+		background-color: shade($green, 20%)!important;
+		color: #fff;
+	}
+
+	&:disabled {
+		cursor: not-allowed;
+		opacity: 0.5;
+
+		&:hover {
+			background-color: $green;
+		}
+	}
+
+	&:hover {
+		//@include small-shadow;
+		background: $light-green;
+
+		@include transition;
+	}
+
+	/*color:white;*/
+}
+
+/*.block--search-navigation--list-item a {*/
+/*[>@extend button;<]*/
+/*background: #f9f7f9;*/
+/*background: white;*/
+/*padding: 5px 10px !important;*/
+/*border: $base-border;*/
+/*border-radius: 4px;*/
+/*color: $base-font-color;*/
+/*font-family: $roboto_condensed;*/
+/*text-transform: uppercase;*/
+/*line-height: 0;*/
+/*font-size: .9em;*/
+
+/*&:hover {*/
+/*//@include small-shadow;*/
+/*background: $light-green;*/
+
+/*@include transition;*/
+/*}*/
+
+/*[>color:white;<]*/
+/*}*/
