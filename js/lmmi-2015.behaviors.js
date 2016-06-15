@@ -1,6 +1,36 @@
 (function ($) {
 
 
+Drupal.behaviors.search_navigation = {
+		attach: function (context, settings) {
+		
+					var target = '.block--search-navigation--prev a';
+					var replacement = '<i class="fa fa-arrow-left" aria-hidden="true"></i> Prev';
+		
+					$(target, context).once(function() {
+									$(this).empty();
+									$(this).prepend(replacement);
+								});
+		
+					var target = '.block--search-navigation--return a';
+					var replacement = '<i class="fa fa-search aria-hidden="true"></i> Search Results';
+		
+					$(target, context).once(function() {
+									$(this).empty();
+									$(this).prepend(replacement);
+								});
+		
+					var target = '.block--search-navigation--next a';
+					var replacement = 'Next <i class="fa fa-arrow-right" aria-hidden="true"></i>';
+		
+					$(target, context).once(function() {
+									$(this).empty();
+									$(this).append(replacement);
+								});
+		
+					$(".l-content h1").after($(".block-islandora-solr-search-navigation"));
+				}
+	}	
 	Drupal.behaviors.nice_select = {
 		attach: function (context, settings) {
 
