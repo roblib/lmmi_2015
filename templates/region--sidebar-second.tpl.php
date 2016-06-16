@@ -29,14 +29,8 @@
  * @see template_process()
  */
 ?>
-<?php 
-    $variables['classes_array'][] = 'whoopee';
-?>
 <?php if ($content): ?>
   <aside class="l-region l-region--sidebar-second search-facets">
-<h2>
-	Refine your search
-</h2>
     <?php print $content; ?>
   </aside>
 <?php endif; ?>
