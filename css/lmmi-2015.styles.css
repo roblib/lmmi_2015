@@ -2065,6 +2065,95 @@ body#imagepicker {
     width: 100% !important;
     height: auto !important; }
 
+@media screen and (max-width: 900px) {
+  /* line 6, ../sass/components/_mobile-facets.scss */
+  #block-islandora-solr-basic-facets {
+    padding: 0; }
+
+  /* line 10, ../sass/components/_mobile-facets.scss */
+  #block-islandora-solr-basic-facets .block__content,
+  #block-islandora-solr-sort,
+  .block--islandora-solr-current-query {
+    display: none; }
+
+  /* line 16, ../sass/components/_mobile-facets.scss */
+  .show_me {
+    display: block !important; }
+
+  /* line 20, ../sass/components/_mobile-facets.scss */
+  i {
+    font-size: 1.4em; }
+
+  /* line 25, ../sass/components/_mobile-facets.scss */
+  .page-islandora-search .l-main {
+    display: flex;
+    flex-direction: column; }
+  /* line 30, ../sass/components/_mobile-facets.scss */
+  .page-islandora-search h1 {
+    margin: 0;
+    text-align: center; }
+  /* line 39, ../sass/components/_mobile-facets.scss */
+  .page-islandora-search .l-content {
+    order: 2; }
+  /* line 43, ../sass/components/_mobile-facets.scss */
+  .page-islandora-search .has-one-sidebar.has-sidebar-second .l-content {
+    float: none;
+    margin-right: initial;
+    width: initial; }
+  /* line 49, ../sass/components/_mobile-facets.scss */
+  .page-islandora-search .has-one-sidebar.has-sidebar-second .l-region--sidebar-second {
+    float: none;
+    width: initial; }
+  /* line 54, ../sass/components/_mobile-facets.scss */
+  .page-islandora-search div#block-islandora-solr-sort {
+    margin-top: 0.75em; }
+  /* line 58, ../sass/components/_mobile-facets.scss */
+  .page-islandora-search .block__title {
+    margin: 0 auto;
+    margin: 0 auto !important;
+    display: block !important;
+    width: 180px;
+    text-align: center;
+    appearance: none;
+    background-color: #8c2004;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    /*font-family: $button-font;*/
+    font-size: .9em;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    line-height: 1;
+    padding: 0.375em 0.75em;
+    text-decoration: none;
+    transition: background-color 150ms ease;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    /*@include small-shadow;*/ }
+    /* line 2, ../sass/abstractions/_my-tools.scss */
+    .page-islandora-search .block__title:before {
+      content: "\f085";
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      margin-right: 4px; }
+    /* line 89, ../sass/components/_mobile-facets.scss */
+    .page-islandora-search .block__title:hover, .page-islandora-search .block__title:focus {
+      background-color: #701a03;
+      color: #fff; }
+    /* line 95, ../sass/components/_mobile-facets.scss */
+    .page-islandora-search .block__title:disabled {
+      cursor: not-allowed;
+      opacity: 0.5; }
+      /* line 99, ../sass/components/_mobile-facets.scss */
+      .page-islandora-search .block__title:disabled:hover {
+        background-color: #8c2004; } }
 /* line 6, ../sass/components/_navigation.scss */
 ul.sf-menu ul {
   overflow: visible !important; }

@@ -31,6 +31,7 @@ Drupal.behaviors.search_navigation = {
 					$(".l-content h1").after($(".block-islandora-solr-search-navigation"));
 				}
 	}	
+
 	Drupal.behaviors.nice_select = {
 		attach: function (context, settings) {
 
