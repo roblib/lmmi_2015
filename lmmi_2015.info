@@ -17,7 +17,7 @@ stylesheets[all][] = css/lmmi-2015.no-query.css
 ; Scripts
 ; ========================================
 scripts[] = js/lmmi-2015.behaviors.js
-scripts[] = js/Dropit/dropit.js
+; scripts[] = js/Dropit/dropit.js
 scripts[] = js/jquery-nice-select/js/jquery.nice-select.js
 
 ; ========================================
