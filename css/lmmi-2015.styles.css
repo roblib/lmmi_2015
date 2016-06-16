@@ -1586,6 +1586,39 @@ blockquote {
   display: block;
   margin: 0 auto; }
 
+/* line 1, ../sass/components/_bookreader.scss */
+div#BRnav, #BRtoolbar {
+  box-shadow: none; }
+
+/* line 5, ../sass/components/_bookreader.scss */
+div#BookReader {
+  margin-bottom: 1.5em;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  border: 1px solid #ddd; }
+
+/* line 11, ../sass/components/_bookreader.scss */
+.BRnavCntl, div#BRnav, #BRtoolbar {
+  background-color: #e0e8e2; }
+
+/* line 15, ../sass/components/_bookreader.scss */
+#BRpage {
+  width: initial !important; }
+
+/* line 19, ../sass/components/_bookreader.scss */
+.ui-widget-content {
+  border: 1px solid #ccc;
+  background: #ffffff;
+  color: #403f3f; }
+
+/* line 25, ../sass/components/_bookreader.scss */
+#BRreturn a {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  display: block;
+  color: #74933E;
+  /* height: 18px; */
+  overflow: hidden; }
+
 /**
  * $BREADCRUMB
  */
