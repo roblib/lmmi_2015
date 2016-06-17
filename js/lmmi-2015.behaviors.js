@@ -1,6 +1,37 @@
 (function ($) {
 
 
+	Drupal.behaviors.search_navigation = {
+		attach: function (context, settings) {
+
+			var target = '.block--search-navigation--prev a';
+			var replacement = '<i class="fa fa-arrow-left" aria-hidden="true"></i> Prev';
+
+			$(target, context).once(function() {
+				$(this).empty();
+				$(this).prepend(replacement);
+			});
+
+			var target = '.block--search-navigation--return a';
+			var replacement = '<i class="fa fa-search aria-hidden="true"></i> Search Results';
+
+			$(target, context).once(function() {
+				$(this).empty();
+				$(this).prepend(replacement);
+			});
+
+			var target = '.block--search-navigation--next a';
+			var replacement = 'Next <i class="fa fa-arrow-right" aria-hidden="true"></i>';
+
+			$(target, context).once(function() {
+				$(this).empty();
+				$(this).append(replacement);
+			});
+
+			$(".l-content h1").after($(".block-islandora-solr-search-navigation"));
+		}
+	}	
+
 	Drupal.behaviors.nice_select = {
 		attach: function (context, settings) {
 
@@ -16,7 +47,7 @@
 			$('.islandora-collection-search-form  option[value="all"]').remove();
 			$('.islandora-collection-search-form  .form-item-collection-select').hide();
 			//$('.islandora-collection-search-form  .current').replaceWith('<span class="current">KindredSpaces</span>');
-			
+
 		}
 	};
 	Drupal.behaviors.solr_search_move_results = {
@@ -130,4 +161,32 @@
 
 		}
 	};
+	Drupal.behaviors.move_the_sort = {
+	
+			attach: function (context, settings) {
+						var location = '.block--islandora-facets .block__title';
+						var target = '.block--islandora-solr-current-query';
+			
+						$(target).insertAfter(location);
+			
+						var target = '#block-islandora-solr-sort';
+			
+						$(target).insertAfter(location);
+					}
+	
+		};
+		Drupal.behaviors.mobile_facets = {
+		
+				attach: function (context, settings) {
+							$('.block--islandora-facets .block__title').click(function() {
+							
+											$('.block--islandora-facets .block__content').toggleClass("show_me", 500);
+											$('.block--islandora-solr-current-query').toggleClass("show_me", 500);
+											$("#block-islandora-solr-sort").toggleClass("show_me", 500);
+							
+							
+										});
+						}
+		
+			};
 })(jQuery);
