@@ -35,7 +35,7 @@
 	Drupal.behaviors.nice_select = {
 		attach: function (context, settings) {
 
-			$('.view-ryrie-campbell select', context).once(function() {
+			$('select', context).once(function() {
 				$(this).niceSelect();
 			});
 		}
