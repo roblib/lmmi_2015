@@ -88,3 +88,33 @@ $visual-grid-index: front;
 		height: auto !important;
 	}
 }
+//melanies book launch
+.blog__post {
+	@include outer-container();
+	img {
+
+		@include span-columns(3);
+	}
+	.blog__text {
+
+		@include span-columns(9);
+	}
+
+}
+.blog__text {
+	display: none;
+}
+.blog__videos {
+	h3 {
+	display:none;
+	}
+	margin-top: $base-spacing * 2;
+	margin-bottom: $base-spacing * 2;
+	@include breakpoint(800px) {
+		.blog__video {
+
+			@include span-columns(6);
+
+		}
+	}
+}

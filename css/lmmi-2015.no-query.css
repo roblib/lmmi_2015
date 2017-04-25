@@ -51,7 +51,7 @@ html {
     clear: both;
     content: "";
     display: table; }
-  /* line 62, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  /* line 62, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
   .breadcrumb li {
     list-style-image: none;
     list-style-type: none;
@@ -1964,6 +1964,61 @@ body#imagepicker {
     width: 100% !important;
     height: auto !important; }
 
+/* line 92, ../sass/components/_misc-pages.scss */
+.blog__post {
+  *zoom: 1;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 645, ../sass/abstractions/_juice.scss */
+  .blog__post:before, .blog__post:after {
+    display: table;
+    content: '';
+    line-height: 0; }
+  /* line 651, ../sass/abstractions/_juice.scss */
+  .blog__post:after {
+    clear: both; }
+  /* line 94, ../sass/components/_misc-pages.scss */
+  .blog__post img {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 23.40426%; }
+    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+    .blog__post img:last-child {
+      margin-right: 0; }
+  /* line 98, ../sass/components/_misc-pages.scss */
+  .blog__post .blog__text {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 74.46809%; }
+    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+    .blog__post .blog__text:last-child {
+      margin-right: 0; }
+
+/* line 104, ../sass/components/_misc-pages.scss */
+.blog__text {
+  display: none; }
+
+/* line 107, ../sass/components/_misc-pages.scss */
+.blog__videos {
+  margin-top: 3em;
+  margin-bottom: 3em; }
+  /* line 108, ../sass/components/_misc-pages.scss */
+  .blog__videos h3 {
+    display: none; }
+  @media screen and (min-width: 800px) {
+    /* line 114, ../sass/components/_misc-pages.scss */
+    .blog__videos .blog__video {
+      float: left;
+      display: block;
+      margin-right: 2.12766%;
+      width: 48.93617%; }
+      /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+      .blog__videos .blog__video:last-child {
+        margin-right: 0; } }
+
 @media screen and (max-width: 900px) {
   /* line 6, ../sass/components/_mobile-facets.scss */
   #block-islandora-solr-basic-facets {
@@ -2807,7 +2862,7 @@ ul.breadcrumb {
   /* line 651, ../sass/abstractions/_juice.scss */
   .search-facets .block--islandora-solr .islandora-solr-sort:after {
     clear: both; }
-  /* line 62, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  /* line 62, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
   .search-facets .block--islandora-solr .islandora-solr-sort li {
     list-style-image: none;
     list-style-type: none;
@@ -2816,13 +2871,13 @@ ul.breadcrumb {
     float: left;
     padding-left: 4px;
     padding-right: 4px; }
-    /* line 49, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    /* line 49, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
     .search-facets .block--islandora-solr .islandora-solr-sort li:first-child {
       padding-left: 0; }
-    /* line 50, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    /* line 50, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
     .search-facets .block--islandora-solr .islandora-solr-sort li:last-child {
       padding-right: 0; }
-    /* line 52, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    /* line 52, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
     .search-facets .block--islandora-solr .islandora-solr-sort li.last {
       padding-right: 0; }
   /* line 117, ../sass/components/_search.scss */
@@ -3447,7 +3502,7 @@ body {
     /* line 68, ../sass/components/regions/_footer.scss */
     .mini-panel--footer .menu li a {
       color: #fff; }
-      /* line 24, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+      /* line 24, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
       .mini-panel--footer .menu li a:hover {
         color: #ECAD00; }
     /* line 72, ../sass/components/regions/_footer.scss */
@@ -3475,7 +3530,7 @@ body {
     /* line 100, ../sass/components/regions/_footer.scss */
     .menu--social-links .menu li a {
       color: #fff; }
-      /* line 24, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+      /* line 24, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
       .menu--social-links .menu li a:hover {
         color: #ECAD00; }
     /* line 104, ../sass/components/regions/_footer.scss */
@@ -3594,7 +3649,7 @@ nav.social {
   /* line 651, ../sass/abstractions/_juice.scss */
   nav.social:after {
     clear: both; }
-  /* line 62, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+  /* line 62, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
   nav.social li {
     list-style-image: none;
     list-style-type: none;
@@ -3603,13 +3658,13 @@ nav.social {
     float: left;
     padding-left: 4px;
     padding-right: 4px; }
-    /* line 49, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    /* line 49, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
     nav.social li:first-child {
       padding-left: 0; }
-    /* line 50, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    /* line 50, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
     nav.social li:last-child {
       padding-right: 0; }
-    /* line 52, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    /* line 52, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
     nav.social li.last {
       padding-right: 0; }
   /* line 25, ../sass/components/regions/_header.scss */
@@ -3617,7 +3672,7 @@ nav.social {
     list-style: none;
     float: right;
     margin: 0; }
-    /* line 11, ../../../.rvm/gems/ruby-1.9.3-p551@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_bullets.scss */
+    /* line 11, ../../../.rvm/gems/ruby-1.9.3-p550@omega.lmmi_2015/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_bullets.scss */
     nav.social ul.menu li {
       list-style-image: none;
       list-style-type: none;
