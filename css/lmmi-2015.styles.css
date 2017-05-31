@@ -2530,6 +2530,82 @@ ul.sf-menu ul {
     .pager__item a {
       font-size: .9em; } }
 
+/* line 1, ../sass/components/_paragraphs--media-block--right.scss */
+.paragraphs--media-block-right {
+  *zoom: 1;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 645, ../sass/abstractions/_juice.scss */
+  .paragraphs--media-block-right:before, .paragraphs--media-block-right:after {
+    display: table;
+    content: '';
+    line-height: 0; }
+  /* line 651, ../sass/abstractions/_juice.scss */
+  .paragraphs--media-block-right:after {
+    clear: both; }
+  /* line 4, ../sass/components/_paragraphs--media-block--right.scss */
+  .paragraphs--media-block-right--text {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 74.46809%; }
+    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+    .paragraphs--media-block-right--text:last-child {
+      margin-right: 0; }
+  /* line 7, ../sass/components/_paragraphs--media-block--right.scss */
+  .paragraphs--media-block-right--image {
+    border: 1px solid #ccc;
+    padding: 4px;
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 23.40426%; }
+    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+    .paragraphs--media-block-right--image:last-child {
+      margin-right: 0; }
+  /* line 13, ../sass/components/_paragraphs--media-block--right.scss */
+  .paragraphs--media-block-right--image--caption {
+    font-weight: bold; }
+
+/* line 1, ../sass/components/_paragraphs--media-block.scss */
+.paragraphs--media-block {
+  *zoom: 1;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 645, ../sass/abstractions/_juice.scss */
+  .paragraphs--media-block:before, .paragraphs--media-block:after {
+    display: table;
+    content: '';
+    line-height: 0; }
+  /* line 651, ../sass/abstractions/_juice.scss */
+  .paragraphs--media-block:after {
+    clear: both; }
+  /* line 4, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block--image {
+    border: 1px solid #ccc;
+    padding: 4px;
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 23.40426%; }
+    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+    .paragraphs--media-block--image:last-child {
+      margin-right: 0; }
+  /* line 10, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block--image--caption {
+    font-weight: bold; }
+  /* line 14, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block--text {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 74.46809%; }
+    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+    .paragraphs--media-block--text:last-child {
+      margin-right: 0; }
+
 @media screen and (min-width: 800px) {
   /* line 1, ../sass/components/_past-conferences.scss */
   .field-name-field-conference-image {
