@@ -1,0 +1,17 @@
+.paragraphs--media-block {
+  @include outer-container;
+
+  &--image {
+    border:1px solid #ccc;
+    padding: 4px;
+    @include span-columns(3);
+  }
+
+  &--image--caption {
+    font-weight: bold;
+  }
+
+  &--text {
+    @include span-columns(9);
+  }
+}
