@@ -1,6 +1,15 @@
 .field-type-paragraphs {
   table {
-    table-layout: auto;
+    /*table-layout: auto;*/
   }
+.tabledrag-handle .handle {
+  height: 15px;
+  width: 15px;
+  margin: -0.4em 0;
+  padding: 0.4em;
+  background: url('/sites/lmmi.vre3.upei.ca/themes/lmmi_2015/images/draggable.png?1379458577') no-repeat 6px 9px;
+  /*background: url('https://www.lmmontgomery.ca/sites/all/themes/omega/omega/images/misc/draggable.png?1379458577') no-repeat 6px 9px;*/
+
+}
   
 }
