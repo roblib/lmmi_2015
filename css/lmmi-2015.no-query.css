@@ -2530,6 +2530,10 @@ ul.sf-menu ul {
     .pager__item a {
       font-size: .9em; } }
 
+/* line 2, ../sass/components/_paragraphs--admin.scss */
+.field-type-paragraphs table {
+  table-layout: auto; }
+
 /* line 1, ../sass/components/_paragraphs--media-block--right.scss */
 .paragraphs--media-block-right {
   *zoom: 1;
