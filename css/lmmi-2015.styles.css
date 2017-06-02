@@ -2530,48 +2530,55 @@ ul.sf-menu ul {
     .pager__item a {
       font-size: .9em; } }
 
-/* line 2, ../sass/components/_paragraphs--admin.scss */
+/* line 9, ../sass/components/_paragraphs--admin.scss */
+.field-type-paragraphs input.button--negative {
+  padding-left: 36px;
+  padding-right: 10px;
+  background: #ff9900 url("http://placehold.it/16x16") no-repeat 10px center;
+  /*vertical-align: middle;*/
+  cursor: pointer; }
+/* line 17, ../sass/components/_paragraphs--admin.scss */
+.field-type-paragraphs .button {
+  /*padding: 6px 9px;*/
+  text-transform: uppercase;
+  font-size: .8em;
+  background-color: #74933E;
+  font-weight: normal; }
+/* line 25, ../sass/components/_paragraphs--admin.scss */
+.field-type-paragraphs .button--negative {
+  background-color: #8c2004; }
+/* line 29, ../sass/components/_paragraphs--admin.scss */
 .field-type-paragraphs table {
   table-layout: auto; }
-/* line 6, ../sass/components/_paragraphs--admin.scss */
+/* line 33, ../sass/components/_paragraphs--admin.scss */
 .field-type-paragraphs .tabledrag-handle .handle {
   height: 30px;
   width: 30px;
   margin: 0 1em 0 .5em;
   padding: 0;
   background: url("/sites/lmmi.vre3.upei.ca/themes/lmmi_2015/images/reorder.png") no-repeat 6px 9px; }
-/* line 13, ../sass/components/_paragraphs--admin.scss */
-.field-type-paragraphs .button {
-  padding: 6px 9px;
-  text-transform: uppercase;
-  font-size: .8em;
-  background-color: #74933E;
-  font-weight: normal; }
-/* line 24, ../sass/components/_paragraphs--admin.scss */
-.field-type-paragraphs .button--negative {
-  background-color: #8c2004; }
-/* line 29, ../sass/components/_paragraphs--admin.scss */
+/* line 42, ../sass/components/_paragraphs--admin.scss */
 .field-type-paragraphs .form-actions em {
   background-color: #FFFF00; }
-/* line 34, ../sass/components/_paragraphs--admin.scss */
+/* line 47, ../sass/components/_paragraphs--admin.scss */
 .field-type-paragraphs th {
   padding-right: 1em;
   /* LTR */
   background-color: #bbb;
   text-align: left;
   /* LTR */ }
-/* line 42, ../sass/components/_paragraphs--admin.scss */
+/* line 57, ../sass/components/_paragraphs--admin.scss */
 .field-type-paragraphs tr.even,
 .field-type-paragraphs tr.odd {
   background-color: #f5f5f5; }
-/* line 47, ../sass/components/_paragraphs--admin.scss */
+/* line 62, ../sass/components/_paragraphs--admin.scss */
 .field-type-paragraphs tr.odd {
   background-color: #fff; }
-/* line 50, ../sass/components/_paragraphs--admin.scss */
+/* line 66, ../sass/components/_paragraphs--admin.scss */
 .field-type-paragraphs table {
   border: 1px solid #ddd;
   border-top: 0; }
-/* line 54, ../sass/components/_paragraphs--admin.scss */
+/* line 71, ../sass/components/_paragraphs--admin.scss */
 .field-type-paragraphs [id*="paragraph-bundle-title"] {
   text-transform: uppercase;
   font-size: .8em;
