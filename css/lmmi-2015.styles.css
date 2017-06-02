@@ -2530,55 +2530,86 @@ ul.sf-menu ul {
     .pager__item a {
       font-size: .9em; } }
 
-/* line 9, ../sass/components/_paragraphs--admin.scss */
-.field-type-paragraphs input.button--negative {
-  padding-left: 36px;
-  padding-right: 10px;
-  background: #ff9900 url("http://placehold.it/16x16") no-repeat 10px center;
-  /*vertical-align: middle;*/
-  cursor: pointer; }
-/* line 17, ../sass/components/_paragraphs--admin.scss */
+/* line 13, ../sass/components/_paragraphs--admin.scss */
 .field-type-paragraphs .button {
   /*padding: 6px 9px;*/
   text-transform: uppercase;
   font-size: .8em;
-  background-color: #74933E;
-  font-weight: normal; }
+  font-weight: normal;
+  border: 1px solid #b3b3b3; }
+  /* line 19, ../sass/components/_paragraphs--admin.scss */
+  .field-type-paragraphs .button:hover {
+    background-color: #e6e6e6;
+    color: #333; }
 /* line 25, ../sass/components/_paragraphs--admin.scss */
-.field-type-paragraphs .button--negative {
-  background-color: #8c2004; }
+.field-type-paragraphs [id*="actions-remove-button"] {
+  height: 32px;
+  padding-left: 36px;
+  padding-right: 10px;
+  background: #ccc url("/sites/lmmi.vre3.upei.ca/themes/lmmi_2015/images/close.png") no-repeat 10px center;
+  /*vertical-align: middle;*/
+  color: #333;
+  cursor: pointer; }
 /* line 29, ../sass/components/_paragraphs--admin.scss */
+.field-type-paragraphs [id*="actions-edit-button"] {
+  height: 32px;
+  padding-left: 36px;
+  padding-right: 10px;
+  background: #ccc url("/sites/lmmi.vre3.upei.ca/themes/lmmi_2015/images/edit.png") no-repeat 10px center;
+  /*vertical-align: middle;*/
+  color: #333;
+  cursor: pointer; }
+/* line 33, ../sass/components/_paragraphs--admin.scss */
+.field-type-paragraphs [id*="actions-collapse-button"] {
+  height: 32px;
+  padding-left: 36px;
+  padding-right: 10px;
+  background: #ccc url("/sites/lmmi.vre3.upei.ca/themes/lmmi_2015/images/collapse.png") no-repeat 10px center;
+  /*vertical-align: middle;*/
+  color: #333;
+  cursor: pointer; }
+/* line 40, ../sass/components/_paragraphs--admin.scss */
+.field-type-paragraphs .form-actions .button:first-of-type {
+  border-right-width: 0;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; }
+/* line 46, ../sass/components/_paragraphs--admin.scss */
+.field-type-paragraphs .form-actions .button:last-of-type {
+  margin-left: 0;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px; }
+/* line 60, ../sass/components/_paragraphs--admin.scss */
 .field-type-paragraphs table {
   table-layout: auto; }
-/* line 33, ../sass/components/_paragraphs--admin.scss */
+/* line 64, ../sass/components/_paragraphs--admin.scss */
 .field-type-paragraphs .tabledrag-handle .handle {
   height: 30px;
   width: 30px;
   margin: 0 1em 0 .5em;
   padding: 0;
   background: url("/sites/lmmi.vre3.upei.ca/themes/lmmi_2015/images/reorder.png") no-repeat 6px 9px; }
-/* line 42, ../sass/components/_paragraphs--admin.scss */
+/* line 73, ../sass/components/_paragraphs--admin.scss */
 .field-type-paragraphs .form-actions em {
   background-color: #FFFF00; }
-/* line 47, ../sass/components/_paragraphs--admin.scss */
+/* line 78, ../sass/components/_paragraphs--admin.scss */
 .field-type-paragraphs th {
   padding-right: 1em;
   /* LTR */
   background-color: #bbb;
   text-align: left;
   /* LTR */ }
-/* line 57, ../sass/components/_paragraphs--admin.scss */
+/* line 88, ../sass/components/_paragraphs--admin.scss */
 .field-type-paragraphs tr.even,
 .field-type-paragraphs tr.odd {
   background-color: #f5f5f5; }
-/* line 62, ../sass/components/_paragraphs--admin.scss */
+/* line 93, ../sass/components/_paragraphs--admin.scss */
 .field-type-paragraphs tr.odd {
   background-color: #fff; }
-/* line 66, ../sass/components/_paragraphs--admin.scss */
+/* line 97, ../sass/components/_paragraphs--admin.scss */
 .field-type-paragraphs table {
   border: 1px solid #ddd;
   border-top: 0; }
-/* line 71, ../sass/components/_paragraphs--admin.scss */
+/* line 102, ../sass/components/_paragraphs--admin.scss */
 .field-type-paragraphs [id*="paragraph-bundle-title"] {
   text-transform: uppercase;
   font-size: .8em;
@@ -2630,6 +2661,18 @@ ul.sf-menu ul {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
+  /* line 2, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block--image {
+    border: 1px solid #ccc;
+    padding: 4px;
+    margin-bottom: 1em; }
+  /* line 8, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block--image--caption {
+    font-weight: bold; }
+  /* line 12, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block--text {
+    /*@include span-columns(9);*/
+    /*@include span-columns( 5 of 10 );*/ }
   /* line 645, ../sass/abstractions/_juice.scss */
   .paragraphs--media-block:before, .paragraphs--media-block:after {
     display: table;
@@ -2638,29 +2681,68 @@ ul.sf-menu ul {
   /* line 651, ../sass/abstractions/_juice.scss */
   .paragraphs--media-block:after {
     clear: both; }
-  /* line 4, ../sass/components/_paragraphs--media-block.scss */
-  .paragraphs--media-block--image {
-    border: 1px solid #ccc;
-    padding: 4px;
-    margin-bottom: 1em;
+  /* line 20, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-20 .paragraphs--media-block--image {
     float: left;
     display: block;
-    margin-right: 2.12766%;
-    width: 23.40426%; }
+    margin-right: 2.5641%;
+    width: 17.94872%; }
     /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-    .paragraphs--media-block--image:last-child {
+    .paragraphs--media-block.img-20 .paragraphs--media-block--image:last-child {
       margin-right: 0; }
-  /* line 11, ../sass/components/_paragraphs--media-block.scss */
-  .paragraphs--media-block--image--caption {
-    font-weight: bold; }
-  /* line 15, ../sass/components/_paragraphs--media-block.scss */
-  .paragraphs--media-block--text {
+  /* line 26, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-30 .paragraphs--media-block--image {
     float: left;
     display: block;
-    margin-right: 2.12766%;
-    width: 74.46809%; }
+    margin-right: 2.5641%;
+    width: 28.20513%; }
     /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-    .paragraphs--media-block--text:last-child {
+    .paragraphs--media-block.img-30 .paragraphs--media-block--image:last-child {
+      margin-right: 0; }
+  /* line 32, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-40 .paragraphs--media-block--image {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 38.46154%; }
+    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+    .paragraphs--media-block.img-40 .paragraphs--media-block--image:last-child {
+      margin-right: 0; }
+  /* line 38, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-50 .paragraphs--media-block--image {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 48.71795%; }
+    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+    .paragraphs--media-block.img-50 .paragraphs--media-block--image:last-child {
+      margin-right: 0; }
+  /* line 44, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-60 .paragraphs--media-block--image {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 58.97436%; }
+    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+    .paragraphs--media-block.img-60 .paragraphs--media-block--image:last-child {
+      margin-right: 0; }
+  /* line 50, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-70 .paragraphs--media-block--image {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 69.23077%; }
+    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+    .paragraphs--media-block.img-70 .paragraphs--media-block--image:last-child {
+      margin-right: 0; }
+  /* line 56, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-80 .paragraphs--media-block--image {
+    float: left;
+    display: block;
+    margin-right: 2.5641%;
+    width: 79.48718%; }
+    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
+    .paragraphs--media-block.img-80 .paragraphs--media-block--image:last-child {
       margin-right: 0; }
 
 @media screen and (min-width: 800px) {

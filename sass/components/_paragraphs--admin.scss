@@ -1,30 +1,61 @@
+@mixin input-icon($icon-url, $icon-size: 16px, $icon-inset: 10px, $bg-color: #ccc, $text-color: #333) {
+  height: $icon-size * 2;
+  padding-left: $icon-size + $icon-inset * 2;
+  padding-right: $icon-inset;
+  background: $bg-color url($icon-url) no-repeat 10px center;
+
+  /*vertical-align: middle;*/
+  color: $text-color;
+  cursor: pointer;
+}
+
 .field-type-paragraphs {
-
-
-
-
-
-
-
-  input.button--negative {
-    padding-left: 36px;
-    padding-right: 10px;
-    background: #ff9900 url("http://placehold.it/16x16") no-repeat 10px center;
-    /*vertical-align: middle;*/
-    cursor: pointer;
-  }
-
   .button {
     /*padding: 6px 9px;*/
     text-transform: uppercase;
     font-size: .8em;
-    background-color: $light-green;
     font-weight: normal;
+    border: 1px solid darken(#ccc, 10%);
+    &:hover {
+      background-color: lighten(#ccc, 10%);
+      color: #333;
+    }
   }
 
-  .button--negative {
-    background-color: $red;
+  [id*="actions-remove-button"] {
+    @include input-icon("/sites/lmmi.vre3.upei.ca/themes/lmmi_2015/images/close.png");
   }
+
+  [id*="actions-edit-button"] {
+    @include input-icon("/sites/lmmi.vre3.upei.ca/themes/lmmi_2015/images/edit.png");
+  }
+
+  [id*="actions-collapse-button"] {
+    @include input-icon("/sites/lmmi.vre3.upei.ca/themes/lmmi_2015/images/collapse.png");
+  }
+
+  // button bar
+
+  .form-actions {
+    .button:first-of-type {
+      border-right-width: 0;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+    .button:last-of-type {
+    
+      margin-left: 0;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    
+    
+    }
+  }
+
+  [id*="actions-edit-button"] {}
+
+  [id*="actions-remove-button"] {}
 
   table {
     table-layout: auto;
