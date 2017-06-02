@@ -4,6 +4,7 @@
   &--image {
     border:1px solid #ccc;
     padding: 4px;
+    margin-bottom: 1em;
     @include span-columns(3);
   }
 
