@@ -1,3 +1,12 @@
+.field-type-paragraphs {
+  .filter-wrapper {
+    display: none;
+  }
+  .form-type-textarea {
+    margin-bottom: 1em;
+  }
+}
+
 .paragraphs--media-block {
   &--image {
     border: 1px solid #ccc;
@@ -14,47 +23,231 @@
     /*@include span-columns( 5 of 10 );*/
   }
 
-  @include outer-container;
+  /*@include breakpoint($medium-screen) {*/
+  /*@include outer-container;*/
 
-  &.img-20 {
+  /*&.img-20 {*/
+  /*.paragraphs--media-block--image {*/
+  /*@include span-columns(2 of 10);*/
+  /*}*/
+  /*}*/
+
+  /*&.img-30 {*/
+  /*.paragraphs--media-block--image {*/
+  /*@include span-columns(3 of 10);*/
+  /*@include shift(3 of 10 );*/
+  /*}*/
+  /*}*/
+
+  /*&.img-40 {*/
+  /*.paragraphs--media-block--image {*/
+  /*@include span-columns(4 of 10);*/
+  /*}*/
+  /*}*/
+
+  /*&.img-50 {*/
+  /*.paragraphs--media-block--image {*/
+  /*@include span-columns(5 of 10);*/
+  /*}*/
+  /*}*/
+
+  /*&.img-60 {*/
+  /*.paragraphs--media-block--image {*/
+  /*@include span-columns(6 of 10);*/
+  /*}*/
+  /*}*/
+
+  /*&.img-70 {*/
+  /*.paragraphs--media-block--image {*/
+  /*@include span-columns(7 of 10);*/
+  /*}*/
+  /*}*/
+
+  /*&.img-80 {*/
+  /*.paragraphs--media-block--image {*/
+  /*@include span-columns(8 of 10);*/
+  /*}*/
+  /*}*/
+  /*}*/
+}
+
+.paragraphs--media-block {
+  display: flex;
+
+  img {
+    width: 100%;
+    height: auto;
+
+    /*order: 2;*/
+  }
+
+  .paragraphs--media-block--image {
+  }
+
+  &.img-20-left {
     .paragraphs--media-block--image {
-      @include span-columns(2 of 10);
+      margin-right: 1em;
+      flex: 2;
+    }
+
+    .paragraphs--media-block--text {
+      flex: 8;
     }
   }
 
-  &.img-30 {
+  &.img-30-left {
     .paragraphs--media-block--image {
-      @include span-columns(3 of 10);
+    margin-right: 1em;
+      flex: 3;
+    }
+
+    .paragraphs--media-block--text {
+      flex: 7;
     }
   }
 
-  &.img-40 {
+  &.img-40-left {
     .paragraphs--media-block--image {
-      @include span-columns(4 of 10);
+    margin-right: 1em;
+      flex: 4;
+    }
+
+    .paragraphs--media-block--text {
+      flex: 6;
     }
   }
 
-  &.img-50 {
+  &.img-50-left {
     .paragraphs--media-block--image {
-      @include span-columns(5 of 10);
+    margin-right: 1em;
+      flex: 1;
+    }
+
+    .paragraphs--media-block--text {
+      flex: 1;
     }
   }
 
-  &.img-60 {
+  &.img-60-left {
     .paragraphs--media-block--image {
-      @include span-columns(6 of 10);
+    margin-right: 1em;
+      flex: 6;
+    }
+
+    .paragraphs--media-block--text {
+      flex: 4;
     }
   }
 
-  &.img-70 {
+  &.img-70-left {
     .paragraphs--media-block--image {
-      @include span-columns(7 of 10);
+    margin-right: 1em;
+      flex: 7;
+    }
+
+    .paragraphs--media-block--text {
+      flex: 3;
     }
   }
 
-  &.img-80 {
+  &.img-80-left {
     .paragraphs--media-block--image {
-      @include span-columns(8 of 10);
+      flex: 8;
+    margin-right: 1em;
+    }
+
+    .paragraphs--media-block--text {
+      flex: 2;
+    }
+  }
+
+  &.img-20-right {
+    .paragraphs--media-block--image {
+      flex: 2;
+      order: 2;
+    }
+
+    .paragraphs--media-block--text {
+      flex: 8;
+      order: 1;
+    }
+  }
+
+  &.img-30-right {
+    .paragraphs--media-block--image {
+      margin-left: 1em;
+      flex: 3;
+      order: 2;
+    }
+
+    .paragraphs--media-block--text {
+      flex: 7;
+      order: 1;
+    }
+  }
+
+  &.img-40-right {
+    .paragraphs--media-block--image {
+      margin-left: 1em;
+      flex: 4;
+      order: 2;
+    }
+
+    .paragraphs--media-block--text {
+      flex: 6;
+      order: 1;
+    }
+  }
+
+  &.img-50-right {
+    .paragraphs--media-block--image {
+      margin-left: 1em;
+      flex: 1;
+      order: 2;
+    }
+
+    .paragraphs--media-block--text {
+      flex: 1;
+      order: 1;
+    }
+  }
+
+  &.img-60-right {
+    .paragraphs--media-block--image {
+      margin-left: 1em;
+      flex: 6;
+      order: 2;
+    }
+
+    .paragraphs--media-block--text {
+      flex: 4;
+      order: 1;
+    }
+  }
+
+  &.img-70-right {
+    .paragraphs--media-block--image {
+      margin-left: 1em;
+      flex: 7;
+      order: 2;
+    }
+
+    .paragraphs--media-block--text {
+      flex: 3;
+      order: 1;
+    }
+  }
+
+  &.img-80-right {
+    .paragraphs--media-block--image {
+      margin-left: 1em;
+      flex: 8;
+      order: 2;
+    }
+
+    .paragraphs--media-block--text {
+      flex: 2;
+      order: 1;
     }
   }
 }
