@@ -2655,95 +2655,186 @@ ul.sf-menu ul {
   .paragraphs--media-block-right--image--caption {
     font-weight: bold; }
 
-/* line 1, ../sass/components/_paragraphs--media-block.scss */
+/* line 2, ../sass/components/_paragraphs--media-block.scss */
+.field-type-paragraphs .filter-wrapper {
+  display: none; }
+/* line 5, ../sass/components/_paragraphs--media-block.scss */
+.field-type-paragraphs .form-type-textarea {
+  margin-bottom: 1em; }
+
+/* line 10, ../sass/components/_paragraphs--media-block.scss */
 .paragraphs--media-block {
-  *zoom: 1;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto; }
-  /* line 2, ../sass/components/_paragraphs--media-block.scss */
+  /*@include breakpoint($medium-screen) {*/
+  /*@include outer-container;*/
+  /*&.img-20 {*/
+  /*.paragraphs--media-block--image {*/
+  /*@include span-columns(2 of 10);*/
+  /*}*/
+  /*}*/
+  /*&.img-30 {*/
+  /*.paragraphs--media-block--image {*/
+  /*@include span-columns(3 of 10);*/
+  /*@include shift(3 of 10 );*/
+  /*}*/
+  /*}*/
+  /*&.img-40 {*/
+  /*.paragraphs--media-block--image {*/
+  /*@include span-columns(4 of 10);*/
+  /*}*/
+  /*}*/
+  /*&.img-50 {*/
+  /*.paragraphs--media-block--image {*/
+  /*@include span-columns(5 of 10);*/
+  /*}*/
+  /*}*/
+  /*&.img-60 {*/
+  /*.paragraphs--media-block--image {*/
+  /*@include span-columns(6 of 10);*/
+  /*}*/
+  /*}*/
+  /*&.img-70 {*/
+  /*.paragraphs--media-block--image {*/
+  /*@include span-columns(7 of 10);*/
+  /*}*/
+  /*}*/
+  /*&.img-80 {*/
+  /*.paragraphs--media-block--image {*/
+  /*@include span-columns(8 of 10);*/
+  /*}*/
+  /*}*/
+  /*}*/ }
+  /* line 11, ../sass/components/_paragraphs--media-block.scss */
   .paragraphs--media-block--image {
     border: 1px solid #ccc;
     padding: 4px;
     margin-bottom: 1em; }
-  /* line 8, ../sass/components/_paragraphs--media-block.scss */
+  /* line 17, ../sass/components/_paragraphs--media-block.scss */
   .paragraphs--media-block--image--caption {
     font-weight: bold; }
-  /* line 12, ../sass/components/_paragraphs--media-block.scss */
+  /* line 21, ../sass/components/_paragraphs--media-block.scss */
   .paragraphs--media-block--text {
     /*@include span-columns(9);*/
     /*@include span-columns( 5 of 10 );*/ }
-  /* line 645, ../sass/abstractions/_juice.scss */
-  .paragraphs--media-block:before, .paragraphs--media-block:after {
-    display: table;
-    content: '';
-    line-height: 0; }
-  /* line 651, ../sass/abstractions/_juice.scss */
-  .paragraphs--media-block:after {
-    clear: both; }
-  /* line 20, ../sass/components/_paragraphs--media-block.scss */
-  .paragraphs--media-block.img-20 .paragraphs--media-block--image {
-    float: left;
-    display: block;
-    margin-right: 2.5641%;
-    width: 17.94872%; }
-    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-    .paragraphs--media-block.img-20 .paragraphs--media-block--image:last-child {
-      margin-right: 0; }
-  /* line 26, ../sass/components/_paragraphs--media-block.scss */
-  .paragraphs--media-block.img-30 .paragraphs--media-block--image {
-    float: left;
-    display: block;
-    margin-right: 2.5641%;
-    width: 28.20513%; }
-    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-    .paragraphs--media-block.img-30 .paragraphs--media-block--image:last-child {
-      margin-right: 0; }
-  /* line 32, ../sass/components/_paragraphs--media-block.scss */
-  .paragraphs--media-block.img-40 .paragraphs--media-block--image {
-    float: left;
-    display: block;
-    margin-right: 2.5641%;
-    width: 38.46154%; }
-    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-    .paragraphs--media-block.img-40 .paragraphs--media-block--image:last-child {
-      margin-right: 0; }
-  /* line 38, ../sass/components/_paragraphs--media-block.scss */
-  .paragraphs--media-block.img-50 .paragraphs--media-block--image {
-    float: left;
-    display: block;
-    margin-right: 2.5641%;
-    width: 48.71795%; }
-    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-    .paragraphs--media-block.img-50 .paragraphs--media-block--image:last-child {
-      margin-right: 0; }
-  /* line 44, ../sass/components/_paragraphs--media-block.scss */
-  .paragraphs--media-block.img-60 .paragraphs--media-block--image {
-    float: left;
-    display: block;
-    margin-right: 2.5641%;
-    width: 58.97436%; }
-    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-    .paragraphs--media-block.img-60 .paragraphs--media-block--image:last-child {
-      margin-right: 0; }
-  /* line 50, ../sass/components/_paragraphs--media-block.scss */
-  .paragraphs--media-block.img-70 .paragraphs--media-block--image {
-    float: left;
-    display: block;
-    margin-right: 2.5641%;
-    width: 69.23077%; }
-    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-    .paragraphs--media-block.img-70 .paragraphs--media-block--image:last-child {
-      margin-right: 0; }
-  /* line 56, ../sass/components/_paragraphs--media-block.scss */
-  .paragraphs--media-block.img-80 .paragraphs--media-block--image {
-    float: left;
-    display: block;
-    margin-right: 2.5641%;
-    width: 79.48718%; }
-    /* line 89, ../sass/libraries/neat/grid/_span-columns.scss */
-    .paragraphs--media-block.img-80 .paragraphs--media-block--image:last-child {
-      margin-right: 0; }
+
+/* line 74, ../sass/components/_paragraphs--media-block.scss */
+.paragraphs--media-block {
+  display: flex; }
+  /* line 77, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block img {
+    width: 100%;
+    height: auto;
+    /*order: 2;*/ }
+  /* line 88, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-20-left .paragraphs--media-block--image {
+    margin-right: 1em;
+    flex: 2; }
+  /* line 93, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-20-left .paragraphs--media-block--text {
+    flex: 8; }
+  /* line 99, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-30-left .paragraphs--media-block--image {
+    margin-right: 1em;
+    flex: 3; }
+  /* line 104, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-30-left .paragraphs--media-block--text {
+    flex: 7; }
+  /* line 110, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-40-left .paragraphs--media-block--image {
+    margin-right: 1em;
+    flex: 4; }
+  /* line 115, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-40-left .paragraphs--media-block--text {
+    flex: 6; }
+  /* line 121, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-50-left .paragraphs--media-block--image {
+    margin-right: 1em;
+    flex: 1; }
+  /* line 126, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-50-left .paragraphs--media-block--text {
+    flex: 1; }
+  /* line 132, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-60-left .paragraphs--media-block--image {
+    margin-right: 1em;
+    flex: 6; }
+  /* line 137, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-60-left .paragraphs--media-block--text {
+    flex: 4; }
+  /* line 143, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-70-left .paragraphs--media-block--image {
+    margin-right: 1em;
+    flex: 7; }
+  /* line 148, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-70-left .paragraphs--media-block--text {
+    flex: 3; }
+  /* line 154, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-80-left .paragraphs--media-block--image {
+    flex: 8;
+    margin-right: 1em; }
+  /* line 159, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-80-left .paragraphs--media-block--text {
+    flex: 2; }
+  /* line 165, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-20-right .paragraphs--media-block--image {
+    flex: 2;
+    order: 2; }
+  /* line 170, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-20-right .paragraphs--media-block--text {
+    flex: 8;
+    order: 1; }
+  /* line 177, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-30-right .paragraphs--media-block--image {
+    margin-left: 1em;
+    flex: 3;
+    order: 2; }
+  /* line 183, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-30-right .paragraphs--media-block--text {
+    flex: 7;
+    order: 1; }
+  /* line 190, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-40-right .paragraphs--media-block--image {
+    margin-left: 1em;
+    flex: 4;
+    order: 2; }
+  /* line 196, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-40-right .paragraphs--media-block--text {
+    flex: 6;
+    order: 1; }
+  /* line 203, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-50-right .paragraphs--media-block--image {
+    margin-left: 1em;
+    flex: 1;
+    order: 2; }
+  /* line 209, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-50-right .paragraphs--media-block--text {
+    flex: 1;
+    order: 1; }
+  /* line 216, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-60-right .paragraphs--media-block--image {
+    margin-left: 1em;
+    flex: 6;
+    order: 2; }
+  /* line 222, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-60-right .paragraphs--media-block--text {
+    flex: 4;
+    order: 1; }
+  /* line 229, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-70-right .paragraphs--media-block--image {
+    margin-left: 1em;
+    flex: 7;
+    order: 2; }
+  /* line 235, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-70-right .paragraphs--media-block--text {
+    flex: 3;
+    order: 1; }
+  /* line 242, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-80-right .paragraphs--media-block--image {
+    margin-left: 1em;
+    flex: 8;
+    order: 2; }
+  /* line 248, ../sass/components/_paragraphs--media-block.scss */
+  .paragraphs--media-block.img-80-right .paragraphs--media-block--text {
+    flex: 2;
+    order: 1; }
 
 @media screen and (min-width: 800px) {
   /* line 1, ../sass/components/_past-conferences.scss */
