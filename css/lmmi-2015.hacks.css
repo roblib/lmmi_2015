@@ -71,3 +71,6 @@ article img {
     font-style: italic;
     font-weight: 600;
 }
+.video-filter iframe {
+    max-height: 367px;
+}
