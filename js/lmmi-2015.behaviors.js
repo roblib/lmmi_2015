@@ -1,6 +1,16 @@
 (function ($) {
 
 
+	Drupal.behaviors.linkAnchors = {
+		attach: function (context, settings) {
+
+
+			$(".keynote-speaker__title:contains('Epperly')").prepend("<a name='epperly'></a>");
+			$(".keynote-speaker__title:contains('Mackey')").prepend("<a name='mackey'></a>");
+			$(".keynote-speaker__title:contains('Ross')").prepend("<a name='ross'></a>");
+			$(".keynote-speaker__title:contains('Woster')").prepend("<a name='woster'></a>");
+		}
+	}	
 	Drupal.behaviors.search_navigation = {
 		attach: function (context, settings) {
 

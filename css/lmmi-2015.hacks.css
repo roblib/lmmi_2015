@@ -71,3 +71,27 @@ article img {
     font-style: italic;
     font-weight: 600;
 }
+.video-filter iframe {
+    max-height: 367px;
+}
+
+
+/*
+ * keynote speakers
+ */
+.keynote-speaker {
+  border-bottom: 1px solid #ccc;
+    float: left;
+  margin-bottom: 2rem;
+  }
+  .keynote-speaker__img {
+    border: 1px solid #ccc;
+  width: 230px;
+    padding: 4px;
+  float: left;
+    margin: 0 1rem 1rem 0;
+}
+.keynote-speaker__img img {
+  width: 100%;
+  padding:0;
+  }
