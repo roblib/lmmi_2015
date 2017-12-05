@@ -17,8 +17,6 @@ stylesheets[all][] = dist/assets/css/lmmi-2015.no-query.css
 ; Scripts
 ; ========================================
 scripts[] = dist/assets/js/app.js
-scripts[] = dist/assets/js/Dropit/dropit.js
-scripts[] = dist/assets/js/jquery-nice-select/js/jquery.nice-select.js
 
 ; ========================================
 ; Regions
