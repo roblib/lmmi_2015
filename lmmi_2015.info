@@ -8,17 +8,17 @@ core = 7.x
 ; ========================================
 ; Stylesheets
 ; ========================================
-stylesheets[all][] = css/lmmi-2015.normalize.css
-stylesheets[all][] = css/lmmi-2015.hacks.css
-stylesheets[all][] = css/lmmi-2015.styles.css
-stylesheets[all][] = css/lmmi-2015.no-query.css
+stylesheets[all][] = dist/assets/css/lmmi-2015.normalize.css
+stylesheets[all][] = dist/assets/css/lmmi-2015.hacks.css
+stylesheets[all][] = dist/assets/css/lmmi-2015.styles.css
+stylesheets[all][] = dist/assets/css/lmmi-2015.no-query.css
 
 ; ========================================
 ; Scripts
 ; ========================================
-scripts[] = js/lmmi-2015.behaviors.js
-scripts[] = js/Dropit/dropit.js
-scripts[] = js/jquery-nice-select/js/jquery.nice-select.js
+scripts[] = dist/assets/js/app.js
+scripts[] = dist/assets/js/Dropit/dropit.js
+scripts[] = dist/assets/js/jquery-nice-select/js/jquery.nice-select.js
 
 ; ========================================
 ; Regions

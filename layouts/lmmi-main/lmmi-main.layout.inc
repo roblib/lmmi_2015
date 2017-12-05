@@ -15,7 +15,8 @@ regions[sidebar_second] = Second sidebar
 regions[footer]         = Footer
 
 ; Stylesheets
-stylesheets[all][] = css/layouts/lmmi-main/lmmi-main.layout.css
+//stylesheets[all][] = css/layouts/lmmi-main/lmmi-main.layout.css
+//stylesheets[all][] = dist/assets/css/lmmi-main.layout.css
 
 ; Scripts
 scripts[] = layouts/lmmi-main/assets/off-canvas.js

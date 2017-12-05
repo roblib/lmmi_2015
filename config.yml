@@ -1,0 +1,44 @@
+    #Url of the site to be proxied
+URL: "www.lmmontgomery.ca/"
+
+    #Root assets folder (contains /css/, /js/ etc)
+ASSETS_DIR: "dist/assets"
+
+    #Path on server to remote assets folder (escape the slashes; no trailing slash)
+REMOTE_ASSETS_PATH: "http://www.lmmontgomery.ca/sites/www.lmmontgomery.ca/themes/lmmi_2015"
+
+LOCALPROXY: "http://drupal7.dev/"
+
+    # Your project's server will run on localhost:xxxx at this port
+PORT: 8000
+
+    # Autoprefixer will make sure your CSS works with these browsers
+COMPATIBILITY:
+    - "last 2 versions"
+    - "ie >= 9"
+    - "ios >= 7"
+
+
+      # Gulp will reference these paths when it copies files
+PATHS:
+    # Path to dist folder
+    dist: "dist"
+        # Paths to static assets that aren't images, CSS, or JavaScript
+    
+    assets:
+        - "src/assets/**/*"
+        - "!src/assets/{img,js,scss}/**/*"
+      # Paths to Sass libraries, which can then be loaded with @import
+    scss:
+        - "src/assets/scss/lmmi-2015.styles.scss"
+        - "src/assets/scss/lmmi-2015.hacks.scss"
+        - "src/assets/scss/lmmi-2015.normalize.scss"
+        #- "src/assets/scss/layouts/lmmi-main/lmmi-main.layout.scss"
+    sass:
+        - "node_modules/bourbon/app/assets/stylesheets"
+        - "node_modules/bourbon-neat/app/assets/stylesheets"
+        - "node_modules/compass-mixins/lib"
+        #- "node_modules/motion-ui/src"
+      # Paths to JavaScript entry points for webpack to bundle modules
+    entries:
+        - "src/assets/js/app.js"

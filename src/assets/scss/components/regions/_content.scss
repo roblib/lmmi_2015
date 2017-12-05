@@ -1,0 +1,33 @@
+
+
+  $texture-top-background: lighten(#fff, 1%);
+  $texture-bottom-background: darken(#fff, 10%);
+
+  //.texture-normal {
+    //// gradient color 1, gradient color 2, gradient angle, texture-number, 0=inverted or 1=normal  
+    //@include texture(180deg, $texture-top-background, $texture-bottom-background, 67, 1); 
+    //float: left;
+    //height: 5em;
+    //width: 50%;
+  //}
+
+  //.texture-inverted {
+    //// gradient color 1, gradient color 2, gradient angle, texture-number, 0=inverted or 1=normal  
+    //@include texture(180deg, $texture-top-background, $texture-bottom-background, 67, 0); 
+    //float: left;
+    //height: 5em;
+    //width: 50%;
+  //}
+
+
+body {
+	background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/textures/inverted/subtle_grunge.png"), linear-gradient(180deg, #ffffff, #e6e6e6), center no-repeat white scroll;
+
+//@include texture(180deg, $texture-top-background, $texture-bottom-background, 48, 0); 
+}
+
+.l-main {
+  background: #fff;
+  border: 1px solid $light-gray;
+  padding-top: 10px;
+}
