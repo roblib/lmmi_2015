@@ -1329,7 +1329,7 @@ body.cke_editable {
   background: #e0e8e2; }
   /* line 19, ../sass/components/_2016-conference.scss */
   .conf_banner_2016 img {
-    width: 100% !important;
+    /*width: 100% !important;*/
     height: auto !important; }
 
 /* line 25, ../sass/components/_2016-conference.scss */
