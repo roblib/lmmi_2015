@@ -1,0 +1,43 @@
+#imagepicker {
+
+	body { background: none; }
+	.messages { display:none; }
+	.imgp_help {
+	    display: none;
+	}
+
+	.form-item-thumb-1 { width: 45%; float: left; }
+	.form-item-scale-1 { width: 45%; float: right; }
+	.form-item-title-1 { clear: both; }
+
+
+
+}
+body#imagepicker {
+	background: none;
+	/* END Buttons */
+	color: #000;
+	background: #fff;
+	font: normal 13px/1.538em Open Sans, "Segoe UI", "Helvetica", sans-serif;
+	label { 
+		font: normal 1.2em/1em Open Sans, "Segoe UI", "Helvetica", sans-serif; 
+		/*font-size: 20px;*/
+		font-weight: 300;
+		color: #0074BD;
+
+	}
+	input[type="text"] {
+		font-size: 1em;
+		font-family: Open Sans, "Segoe UI", "Helvetica", sans-serif;
+	}
+	form#imagepicker-image-form {
+	    clear: both;
+	    padding-left: 5px;
+	}
+}
+.form-type-checkbox { display: inline-block; }
+.form-item-imagepicker-browser-search-by-name {width :20px;}
+.form-item-imagepicker-browser-search-by-desc {width :20px;}
+
+.form-item-imagepicker-browser-search-by-title {width :20px;}
+

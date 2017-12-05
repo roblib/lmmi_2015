@@ -1,0 +1,30 @@
+.lp-welcome {
+	//text-align: justify;
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	h2 {
+		font-size: 1.7em;
+		margin-top: .6em;
+
+		@include media(800px) {
+			margin-top: 0;
+		}
+	}
+}
+
+//twitter logo on lp block
+.tweets h2:before {
+	content: "\f099";
+	margin-right: 4px;
+
+	/* font-size: 4em; */
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	color: #38471E;
+}

@@ -1,0 +1,33 @@
+.layout-container--landing-page {
+	@include outer-container;
+
+@include media(800px) {
+
+	.slider {
+	@include span-columns(8);
+	}
+	.lp-welcome {
+	@include span-columns(4);
+	@include omega();
+	}
+	.lp-feature {
+	@include span-columns(4);
+	}
+	.lp-blog {
+	@include span-columns(4);
+	}
+	.tweets {
+	@include span-columns(4);
+	@include omega();
+	}
+	.lp-video {
+	clear:both;
+	@include span-columns(8);
+	}
+	.exhibits {
+	@include span-columns(4);
+	@include omega();
+	}
+
+}
+}
