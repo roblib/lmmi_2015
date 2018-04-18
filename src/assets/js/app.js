@@ -1,5 +1,18 @@
 (function ($) {
 
+	Drupal.behaviors.bxslider = {
+		attach: function attach(context, settings) {
+
+			$('.slider').bxSlider({
+			  auto: true,
+			captions: true,
+			  autoControls: true,
+			  stopAutoOnClick: true,
+			  pager: true,
+			  //slideWidth: 600
+			});
+		}
+	};
 
 	Drupal.behaviors.linkAnchors = {
 		attach: function (context, settings) {

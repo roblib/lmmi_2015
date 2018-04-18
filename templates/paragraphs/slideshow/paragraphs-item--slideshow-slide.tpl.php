@@ -25,8 +25,16 @@
  * @see template_preprocess_entity()
  * @see template_process()
  */
-
+$image = $content[field_slideshow_image];
+$caption =  $content[field_slide_caption];
+$link =  $content['field_slide_link']['#items'][0]['url'];
+$uri = $content['field_slideshow_image']['#items'][0]['uri'];
+$imgPath = file_create_url($uri);
 ?>
-	<li>
-		<?php print render($content); ?>
-	</li>
+<div>
+<a href="<?php print $link ?>">
+<img src="<?php print render($imgPath); ?>" title="<?php print render($caption); ?>">
+
+</a>
+
+</div>

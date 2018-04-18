@@ -26,9 +26,8 @@
 ?>
 
 <div class="slider">
-  <ul class="slides">
   <?php
     print $content;
   ?>
-  </ul>
 </div>
+

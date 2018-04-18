@@ -21,9 +21,9 @@ stylesheets[all][] = libraries/bxslider/dist/jquery.bxslider.css
 ; ========================================
 ; Scripts
 ; ========================================
+scripts[] = libraries/bxslider/dist/jquery.bxslider.min.js
 scripts[] = dist/assets/js/app.js
 ;bxslider
-scripts[] = libraries/bxslider/dist/jquery.bxslider.min.js
 
 ; ========================================
 ; Regions
