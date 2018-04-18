@@ -82,7 +82,7 @@ module.exports = __webpack_require__(1);
 	Drupal.behaviors.bxslider = {
 		attach: function attach(context, settings) {
 
-			$('.slider').bxSlider({
+			$('.bxslider').bxSlider({
 				auto: true,
 				captions: true,
 				stopAutoOnClick: true,
