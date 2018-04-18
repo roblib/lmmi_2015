@@ -85,9 +85,8 @@ module.exports = __webpack_require__(1);
 			$('.slider').bxSlider({
 				auto: true,
 				captions: true,
-				autoControls: true,
 				stopAutoOnClick: true,
-				pager: true
+				speed: 1000
 				//slideWidth: 600
 			});
 		}

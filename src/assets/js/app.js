@@ -6,9 +6,8 @@
 			$('.slider').bxSlider({
 			  auto: true,
 			captions: true,
-			  autoControls: true,
 			  stopAutoOnClick: true,
-			  pager: true,
+            speed: 1000
 			  //slideWidth: 600
 			});
 		}

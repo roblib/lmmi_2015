@@ -1,0 +1,32 @@
+.section-new-landing-page h1 {
+    display: none;
+}
+h1 {
+    display:none;
+}
+.pane-node-field-featured-content-blocks {
+
+	.media-object {
+		background: $light-gray;
+		border: 1px solid $medium-gray;
+		padding: 4px;
+		width: 100%;
+
+		@extend .shadow;
+
+		.media-object-section:nth-child(2) {
+			width: 100%;
+
+			/* height: auto; */
+		}
+	}
+}
+.lp-feature {
+}
+body {
+    background:blue !important;
+}
+
+
+.slider {
+}

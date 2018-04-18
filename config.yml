@@ -1,4 +1,4 @@
-    #Url of the site to be proxied
+#Url of the site to be proxied
 URL: "www.lmmontgomery.ca"
 
     #Root assets folder (contains /css/, /js/ etc)
