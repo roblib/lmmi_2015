@@ -79,7 +79,20 @@ module.exports = __webpack_require__(1);
 
 (function ($) {
 
-	
+	Drupal.behaviors.bxslider = {
+		attach: function attach(context, settings) {
+
+			$('.slider').bxSlider({
+				auto: true,
+				captions: true,
+				autoControls: true,
+				stopAutoOnClick: true,
+				pager: true
+				//slideWidth: 600
+			});
+		}
+	};
+
 	Drupal.behaviors.linkAnchors = {
 		attach: function attach(context, settings) {
 
@@ -258,6 +271,7 @@ module.exports = __webpack_require__(1);
 		}
 
 	};
+	$('.slider').bxSlider();
 })(jQuery);
 
 /***/ })
