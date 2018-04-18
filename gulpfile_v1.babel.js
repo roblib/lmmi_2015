@@ -30,7 +30,7 @@ const {
 } = loadconfig();
 
 function loadconfig() {
-    let ymlfile = fs.readFileSync('config.yml', 'utf8');
+    let ymlfile = fs.readfilesync('config.yml', 'utf8');
     return yaml.load(ymlfile);
 }
 
@@ -183,5 +183,6 @@ function watch() {
     gulp.watch(PATHS.assets, copy);
     gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
     gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
+    gulp.watch('dist/assets/js/**/*.js').on('change', gulp.series(browser.reload));
     gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
 }

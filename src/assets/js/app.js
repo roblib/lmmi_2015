@@ -199,4 +199,5 @@
 						}
 
 			};
+    $('.slider').bxSlider();
 })(jQuery);

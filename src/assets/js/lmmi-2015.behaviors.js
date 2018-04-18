@@ -1,6 +1,14 @@
 (function ($) {
 
 
+	Drupal.behaviors.addRandomMarkup = {
+		attach: function (context, settings) {
+
+            $( ".keynote-speaker__title:contains('Benjamin Lefebvre')" ).addClass( "equal" );
+
+
+        }
+	}
 	Drupal.behaviors.linkAnchors = {
 		attach: function (context, settings) {
 
@@ -10,7 +18,7 @@
 			$(".keynote-speaker__title:contains('Ross')").prepend("<a name='ross'></a>");
 			$(".keynote-speaker__title:contains('Woster')").prepend("<a name='woster'></a>");
 		}
-	}	
+	}
 	Drupal.behaviors.search_navigation = {
 		attach: function (context, settings) {
 
@@ -40,7 +48,7 @@
 
 			$(".l-content h1").after($(".block-islandora-solr-search-navigation"));
 		}
-	}	
+	}
 
 	Drupal.behaviors.nice_select = {
 		attach: function (context, settings) {
@@ -94,7 +102,7 @@
 		attach: function(context, settings) {
 			//$("span.replaceme").replaceWith($(".program .file"));
 		}
-	};	
+	};
 
 
 
@@ -102,12 +110,12 @@
 		attach: function(context, settings) {
 			$("span.replaceme").replaceWith($(".program .file"));
 		}
-	};	
+	};
 	Drupal.behaviors.move_submenu_location = {
 		attach: function(context, settings) {
 			$('.breadcrumb').after($('.page-sub-nav'));
 		}
-	};	
+	};
 
 	Drupal.behaviors.submenu_actions = {
 		attach: function(context, settings) {
@@ -125,14 +133,14 @@
 
 			$('.page-sub-nav h2').html( $('.page-sub-nav h2').text() );
 		}
-	};	
+	};
 	Drupal.behaviors.shining_scroll_menu_link = {
 		attach: function(context, settings) {
 			// Place your code here.
 			$('#menu-2439-1 a').attr('target', '_blank');
 
 		}
-	};	
+	};
 
 	//Drupal.behaviors.solr_metadata = {
 	//attach: function(context, settings) {
@@ -140,7 +148,7 @@
 	//$('.islandora-metadata').prependTo($('.islandora-book-metadata'));
 
 	//}
-	//};	
+	//};
 
 	Drupal.behaviors.program_link_manipulation = {
 		attach: function (context, settings) {
@@ -172,31 +180,31 @@
 		}
 	};
 	Drupal.behaviors.move_the_sort = {
-	
+
 			attach: function (context, settings) {
 						var location = '.block--islandora-facets .block__title';
 						var target = '.block--islandora-solr-current-query';
-			
+
 						$(target).insertAfter(location);
-			
+
 						var target = '#block-islandora-solr-sort';
-			
+
 						$(target).insertAfter(location);
 					}
-	
+
 		};
 		Drupal.behaviors.mobile_facets = {
-		
+
 				attach: function (context, settings) {
 							$('.block--islandora-facets .block__title').click(function() {
-							
+
 											$('.block--islandora-facets .block__content').toggleClass("show_me", 500);
 											$('.block--islandora-solr-current-query').toggleClass("show_me", 500);
 											$("#block-islandora-solr-sort").toggleClass("show_me", 500);
-							
-							
+
+
 										});
 						}
-		
+
 			};
 })(jQuery);
