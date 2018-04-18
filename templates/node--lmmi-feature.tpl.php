@@ -102,6 +102,8 @@
       //hide($content['comments']);
       //hide($content['links']);
 	  print render($content['field_feature_image']);
+	  print render($content['field_existing_content']);
+
 	  print render($content['body'][0]['#markup']);
     ?>
   </div>

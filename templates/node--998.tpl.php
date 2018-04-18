@@ -101,7 +101,7 @@
 <img alt="Image" class="read-along__image" src="/sites/www.lmmontgomery.ca/files/imagepicker/1/lmmi-readalong-header.jpg" />
 	<div class="read-along__caption">
 <h2>
-Join us every Tuesday as readers from 
+Join us every week as readers from 
 around the world respond to a chapter from <br>
 L.M. Montgomery’s beloved novel.
 

@@ -12,11 +12,18 @@ stylesheets[all][] = dist/assets/css/lmmi-2015.normalize.css
 stylesheets[all][] = dist/assets/css/lmmi-2015.hacks.css
 stylesheets[all][] = dist/assets/css/lmmi-2015.styles.css
 stylesheets[all][] = dist/assets/css/lmmi-2015.no-query.css
+;bxslider
+stylesheets[all][] = libraries/bxslider/dist/jquery.bxslider.css
+
+
+
 
 ; ========================================
 ; Scripts
 ; ========================================
 scripts[] = dist/assets/js/app.js
+;bxslider
+scripts[] = libraries/bxslider/dist/jquery.bxslider.min.js
 
 ; ========================================
 ; Regions
