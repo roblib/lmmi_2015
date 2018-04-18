@@ -79,6 +79,7 @@ module.exports = __webpack_require__(1);
 
 (function ($) {
 
+	
 	Drupal.behaviors.linkAnchors = {
 		attach: function attach(context, settings) {
 
@@ -257,7 +258,6 @@ module.exports = __webpack_require__(1);
 		}
 
 	};
-	$('.slider').bxSlider();
 })(jQuery);
 
 /***/ })
