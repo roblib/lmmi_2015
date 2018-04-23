@@ -25,7 +25,7 @@
  */
 ?>
 
-<div class="slider">
+<div class="bxslider">
   <?php
     print $content;
   ?>

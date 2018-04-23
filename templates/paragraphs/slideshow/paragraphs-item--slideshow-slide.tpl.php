@@ -33,7 +33,7 @@ $imgPath = file_create_url($uri);
 ?>
 <div>
 <a href="<?php print $link ?>">
-<img src="<?php print render($imgPath); ?>" title="<?php print render($caption); ?>">
+<?php print render($image); ?>
 
 </a>
 
