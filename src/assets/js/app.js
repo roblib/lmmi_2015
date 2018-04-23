@@ -5,6 +5,7 @@
 
 			$('.bxslider').bxSlider({
 			  auto: true,
+                pager: false,
 			captions: true,
 			  stopAutoOnClick: true,
             speed: 1000

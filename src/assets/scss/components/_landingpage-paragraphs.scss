@@ -1,4 +1,7 @@
 //@format
+.bxwrapper {
+    margin: 0;
+}
 .front .l-content h1 {
     //display: none;
     color: $light-green;
@@ -43,6 +46,15 @@
 }
 .featured-image {
     grid-area: featured-image;
+    figure {
+        margin-top: 1rem;
+    }
+    * {
+        line-height: 0;
+    }
+}
+.bx-wrapper {
+    margin-bottom: 0 !important;
 }
 .grid-wrapper {
     display: grid;
