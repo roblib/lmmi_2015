@@ -6,7 +6,7 @@ ASSETS_DIR: "dist/assets"
 
     #Path on server to remote assets folder (escape the slashes; no trailing slash)
 #REMOTE_ASSETS_PATH: "www.lmmontgomery.ca/sites/www.lmmontgomery.ca/themes/lmmi_2015/dist/assets"
-REMOTE_ASSETS_PATH: "http://www.lmmontgomery.ca/sites/lmmi.vre3.upei.ca/themes/lmmi_2015/dist/assets"
+REMOTE_ASSETS_PATH: "http://www.lmmontgomery.ca/sites/www.lmmontgomery.ca/themes/lmmi_2015/dist/assets"
 
 LOCALPROXY: "http://drupal7.dev/"
 
