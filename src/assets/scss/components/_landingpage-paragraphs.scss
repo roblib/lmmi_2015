@@ -56,22 +56,15 @@
 .bx-wrapper {
     margin-bottom: 0 !important;
 }
-.grid-wrapper {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-        'slider slider welcome'
-        'featured-list blog-list twitter-list'
-        '.... featured-image ....';
-}
 .lp-grid {
     //display: none;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-        'slider slider welcome'
-        'featured-list blog-list twitter-list'
-        '.... featured-image ....';
+    @include breakpoint(800px) {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            'slider slider welcome'
+            'featured-list blog-list twitter-list'
+            '.... featured-image ....';
+    }
 }
