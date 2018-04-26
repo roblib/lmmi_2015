@@ -10,7 +10,7 @@ core = 7.x
 ; ========================================
 stylesheets[all][] = dist/assets/css/lmmi-2015.normalize.css
 stylesheets[all][] = dist/assets/css/lmmi-2015.hacks.css
-stylesheets[all][] = dist/assets/css/lmmi-2015.styles.css
+;stylesheets[all][] = dist/assets/css/lmmi-2015.styles.css
 stylesheets[all][] = dist/assets/css/lmmi-2015.no-query.css
 ;bxslider
 stylesheets[all][] = libraries/bxslider/dist/jquery.bxslider.css
@@ -22,7 +22,7 @@ stylesheets[all][] = libraries/bxslider/dist/jquery.bxslider.css
 ; Scripts
 ; ========================================
 scripts[] = libraries/bxslider/dist/jquery.bxslider.min.js
-scripts[] = dist/assets/js/app.js
+;scripts[] = dist/assets/js/app.js
 ;bxslider
 
 ; ========================================
@@ -41,6 +41,7 @@ regions[footer] = Footer
 ; ========================================
 ; Settings
 ; ========================================
+settings[preprocess_css] = FALSE
 settings[toggle_logo] = 1
 settings[toggle_name] = 1
 settings[toggle_slogan] = 1
