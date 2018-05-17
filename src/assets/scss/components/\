@@ -71,25 +71,8 @@
 }
 .image-row-image__wrapper {
     display: block;
-    &:nth-child(1) {
-        padding-left: 0;
-    }
-    &:nth-child(2) {
-        $padding: 6px;
-        padding-left: $padding;
-        padding-right: $padding;
-    }
-    &:nth-child(3) {
-        padding-right: 0;
-    }
 }
 .image-row-image {
     border: 1px solid #ccc;
     padding: 4px;
-    margin-bottom: 1rem;
-}
-.featured-image .row {
-    margin: 0;
-    margin-top: 2rem;
-    max-width: initial;
 }
