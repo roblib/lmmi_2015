@@ -1,18 +1,19 @@
 (function ($) {
 
-	Drupal.behaviors.bxslider = {
-		attach: function attach(context, settings) {
+  Drupal.behaviors.bxslider = {
+    attach: function attach(context, settings) {
 
-			$('.bxslider').bxSlider({
-			  auto: true,
-                pager: false,
-			captions: true,
-			  stopAutoOnClick: true,
-            speed: 1000
-			  //slideWidth: 600
-			});
-		}
-	};
+      $('.bxslider').bxSlider({
+        auto: true,
+        pager: false,
+        touchEnabled: false,
+        captions: true,
+        stopAutoOnClick: true,
+        speed: 1000
+        //slideWidth: 600
+      });
+    }
+  };
 
 	Drupal.behaviors.linkAnchors = {
 		attach: function (context, settings) {

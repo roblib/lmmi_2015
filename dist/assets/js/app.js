@@ -85,6 +85,7 @@ module.exports = __webpack_require__(1);
 			$('.bxslider').bxSlider({
 				auto: true,
 				pager: false,
+				touchEnabled: false,
 				captions: true,
 				stopAutoOnClick: true,
 				speed: 1000
